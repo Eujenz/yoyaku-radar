@@ -8,7 +8,7 @@ import { fileURLToPath } from 'node:url';
 const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
 const DATA_FILE = `${ROOT}/data/items.json`;
 const BASE = 'https://www.goodsmile.com';
-const UA = `YoyakuRadarBot/0.1 (preorder deadline calendar; ${process.env.SITE_URL || 'contact via site'})`;
+const UA = `YoyakuBot/0.2 (preorder deadline calendar; ${process.env.SITE_URL || 'contact via site'})`;
 const DELAY_MS = Number(process.env.SCRAPE_DELAY_MS || 1200);
 const REFRESH_DAYS = Number(process.env.REFRESH_DAYS || 2);
 const MAX_FETCH = Number(process.env.MAX_FETCH || 500);
@@ -53,6 +53,7 @@ const text = (html) => decode(html.replace(/<[^>]+>/g, ' ')).replace(/\s+/g, ' '
 
 export async function listPreorderIds() {
   const ids = new Set();
+  const listing = new Map(); // id -> { thumb, bonus } as shown on the listing card
   let total = null;
   for (let offset = 0; offset < 3000; offset += PAGE) {
     const qs = new URLSearchParams({
@@ -68,11 +69,17 @@ export async function listPreorderIds() {
     const t = html.match(/search_result_total_count[^>]*>\s*(\d+)/);
     if (t) total = Number(t[1]);
     const before = ids.size;
-    for (const m of html.matchAll(/\/ja\/product\/(\d+)/g)) ids.add(m[1]);
+    for (const block of html.split('<div class="p-product-list__item">').slice(1)) {
+      const id = (block.match(/\/ja\/product\/(\d+)/) || [])[1];
+      if (!id) continue;
+      ids.add(id);
+      const img = (block.match(/<img src="(\/[^"]*\/product\/image\/[^"]+)"/) || [])[1];
+      listing.set(id, { thumb: img ? BASE + decode(img) : null, bonus: /特典付き/.test(block) });
+    }
     if (ids.size === before) break;
     if (total !== null && offset + PAGE >= total) break;
   }
-  return { ids: [...ids], total };
+  return { ids: [...ids], total, listing };
 }
 
 export function parseProduct(html, sourceId) {
@@ -139,6 +146,7 @@ export function parseProduct(html, sourceId) {
     preorderEndAt: exact || null,
     releaseMonth: lastMonth ? `${lastMonth[2]}-${lastMonth[3].padStart(2, '0')}` : null,
     availability: String(offer.availability || '').split('/').pop() || null,
+    image: typeof ld.image === 'string' && ld.image.startsWith('/') ? BASE + ld.image : null,
     isRerelease: /再販/.test(name) || months.some((m) => m[1] === '再販'),
     url: `${BASE}/ja/product/${sourceId}`,
     shops,
@@ -154,7 +162,7 @@ async function main() {
   const byId = new Map(prev.map((i) => [i.id, i]));
   const prevActive = prev.filter((i) => i.status === 'open').length;
 
-  const { ids, total } = await listPreorderIds();
+  const { ids, total, listing } = await listPreorderIds();
   console.log(`listing: ${ids.length} ids (site reports ${total})`);
   if (ids.length === 0) throw new Error('Listing returned no products; source layout may have changed.');
   if (prevActive >= 20 && ids.length < prevActive * 0.5)
@@ -201,6 +209,7 @@ async function main() {
     if (listed.has(item.id)) {
       item.status = 'open';
       delete item.closedAt;
+      Object.assign(item, listing.get(item.sourceId));
     } else if (item.status !== 'closed') {
       item.status = 'closed';
       item.closedAt = now;

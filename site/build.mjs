@@ -3,7 +3,7 @@ import { readFile, writeFile, mkdir, rm, copyFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { SITE, SOURCES } from './config.mjs';
+import { SITE, SOURCES, PARTNERS } from './config.mjs';
 
 const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
 const OUT = `${ROOT}/dist`;
@@ -104,6 +104,9 @@ const categories = group('category').map((g) => ({ ...g, path: `/category/${slug
 const categoryPath = new Map(categories.map((s) => [s.name, s.path]));
 
 // ---------- components ----------
+const HEART = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>';
+// Card titles drop the 【再販】 prefix (it becomes a tag); item pages keep the official name.
+const shortName = (i) => i.name.replace(/^【[^】]*(?:再販|受注)】\s*/, '');
 function chip(i) {
   if (!i.open) return '<span class="chip closed">預購已截止</span>';
   if (i.left === null) return '<span class="chip unknown">截止日未標示</span>';
@@ -111,19 +114,29 @@ function chip(i) {
   const label = i.left === 0 ? '今天截止' : i.left === 1 ? '明天截止' : `剩 ${i.left} 天`;
   return `<span class="chip ${cls}" data-end="${i.preorderEnd}"${i.preorderEndAt ? ` data-at="${i.preorderEndAt}"` : ''}>${label}</span>`;
 }
-function row(i) {
-  const meta = [
-    i.series && (seriesPath.has(i.series) ? `<a href="${href(seriesPath.get(i.series))}" lang="ja">${esc(i.series)}</a>` : `<span lang="ja">${esc(i.series)}</span>`),
-    i.category && `<span lang="ja">${esc(i.category)}</span>`,
-    i.priceJpy && yen(i.priceJpy),
-    !i.preorderEnd && i.releaseMonth && `${i.isRerelease ? '再販' : '發售'} ${fmtMonth(i.releaseMonth)}`,
-  ].filter(Boolean).join('・');
-  return `<li data-k="${esc(`${i.name} ${i.series || ''} ${i.category || ''}`.toLowerCase())}">
-<div class="info"><a class="name" href="${href(i.path)}" lang="ja">${i.isRerelease && !/再販/.test(i.name) ? '<span class="tag" lang="zh-Hant">再販</span>' : ''}${esc(i.name)}</a><span class="meta">${meta}</span></div>
-<div class="when">${chip(i)}${i.preorderEnd ? `<span class="date">${fmtDate(i.preorderEnd)}</span>` : ''}</div>
+const photo = (i, { large = false, eager = false } = {}) => {
+  const src = large ? i.image || i.thumb : i.thumb || i.image;
+  if (!src) return '<span class="case-img empty"></span>';
+  const [w, h] = large && i.image ? [750, 938] : [300, 300];
+  return `<span class="case-img"><img src="${esc(src)}" alt="${large ? esc(i.name) : ''}" width="${w}" height="${h}"${eager ? ' fetchpriority="high"' : ' loading="lazy"'} decoding="async" referrerpolicy="no-referrer"></span>`;
+};
+// data-* attributes carry what the front-end needs to filter, sort and remember a favourite.
+const dataAttrs = (i) =>
+  `data-id="${i.id}" data-name="${esc(shortName(i))}" data-thumb="${esc(i.thumb || i.image || '')}" data-price="${i.priceJpy || 0}" data-end="${i.preorderEnd || ''}" data-at="${i.preorderEndAt || ''}" data-start="${startOf(i) || ''}" data-path="${i.path}" data-series="${esc(i.series || '')}"${i.isRerelease ? ' data-re' : ''}${i.bonus ? ' data-bonus' : ''}`;
+function card(i) {
+  const tags = [chip(i), i.isRerelease && '<span class="tag">再販</span>', i.bonus && '<span class="tag">特典</span>'].filter(Boolean).join('');
+  const sub = [i.preorderEnd ? `<span class="case-date">${fmtDate(i.preorderEnd)}截止</span>` : i.releaseMonth ? `<span class="case-date">${i.isRerelease ? '再販' : '發售'} ${fmtMonth(i.releaseMonth)}</span>` : '',
+    i.series ? `<span lang="ja">${esc(i.series)}</span>` : '', i.priceJpy ? `<span class="num">${yen(i.priceJpy)}</span>` : ''].join('');
+  return `<li class="case" ${dataAttrs(i)} data-k="${esc(`${i.name} ${i.series || ''} ${i.category || ''}`.toLowerCase())}">
+<a class="case-link" href="${href(i.path)}">${photo(i)}<span class="case-tags">${tags}</span><span class="case-name" lang="ja">${esc(shortName(i))}</span><span class="case-meta">${sub}</span></a>
+<button class="fav" type="button" aria-pressed="false" aria-label="收藏 ${esc(shortName(i))}">${HEART}</button>
 </li>`;
 }
-const rows = (list) => `<ul class="rows">${list.map(row).join('\n')}</ul>`;
+const shelf = (list, id) => `<ul class="shelf"${id ? ` id="${id}"` : ''}>${list.map(card).join('\n')}</ul>`;
+const clock = (i) =>
+  i.open && i.preorderEndAt
+    ? `<div class="clock" data-at="${i.preorderEndAt}" role="timer" aria-label="距離預購截止"><div><b>${i.left}</b><span>天</span></div><div><b>--</b><span>時</span></div><div><b>--</b><span>分</span></div><div><b>--</b><span>秒</span></div></div>`
+    : '';
 const itemList = (list, name) => ({
   '@context': 'https://schema.org', '@type': 'ItemList', name, numberOfItems: list.length,
   itemListElement: list.slice(0, 100).map((i, n) => ({ '@type': 'ListItem', position: n + 1, url: abs(i.path), name: i.name })),
@@ -135,24 +148,16 @@ const crumbs = (trail) => ({
 const crumbNav = (trail) =>
   `<nav class="crumbs" aria-label="麵包屑">${trail.map(([name, path], n) => (n < trail.length - 1 ? `<a href="${href(path)}">${esc(name)}</a>` : esc(name))).join(' › ')}</nav>`;
 
-const cssHash = createHash('sha1').update(await readFile(`${ROOT}/site/style.css`)).digest('hex').slice(0, 8);
+const hash = async (f) => createHash('sha1').update(await readFile(`${ROOT}/site/${f}`)).digest('hex').slice(0, 8);
+const cssHash = await hash('style.css');
+const jsHash = await hash('app.js');
 const pages = []; // for sitemap
 const files = new Map();
 const put = (path, body) => files.set(path, body);
 
-const NAV = [['/closing/', '即將截止'], ['/new/', '新開預購'], ['/series/', '依作品'], ['/category/', '依系列'], ['/subscribe/', '訂閱提醒']];
-// Keeps the countdown chips correct between rebuilds, and filters long lists.
-const SCRIPT = `<script>
-(function(){var n=new Date(Date.now()+9*36e5),t=Date.UTC(n.getUTCFullYear(),n.getUTCMonth(),n.getUTCDate());
-document.querySelectorAll('.chip[data-end]').forEach(function(c){var d=Math.round((Date.parse(c.dataset.end+'T00:00:00Z')-t)/864e5);
-if(c.dataset.at&&Date.now()>=Date.parse(c.dataset.at))d=-1;c.className='chip'+(d<0?' closed':d<=3?' urgent':d<=7?' soon':'');c.textContent=d<0?'預購已截止':d===0?'今天截止':d===1?'明天截止':'剩 '+d+' 天';});
-var f=document.getElementById('filter');if(f){var c=document.getElementById('filter-count');f.addEventListener('input',function(){var q=f.value.trim().toLowerCase(),s=0;
-document.querySelectorAll('.rows > li').forEach(function(li){var ok=!q||li.dataset.k.indexOf(q)>=0;li.hidden=!ok;if(ok)s++;});
-document.querySelectorAll('.day').forEach(function(g){g.hidden=!g.querySelector('.rows > li:not([hidden])');});
-if(c)c.textContent=q?'符合 '+s+' 件':'';});}})();
-</script>`;
+const NAV = [['/closing/', '全部預購'], ['/new/', '新上架'], ['/series/', '依作品'], ['/category/', '依系列'], ['/subscribe/', '訂閱提醒']];
 
-function page({ path, title, description, body, ld = [], index = true, lastmod, noSuffix }) {
+function page({ path, title, description, body, ld = [], index = true, lastmod, noSuffix, image }) {
   const fullTitle = noSuffix ? title : `${title}｜${SITE.name}`;
   const canonical = abs(path);
   if (index) pages.push({ path, lastmod: lastmod || UPDATED.slice(0, 10) });
@@ -170,17 +175,19 @@ ${index ? '' : '<meta name="robots" content="noindex">\n'}<meta property="og:typ
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:url" content="${canonical}">
 <meta property="og:locale" content="zh_TW">
-<meta name="twitter:card" content="summary">
+${image ? `<meta property="og:image" content="${esc(image)}">\n<meta name="twitter:card" content="summary_large_image">` : '<meta name="twitter:card" content="summary">'}
 ${SITE.googleSiteVerification ? `<meta name="google-site-verification" content="${esc(SITE.googleSiteVerification)}">\n` : ''}<link rel="alternate" type="application/atom+xml" title="${esc(SITE.name)}：新開預購" href="${abs('/feed.xml')}">
 <link rel="alternate" type="application/atom+xml" title="${esc(SITE.name)}：7 天內截止" href="${abs('/closing.xml')}">
 <link rel="alternate" type="application/json" title="${esc(SITE.name)} 開放資料" href="${abs('/api/preorders.json')}">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;800&display=swap">
 <link rel="stylesheet" href="${href('/assets/style.css')}?v=${cssHash}">
 ${ld.map(jsonLd).join('\n')}
 </head>
-<body>
+<body data-base="${SITE.base}">
 <header class="site-header"><div class="wrap">
 <a class="brand" href="${href('/')}">${esc(SITE.name)}<span>.</span></a>
-<nav aria-label="主選單">${NAV.map(([p, t]) => `<a href="${href(p)}"${path.startsWith(p) ? ' aria-current="page"' : ''}>${t}</a>`).join('')}</nav>
+<nav aria-label="主選單">${NAV.map(([p, t]) => `<a href="${href(p)}"${path.startsWith(p) ? ' aria-current="page"' : ''}>${t}</a>`).join('')}<a class="mine" href="${href('/cabinet/')}"${path === '/cabinet/' ? ' aria-current="page"' : ''}>我的展示櫃<span class="count js-fav-count" hidden>0</span></a></nav>
 </div></header>
 <main class="wrap">
 ${body}
@@ -188,9 +195,9 @@ ${body}
 <footer class="site-footer"><div class="wrap">
 <nav aria-label="頁尾"><a href="${href('/about/')}">關於本站與資料來源</a><a href="${href('/for-agents/')}">給 AI 代理與開發者</a><a href="${href('/feed.xml')}">RSS</a><a href="${href('/calendar.ics')}">行事曆</a>${SITE.threadsUrl ? `<a href="${esc(SITE.threadsUrl)}" rel="me">Threads</a>` : ''}</nav>
 <p>資料最後更新：${esc(updatedText)}（台灣時間）。清單上的日期皆為日本時間。價格、截止時間與是否提前結束，請以官方商品頁為準。</p>
-<p>本站只整理官方公開的商品名稱、價格與預購期間並連回官方頁面，不販售商品，與各製造商沒有合作或隸屬關係。商品名稱與作品名稱為各權利人所有。</p>
+<p>本站整理官方公開的商品資訊並連回官方頁面，不販售商品，與各製造商沒有合作或隸屬關係。商品圖片直接由官方網站載入，圖片、商品名稱與作品名稱的權利屬於各權利人。${SITE.affiliateActive ? '部分店家連結為聯盟行銷連結，你透過連結購買時本站可能獲得分潤，價格不受影響。' : ''}</p>
 </div></footer>
-${SCRIPT}
+<script src="${href('/assets/app.js')}?v=${jsHash}" defer></script>
 </body>
 </html>
 `);
@@ -198,41 +205,63 @@ ${SCRIPT}
 
 // ---------- home ----------
 const FAQ = [
-  ['預購截止日是怎麼來的？', `來自 ${SOURCES.gsc.short} 官方商品頁公開的結構化資料（預購開始日與結束日）。本站每天自動檢查兩次，官方有變動時會跟著更新。`],
-  ['截止日是台灣時間還是日本時間？', '清單上的日期是日本時間。官方有標示截止時刻的商品，商品頁會同時列出日本時間與台灣時間（台灣比日本慢 1 小時）。'],
+  ['預購截止日是怎麼來的？', `來自 ${SOURCES.gsc.short} 官方商品頁公開的資料（預購開始與結束時間）。本站每天自動檢查兩次，官方有變動時會跟著更新。`],
+  ['截止日是台灣時間還是日本時間？', '清單上的日期是日本時間。官方有標示截止時刻的商品，商品頁會同時列出日本時間與台灣時間（台灣比日本慢 1 小時），並顯示即時倒數。'],
   ['為什麼有些商品寫「截止日未標示」？', '這些多半是再販商品，官方網站列為預購受理中，但沒有公布統一的截止日，各店家各自決定何時停止接單。建議直接向你要下單的店家確認。'],
-  ['錯過預購還買得到嗎？', '預購截止後通常只能等再販，或在二手市場購買，價格常比定價高。本站會把名稱帶有「再販」的商品標示出來。'],
+  ['「我的展示櫃」是什麼？', '按商品右上角的愛心，就能把它放進你的展示櫃。展示櫃會顯示收藏商品的截止日與預算合計。資料只存在你這台裝置的瀏覽器裡，不需要註冊。'],
+  ['錯過預購還買得到嗎？', '預購截止後通常只能等再販，或在二手市場購買，價格常比定價高。本站會把再販商品標示出來。'],
   ['你們有賣商品嗎？', '沒有。本站只提供截止日提醒，每件商品都會連到官方商品頁，請在官方或你習慣的店家下單。'],
   ['目前收錄哪些廠商？', `目前收錄 ${SOURCES.gsc.short} 官網上架的預購商品，包含它代理銷售的其他品牌。之後會逐步增加其他廠商。`],
-  ['怎麼收到提醒？', '可以訂閱 RSS，或把行事曆加入 Google 日曆、Apple 行事曆，截止日會直接出現在你的行事曆上。'],
 ];
 const topSeries = series.slice(0, 30);
+// The spotlight: the priciest piece closing within a week. Missing it costs the most.
+const featured = closingSoon.filter((i) => i.thumb || i.image).sort((a, b) => (b.priceJpy || 0) - (a.priceJpy || 0))[0];
+const closingOnHome = closingSoon.slice(0, 18);
 page({
   path: '/',
   noSuffix: true,
   title: `${SITE.name}｜${SITE.tagline}`,
-  description: `整理日本官方公仔與周邊的預購截止日。目前有 ${open.length} 件商品開放預購，未來 7 天內有 ${closingSoon.length} 件截止。每天自動更新，可用 RSS 或行事曆訂閱提醒。`,
+  description: `整理日本官方公仔與周邊的預購截止日。目前有 ${open.length} 件商品開放預購，未來 7 天內有 ${closingSoon.length} 件截止。每天自動更新，可收藏商品、用 RSS 或行事曆訂閱提醒。`,
   ld: [
-    { '@context': 'https://schema.org', '@type': 'WebSite', name: SITE.name, alternateName: SITE.nameEn, url: abs('/'), inLanguage: 'zh-Hant-TW', description: SITE.tagline },
+    { '@context': 'https://schema.org', '@type': 'WebSite', name: SITE.name, url: abs('/'), inLanguage: 'zh-Hant-TW', description: SITE.tagline },
     { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: FAQ.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) },
     itemList(closingSoon, '7 天內截止的預購'),
   ],
-  body: `<section class="stack">
-<h1>公仔與周邊的預購截止日，一頁看完</h1>
-<p class="lede">錯過預購，之後通常只能用更高的二手價買回來。這裡每天整理官方公布的預購期間，快截止的排在最前面。</p>
+  body: `<section class="hero">
+<div class="hero-copy">
+<h1>想收的公仔，別等到截止才想起來</h1>
+<p class="lede">錯過預購，之後通常只能用更高的二手價買回來。這裡每天整理官方公布的預購期間，把喜歡的放進展示櫃，截止前回來看一眼。</p>
 <dl class="stats">
-<div><dt>開放預購中</dt><dd>${open.length} 件</dd></div>
-<div><dt>7 天內截止</dt><dd>${closingSoon.length} 件</dd></div>
-<div><dt>近 14 天新開</dt><dd>${recent.length} 件</dd></div>
+<div><dt>開放預購中</dt><dd>${open.length}<small> 件</small></dd></div>
+<div><dt>7 天內截止</dt><dd>${closingSoon.length}<small> 件</small></dd></div>
+<div><dt>近 14 天新上架</dt><dd>${recent.length}<small> 件</small></dd></div>
 </dl>
+</div>
+${featured ? `<div class="spotlight" ${dataAttrs(featured)}>
+<a href="${href(featured.path)}" aria-hidden="true" tabindex="-1">${photo(featured, { eager: true })}</a>
+<div class="spotlight-body">
+<span class="eyebrow">本週聚光燈・即將截止</span>
+<a class="spotlight-name" href="${href(featured.path)}" lang="ja">${esc(shortName(featured))}</a>
+${featured.priceJpy ? `<span class="price">${yen(featured.priceJpy)}</span>` : ''}
+${clock(featured) || chip(featured)}
+<button class="fav wide" type="button" aria-pressed="false">${HEART}<span class="fav-label">放進我的展示櫃</span></button>
+</div>
+</div>` : ''}
+</section>
+<section class="stack" id="my-cabinet" hidden>
+<div class="section-head"><h2>我的展示櫃</h2><a href="${href('/cabinet/')}">打開展示櫃 →</a></div>
+<p class="note js-cabinet-note"></p>
+<ul class="shelf"></ul>
 </section>
 <section class="stack">
-<div class="section-head"><h2>7 天內截止</h2><a href="${href('/closing/')}">看全部截止日 →</a></div>
-${closingSoon.length ? rows(closingSoon) : '<p class="note">未來 7 天內沒有預購截止。</p>'}
+<div class="section-head"><h2>7 天內截止</h2><a href="${href('/closing/')}">看全部 ${open.length} 件 →</a></div>
+<p class="note" id="since" hidden></p>
+${closingOnHome.length ? shelf(closingOnHome) : '<p class="note">未來 7 天內沒有預購截止。</p>'}
+${closingSoon.length > closingOnHome.length ? `<p class="note">還有 ${closingSoon.length - closingOnHome.length} 件在 7 天內截止，<a href="${href('/closing/')}">到全部預購查看</a>。</p>` : ''}
 </section>
 <section class="stack">
-<div class="section-head"><h2>最新開放預購</h2><a href="${href('/new/')}">看更多 →</a></div>
-${rows(newest.slice(0, 12))}
+<div class="section-head"><h2>新上架</h2><a href="${href('/new/')}">看更多 →</a></div>
+${shelf(newest.slice(0, 12))}
 </section>
 <section class="stack">
 <div class="section-head"><h2>依作品找預購</h2><a href="${href('/series/')}">全部 ${series.length} 部作品 →</a></div>
@@ -244,41 +273,41 @@ ${FAQ.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></de
 </section>`,
 });
 
-// ---------- closing (all, grouped by day) ----------
+// ---------- all preorders, with search / filter / sort ----------
 {
-  const days = new Map();
-  for (const i of dated) {
-    if (!days.has(i.preorderEnd)) days.set(i.preorderEnd, []);
-    days.get(i.preorderEnd).push(i);
-  }
-  const trail = [['首頁', '/'], ['預購截止日一覽', '/closing/']];
+  const trail = [['首頁', '/'], ['全部預購', '/closing/']];
   page({
     path: '/closing/',
-    title: '預購截止日一覽',
-    description: `目前開放預購的 ${open.length} 件公仔與周邊，依截止日由近到遠排列。可用商品名或作品名篩選。`,
+    title: '全部預購與截止日',
+    description: `目前開放預購的 ${open.length} 件公仔與周邊，依截止日由近到遠排列。可搜尋、篩選 3 天內截止或再販商品，並依價格排序。`,
     ld: [crumbs(trail), itemList(dated, '預購截止日一覽')],
     body: `${crumbNav(trail)}
-<section class="stack"><h1>預購截止日一覽</h1>
-<p class="lede">共 ${open.length} 件開放預購，依截止日由近到遠排列。</p>
-<div class="filter"><label for="filter">用商品名、作品名或系列篩選</label><input id="filter" type="search" autocomplete="off" placeholder="例如：ねんどろいど、原神"><span class="note" id="filter-count" aria-live="polite"></span></div>
+<section class="stack"><h1>全部預購與截止日</h1>
+<p class="lede">共 ${open.length} 件開放預購，預設依截止日由近到遠排列。</p>
+<div class="tools" id="shelf-tools" data-target="#all">
+<div class="field grow"><label for="filter">搜尋商品、作品或系列</label><input id="filter" type="search" autocomplete="off" placeholder="例如：ねんどろいど、原神、figma"></div>
+<div class="field"><label for="sort">排序</label><select id="sort"><option value="end">截止日近到遠</option><option value="new">最新上架</option><option value="price-asc">價格低到高</option><option value="price-desc">價格高到低</option></select></div>
+<div class="seg" role="group" aria-label="篩選"><button type="button" data-f="all" aria-pressed="true">全部</button><button type="button" data-f="d3" aria-pressed="false">3 天內截止</button><button type="button" data-f="d7" aria-pressed="false">7 天內截止</button><button type="button" data-f="re" aria-pressed="false">再販</button><button type="button" data-f="bonus" aria-pressed="false">有特典</button><button type="button" data-f="fav" aria-pressed="false">我收藏的</button></div>
+<p class="note" id="filter-count" aria-live="polite"></p>
+</div>
+<p class="note" id="since" hidden></p>
 </section>
-${[...days.entries()].map(([d, list]) => `<section class="stack day"><h2 class="day-head">${fmtDate(d)} 截止・${list.length} 件</h2>${rows(list)}</section>`).join('\n')}
-${undated.length ? `<section class="stack day"><h2 class="day-head">官方未標示截止日・${undated.length} 件</h2>${rows(undated)}</section>` : ''}`,
+${shelf([...dated, ...undated], 'all')}`,
   });
 }
 
 // ---------- new ----------
 {
-  const trail = [['首頁', '/'], ['新開預購', '/new/']];
+  const trail = [['首頁', '/'], ['新上架', '/new/']];
   const list = recent.length >= 12 ? recent : newest.slice(0, 40);
   page({
     path: '/new/',
-    title: '新開預購',
+    title: '新上架的預購',
     description: `最近開放預購的公仔與周邊，共 ${list.length} 件，依開放日期由新到舊排列。`,
-    ld: [crumbs(trail), itemList(list, '新開預購')],
+    ld: [crumbs(trail), itemList(list, '新上架的預購')],
     body: `${crumbNav(trail)}
-<section class="stack"><h1>新開預購</h1><p class="lede">最近開放預購的商品，由新到舊排列。</p></section>
-${rows(list)}`,
+<section class="stack"><h1>新上架的預購</h1><p class="lede">最近開放預購的商品，由新到舊排列。</p><p class="note" id="since" hidden></p></section>
+${shelf(list)}`,
   });
 }
 
@@ -299,15 +328,16 @@ function groupPages(groups, { root, rootTitle, label, intro }) {
     const next = g.list.find((i) => i.preorderEnd);
     const summary = next
       ? `「${g.name}」目前有 ${g.list.length} 件${label}開放預購。最快截止的是「${next.name}」，截止日為 ${fmtLong(next.preorderEnd)}（日本時間）。`
-      : `「${g.name}」目前有 ${g.list.length} 件${label}開放預購。`;
+      : `「${g.name}」目前有 ${g.list.length} 件${label}開放預購，官方都沒有公布統一的截止日。`;
     page({
       path: g.path,
       title: `${g.name} 預購截止日（${g.list.length} 件）`,
       description: summary,
+      image: g.list.find((i) => i.image)?.image,
       ld: [crumbs(t), itemList(g.list, `${g.name} 預購中商品`)],
       body: `${crumbNav(t)}
 <section class="stack"><h1><span lang="ja">${esc(g.name)}</span> 預購截止日</h1><p class="answer">${esc(summary)}</p></section>
-${rows(g.list)}`,
+${shelf(g.list)}`,
     });
   }
 }
@@ -330,22 +360,26 @@ for (const i of items) {
     ['製造商', i.maker && `<span lang="ja">${esc(i.maker)}</span>`],
     ['官方標示價格', i.priceJpy && `${yen(i.priceJpy)}（日圓）`],
     ['預購開始', i.preorderStart && fmtDate(i.preorderStart)],
-    ['預購截止', i.preorderEnd ? `${fmtDate(i.preorderEnd)}${i.preorderEndAt ? ` ${fmtTime(i.preorderEndAt)}` : ''} ${chip(i)}` : i.open ? '官方未標示，請向各店家確認' : null],
+    ['預購截止', i.preorderEnd ? `${fmtDate(i.preorderEnd)}${i.preorderEndAt ? ` ${fmtTime(i.preorderEndAt)}` : ''}` : i.open ? '官方未標示，請向各店家確認' : null],
     [i.isRerelease ? '預定再販' : '預定發售', i.releaseMonth && fmtMonth(i.releaseMonth)],
     ['類型', i.isRerelease ? '再販' : null],
+    ['官方特典', i.bonus ? '有（內容請見官方商品頁）' : null],
     ['JAN 條碼', i.jan],
     ['規格', i.spec && `<span lang="ja">${esc(i.spec)}</span>`],
   ].filter(([, v]) => v);
-  const related = (series.find((s) => s.name === i.series)?.list || []).filter((r) => r.id !== i.id).slice(0, 8);
+  const related = (series.find((s) => s.name === i.series)?.list || []).filter((r) => r.id !== i.id).slice(0, 12);
+  const partnerItem = { ...i, searchName: shortName(i) };
   page({
     path: i.path,
     lastmod: i.closedAt || i.fetchedAt,
+    image: i.image || i.thumb,
     title: `${i.name} 預購截止日${i.preorderEnd ? ` ${fmtDate(i.preorderEnd)}` : ''}`,
     description: `${answer}資料來源：${src.name}，最後確認於 ${checked}。`,
     ld: [
       crumbs(trail),
       {
         '@context': 'https://schema.org', '@type': 'Product', name: i.name, url: abs(i.path), sku: i.sourceId,
+        ...(i.image || i.thumb ? { image: i.image || i.thumb } : {}),
         ...(i.jan && i.jan.length === 13 ? { gtin13: i.jan } : {}),
         ...(i.maker ? { brand: { '@type': 'Brand', name: i.maker } } : {}),
         ...(i.category ? { category: i.category } : {}),
@@ -362,18 +396,40 @@ for (const i of items) {
       },
     ],
     body: `${crumbNav(trail)}
-<section class="stack">
+<section class="product" ${dataAttrs(i)}>
+<div class="display">${photo(i, { large: true, eager: true })}<div class="plinth"></div></div>
+<div class="product-body">
 <h1 lang="ja">${esc(i.name)}</h1>
+<div class="actions">${chip(i)}${i.isRerelease ? '<span class="tag">再販</span>' : ''}${i.bonus ? '<span class="tag">特典</span>' : ''}${i.priceJpy ? `<span class="price">${yen(i.priceJpy)}</span>` : ''}</div>
+${clock(i)}
 <p class="answer">${esc(answer)}</p>
+<div class="actions"><a class="btn" href="${esc(i.url)}" rel="noopener">前往官方商品頁預購</a><button class="fav wide" type="button" aria-pressed="false">${HEART}<span class="fav-label">放進我的展示櫃</span></button></div>
+<div class="stack"><h2>其他購買管道</h2>
+<div class="actions">${i.shops.map((s) => `<a class="btn ghost" href="${esc(s.url)}" rel="noopener nofollow" lang="ja">${esc(s.name)}<small lang="zh-Hant">官方列出的販售店</small></a>`).join('')}${PARTNERS.map((p) => `<a class="btn ghost" href="${esc(p.url(partnerItem))}" rel="noopener nofollow${SITE.affiliateActive ? ' sponsored' : ''}">${esc(p.name)}<small>${esc(p.note)}</small></a>`).join('')}</div>
+<p class="note">各店家的價格、特典與截止時間可能不同。資料來源：<a href="${esc(i.url)}" rel="noopener">${esc(src.name)}</a>，最後確認於 ${checked}。官方可能提前結束預購，下單前請再確認。</p></div>
+</div>
 </section>
 <dl class="facts">${facts.map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join('')}</dl>
-<section class="stack">
-<div class="actions"><a class="btn" href="${esc(outbound(i.url))}" rel="noopener">前往官方商品頁</a>${i.shops.map((s) => `<a class="btn ghost" href="${esc(outbound(s.url))}" rel="noopener nofollow" lang="ja">${esc(s.name)}</a>`).join('')}</div>
-<p class="note">資料來源：<a href="${esc(i.url)}" rel="noopener">${esc(src.name)}</a>，最後確認於 ${checked}。官方可能提前結束預購，下單前請再確認官方頁面。</p>
-</section>
-${related.length ? `<section class="stack"><h2>同作品的其他預購</h2>${rows(related)}</section>` : ''}`,
+${related.length ? `<section class="stack"><h2>同作品的其他預購</h2>${shelf(related)}</section>` : ''}`,
   });
 }
+
+// ---------- my cabinet (filled in by the browser from saved favourites) ----------
+page({
+  path: '/cabinet/',
+  title: '我的展示櫃',
+  description: '你收藏的預購商品、各自的截止日與預算合計。資料只存在這台裝置的瀏覽器裡。',
+  index: false,
+  body: `<section class="stack"><h1>我的展示櫃</h1><p class="lede">你收藏的預購商品會擺在這裡，依截止日由近到遠排列。資料只存在這台裝置的瀏覽器裡，不需要註冊。</p></section>
+<section class="stack" id="cabinet">
+<div class="empty-state js-empty"><h2>展示櫃還是空的</h2><p>在任何商品右上角按一下愛心，它就會出現在這裡，並顯示截止日與預算合計。</p><a class="btn" href="${href('/closing/')}">去逛全部預購</a></div>
+<div class="stack js-filled" hidden>
+<dl class="stats"><div><dt>收藏</dt><dd><span class="js-total-count">0</span><small> 件</small></dd></div><div><dt>預購中商品的預算合計</dt><dd class="js-total-price">¥0</dd></div><div><dt>最近的截止日</dt><dd class="js-next">—</dd></div></dl>
+<ul class="shelf"></ul>
+<p class="note">預算合計以官方標示的日圓價格計算，不含運費、關稅與代購費。再按一次愛心就能移除。</p>
+</div>
+</section>`,
+});
 
 // ---------- about / subscribe / for-agents / 404 ----------
 {
@@ -387,7 +443,7 @@ ${related.length ? `<section class="stack"><h2>同作品的其他預購</h2>${ro
 <section class="stack prose"><h1>關於本站與資料來源</h1>
 <p>${esc(SITE.name)}只做一件事：告訴你公仔與周邊的預購什麼時候截止，讓你不必因為忘記日期而去買高價二手。</p>
 <h2>資料從哪裡來</h2>
-<p>目前的來源是 <a href="${SOURCES.gsc.url}" rel="noopener">${esc(SOURCES.gsc.name)}</a>。本站只讀取官方商品頁公開的事實資料：商品名稱、作品名稱、製造商、價格、JAN 條碼、規格與預購期間。不複製商品圖片與介紹文字，每件商品都連回官方頁面。</p>
+<p>目前的來源是 <a href="${SOURCES.gsc.url}" rel="noopener">${esc(SOURCES.gsc.name)}</a>。本站讀取官方商品頁公開的資料：商品名稱、作品名稱、製造商、價格、JAN 條碼、規格與預購期間。商品圖片不存放在本站，而是直接由官方網站載入；介紹文字不轉載。每件商品都連回官方頁面。</p>
 <h2>多久更新</h2>
 <p>每天自動更新兩次。每個商品頁都會標示最後一次向官方確認的日期。</p>
 <h2>有哪些限制</h2>
@@ -401,7 +457,7 @@ ${related.length ? `<section class="stack"><h2>同作品的其他預購</h2>${ro
 <h2>誰在維護</h2>
 <p>本站由 AI 代理自動維護，有人類負責人監督。${SITE.contactEmail ? `發現資料錯誤，或你是權利人並希望調整收錄內容，請來信：<span>${esc(SITE.contactEmail)}</span>。` : ''}</p>
 <h2>自動程式的行為</h2>
-<p>本站的抓取程式以 YoyakuRadarBot 自我標示，每次請求間隔 1 秒以上，每個商品頁最多每兩天讀取一次。</p>
+<p>本站的抓取程式以 YoyakuBot 自我標示，每次請求間隔 1 秒以上，每個商品頁最多每兩天讀取一次。</p>
 </section>`,
   });
 }
@@ -445,7 +501,10 @@ const FIELDS = [
   ['preorder_end_at', 'string | null', '截止時刻，ISO 8601，含 +09:00 時區；官方未標示時為 null'],
   ['release_month', 'string | null', '預定發售或再販的月份，格式 YYYY-MM'],
   ['days_left', 'number | null', '產生資料當下距離截止日的天數，0 代表當天'],
-  ['is_rerelease', 'boolean', '商品名稱是否帶有「再販」'],
+  ['is_rerelease', 'boolean', '是否為再販'],
+  ['has_bonus', 'boolean', '官方商店是否標示附特典'],
+  ['thumbnail_url', 'string | null', '官方網站上的商品縮圖網址（300×300），圖片權利屬於權利人'],
+  ['image_url', 'string | null', '官方網站上的商品主圖網址'],
   ['official_url', 'string', '官方商品頁'],
   ['page_url', 'string', '本站的商品頁'],
   ['last_checked', 'YYYY-MM-DD', '最後一次向官方確認的日期'],
@@ -454,7 +513,7 @@ const apiItem = (i) => ({
   id: i.id, name: i.name, series: i.series, category: i.category, maker: i.maker, jan: i.jan,
   price_jpy: i.priceJpy, preorder_start: i.preorderStart, preorder_end: i.preorderEnd, preorder_end_at: i.preorderEndAt ?? null,
   release_month: i.releaseMonth ?? null, days_left: i.left,
-  is_rerelease: i.isRerelease, official_url: i.url, page_url: abs(i.path), last_checked: i.fetchedAt,
+  is_rerelease: i.isRerelease, has_bonus: !!i.bonus, thumbnail_url: i.thumb ?? null, image_url: i.image ?? null, official_url: i.url, page_url: abs(i.path), last_checked: i.fetchedAt,
 });
 const apiEnvelope = (list, title) => ({
   title, site: abs('/'), generated_at: UPDATED, as_of_date_jst: TODAY, timezone_of_dates: 'Asia/Tokyo',
@@ -513,7 +572,7 @@ page({
   title: '找不到這個頁面',
   description: '找不到這個頁面。',
   index: false,
-  body: `<section class="stack"><h1>找不到這個頁面</h1><p class="lede">這件商品可能已經下架超過 60 天。</p><div class="actions"><a class="btn" href="${href('/closing/')}">看目前的預購截止日</a></div></section>`,
+  body: `<section class="stack"><h1>找不到這個頁面</h1><p class="lede">這件商品可能已經下架超過 60 天。</p><div class="actions"><a class="btn" href="${href('/closing/')}">看全部預購</a></div></section>`,
 });
 
 // ---------- machine-readable outputs ----------
@@ -563,8 +622,8 @@ put('/llms.txt', `# ${SITE.name} (${SITE.nameEn})
 
 ## 頁面
 
-- [預購截止日一覽](${abs('/closing/')})
-- [新開預購](${abs('/new/')})
+- [全部預購與截止日](${abs('/closing/')})
+- [新上架的預購](${abs('/new/')})
 - [依作品找預購](${abs('/series/')})
 - [依系列找預購](${abs('/category/')})
 - [關於本站與資料來源](${abs('/about/')})
@@ -671,5 +730,6 @@ for (const [path, body] of files) {
 }
 await mkdir(`${OUT}/assets`, { recursive: true });
 await copyFile(`${ROOT}/site/style.css`, `${OUT}/assets/style.css`);
+await copyFile(`${ROOT}/site/app.js`, `${OUT}/assets/app.js`);
 await writeFile(`${OUT}/urls.txt`, pages.map((p) => abs(p.path)).join('\n') + '\n');
 console.log(`built ${files.size} files: ${open.length} open items, ${closingSoon.length} closing within 7 days, ${series.length} series, ${categories.length} categories`);
