@@ -66,6 +66,15 @@ function slug(name) {
   return candidate;
 }
 
+// ---------- Traditional Chinese names ----------
+const ALIASES = JSON.parse(await readFile(`${ROOT}/data/aliases.json`, 'utf8'));
+const zhSeries = (name) => ALIASES.series[name] || null;
+const zhCategory = (name) => ALIASES.category[name?.trim()] || null;
+// "蔚藍檔案（ブルーアーカイブ）" when a Chinese name is known, otherwise the Japanese name alone.
+const both = (name, zh) => (zh && zh !== name ? `${zh}（${name}）` : name);
+const seriesLabel = (name) => both(name, zhSeries(name));
+const categoryLabel = (name) => both(name, zhCategory(name));
+
 // ---------- model ----------
 const NOW = process.env.BUILD_DATE ? Date.parse(`${TODAY}T00:00:00+09:00`) : Date.now();
 // Items already listed when tracking began have no meaningful "first seen" date.
@@ -123,12 +132,12 @@ const photo = (i, { large = false, eager = false } = {}) => {
 };
 // data-* attributes carry what the front-end needs to filter, sort and remember a favourite.
 const dataAttrs = (i) =>
-  `data-id="${i.id}" data-name="${esc(shortName(i))}" data-thumb="${esc(i.thumb || i.image || '')}" data-price="${i.priceJpy || 0}" data-end="${i.preorderEnd || ''}" data-at="${i.preorderEndAt || ''}" data-start="${startOf(i) || ''}" data-path="${i.path}" data-series="${esc(i.series || '')}"${i.isRerelease ? ' data-re' : ''}${i.bonus ? ' data-bonus' : ''}`;
+  `data-id="${i.id}" data-name="${esc(shortName(i))}" data-thumb="${esc(i.thumb || i.image || '')}" data-price="${i.priceJpy || 0}" data-end="${i.preorderEnd || ''}" data-at="${i.preorderEndAt || ''}" data-start="${startOf(i) || ''}" data-path="${i.path}" data-series="${esc(zhSeries(i.series) || i.series || '')}"${i.isRerelease ? ' data-re' : ''}${i.bonus ? ' data-bonus' : ''}`;
 function card(i) {
   const tags = [chip(i), i.isRerelease && '<span class="tag">再販</span>', i.bonus && '<span class="tag">特典</span>'].filter(Boolean).join('');
   const sub = [i.preorderEnd ? `<span class="case-date">${fmtDate(i.preorderEnd)}截止</span>` : i.releaseMonth ? `<span class="case-date">${i.isRerelease ? '再販' : '發售'} ${fmtMonth(i.releaseMonth)}</span>` : '',
-    i.series ? `<span lang="ja">${esc(i.series)}</span>` : '', i.priceJpy ? `<span class="num">${yen(i.priceJpy)}</span>` : ''].join('');
-  return `<li class="case" ${dataAttrs(i)} data-k="${esc(`${i.name} ${i.series || ''} ${i.category || ''}`.toLowerCase())}">
+    i.series ? (zhSeries(i.series) ? `<span>${esc(zhSeries(i.series))}</span>` : `<span lang="ja">${esc(i.series)}</span>`) : '', i.priceJpy ? `<span class="num">${yen(i.priceJpy)}</span>` : ''].join('');
+  return `<li class="case" ${dataAttrs(i)} data-k="${esc(`${i.name} ${i.series || ''} ${i.category || ''} ${zhSeries(i.series) || ''} ${zhCategory(i.category) || ''}`.toLowerCase())}">
 <a class="case-link" href="${href(i.path)}">${photo(i)}<span class="case-tags">${tags}</span><span class="case-name" lang="ja">${esc(shortName(i))}</span><span class="case-meta">${sub}</span></a>
 <button class="fav" type="button" aria-pressed="false" aria-label="收藏 ${esc(shortName(i))}">${HEART}</button>
 </li>`;
@@ -265,7 +274,7 @@ ${shelf(newest.slice(0, 12))}
 </section>
 <section class="stack">
 <div class="section-head"><h2>依作品找預購</h2><a href="${href('/series/')}">全部 ${series.length} 部作品 →</a></div>
-<ul class="pills">${topSeries.map((s) => `<li><a href="${href(s.path)}" lang="ja">${esc(s.name)} <small>${s.list.length}</small></a></li>`).join('')}</ul>
+<ul class="pills">${topSeries.map((s) => `<li><a href="${href(s.path)}">${esc(zhSeries(s.name) || s.name)} <small>${s.list.length}</small></a></li>`).join('')}</ul>
 </section>
 <section class="stack faq">
 <h2>常見問題</h2>
@@ -312,7 +321,7 @@ ${shelf(list)}`,
 }
 
 // ---------- series / category ----------
-function groupPages(groups, { root, rootTitle, label, intro }) {
+function groupPages(groups, { root, rootTitle, label, intro, zh }) {
   const trail = [['首頁', '/'], [rootTitle, root]];
   page({
     path: root,
@@ -321,33 +330,34 @@ function groupPages(groups, { root, rootTitle, label, intro }) {
     ld: [crumbs(trail)],
     body: `${crumbNav(trail)}
 <section class="stack"><h1>${rootTitle}</h1><p class="lede">${intro}數字是目前開放預購的件數。</p></section>
-<ul class="pills">${groups.map((g) => `<li><a href="${href(g.path)}" lang="ja">${esc(g.name)} <small>${g.list.length}</small></a></li>`).join('')}</ul>`,
+<ul class="pills">${groups.map((g) => `<li><a href="${href(g.path)}">${esc(both(g.name, zh(g.name)))} <small>${g.list.length}</small></a></li>`).join('')}</ul>`,
   });
   for (const g of groups) {
-    const t = [...trail, [g.name, g.path]];
+    const full = both(g.name, zh(g.name));
+    const t = [...trail, [zh(g.name) || g.name, g.path]];
     const next = g.list.find((i) => i.preorderEnd);
     const summary = next
-      ? `「${g.name}」目前有 ${g.list.length} 件${label}開放預購。最快截止的是「${next.name}」，截止日為 ${fmtLong(next.preorderEnd)}（日本時間）。`
-      : `「${g.name}」目前有 ${g.list.length} 件${label}開放預購，官方都沒有公布統一的截止日。`;
+      ? `「${full}」目前有 ${g.list.length} 件${label}開放預購。最快截止的是「${next.name}」，截止日為 ${fmtLong(next.preorderEnd)}（日本時間）。`
+      : `「${full}」目前有 ${g.list.length} 件${label}開放預購，官方都沒有公布統一的截止日。`;
     page({
       path: g.path,
-      title: `${g.name} 預購截止日（${g.list.length} 件）`,
+      title: `${full} 預購截止日（${g.list.length} 件）`,
       description: summary,
       image: g.list.find((i) => i.image)?.image,
-      ld: [crumbs(t), itemList(g.list, `${g.name} 預購中商品`)],
+      ld: [crumbs(t), itemList(g.list, `${full} 預購中商品`)],
       body: `${crumbNav(t)}
-<section class="stack"><h1><span lang="ja">${esc(g.name)}</span> 預購截止日</h1><p class="answer">${esc(summary)}</p></section>
+<section class="stack"><h1>${esc(full)} 預購截止日</h1><p class="answer">${esc(summary)}</p></section>
 ${shelf(g.list)}`,
     });
   }
 }
-groupPages(series, { root: '/series/', rootTitle: '依作品找預購', label: '周邊', intro: '依動畫、遊戲等作品分類。' });
-groupPages(categories, { root: '/category/', rootTitle: '依系列找預購', label: '商品', intro: '依商品系列分類，例如黏土人、figma、比例模型。' });
+groupPages(series, { root: '/series/', rootTitle: '依作品找預購', label: '周邊', intro: '依動畫、遊戲等作品分類。', zh: zhSeries });
+groupPages(categories, { root: '/category/', rootTitle: '依系列找預購', label: '商品', intro: '依商品系列分類，例如黏土人、figma、比例模型。', zh: zhCategory });
 
 // ---------- item pages ----------
 for (const i of items) {
   const src = SOURCES[i.source];
-  const trail = [['首頁', '/'], ...(i.series && seriesPath.has(i.series) ? [[i.series, seriesPath.get(i.series)]] : []), [i.name, i.path]];
+  const trail = [['首頁', '/'], ...(i.series && seriesPath.has(i.series) ? [[zhSeries(i.series) || i.series, seriesPath.get(i.series)]] : []), [i.name, i.path]];
   const checked = fmtLong(i.fetchedAt);
   const answer = !i.open
     ? `「${i.name}」的預購已經截止${i.preorderEnd ? `（截止日為 ${fmtLong(i.preorderEnd)}）` : ''}。之後若有再販，本站會重新列出。`
@@ -355,8 +365,8 @@ for (const i of items) {
       ? `「${i.name}」在官方商店的預購截止於 ${fmtLong(i.preorderEnd)}${i.preorderEndAt ? ` ${fmtTime(i.preorderEndAt)}` : '（日本時間）'}，${i.left === 0 ? '也就是今天' : `距離今天還有 ${i.left} 天`}${i.priceJpy ? `。官方標示價格為 ${yen(i.priceJpy)}` : ''}。`
       : `「${i.name}」目前在官方網站列為預購受理中，但官方沒有公布統一的截止日，各店家的截止時間不同${i.releaseMonth ? `。預定${i.isRerelease ? '再販' : '發售'}時間為 ${fmtMonth(i.releaseMonth)}` : ''}${i.priceJpy ? `，官方標示價格為 ${yen(i.priceJpy)}` : ''}。`;
   const facts = [
-    ['作品', i.series && (seriesPath.has(i.series) ? `<a href="${href(seriesPath.get(i.series))}" lang="ja">${esc(i.series)}</a>` : `<span lang="ja">${esc(i.series)}</span>`)],
-    ['系列', i.category && (categoryPath.has(i.category) ? `<a href="${href(categoryPath.get(i.category))}" lang="ja">${esc(i.category)}</a>` : `<span lang="ja">${esc(i.category)}</span>`)],
+    ['作品', i.series && (seriesPath.has(i.series) ? `<a href="${href(seriesPath.get(i.series))}">${esc(seriesLabel(i.series))}</a>` : esc(seriesLabel(i.series)))],
+    ['系列', i.category && (categoryPath.has(i.category) ? `<a href="${href(categoryPath.get(i.category))}">${esc(categoryLabel(i.category))}</a>` : esc(categoryLabel(i.category)))],
     ['製造商', i.maker && `<span lang="ja">${esc(i.maker)}</span>`],
     ['官方標示價格', i.priceJpy && `${yen(i.priceJpy)}（日圓）`],
     ['預購開始', i.preorderStart && fmtDate(i.preorderStart)],
@@ -374,7 +384,7 @@ for (const i of items) {
     lastmod: i.closedAt || i.fetchedAt,
     image: i.image || i.thumb,
     title: `${i.name} 預購截止日${i.preorderEnd ? ` ${fmtDate(i.preorderEnd)}` : ''}`,
-    description: `${answer}資料來源：${src.name}，最後確認於 ${checked}。`,
+    description: `${answer}${zhSeries(i.series) ? `作品：${zhSeries(i.series)}。` : ''}資料來源：${src.name}，最後確認於 ${checked}。`,
     ld: [
       crumbs(trail),
       {
@@ -494,7 +504,9 @@ const FIELDS = [
   ['id', 'string', '本站的商品代號，例如 gsc-1144089'],
   ['name', 'string', '官方商品名稱（日文）'],
   ['series', 'string | null', '作品名稱（日文）'],
+  ['series_zh', 'string | null', '作品在台灣常用的中文名稱，沒有對照時為 null'],
   ['category', 'string | null', '商品系列，例如 ねんどろいど'],
+  ['category_zh', 'string | null', '商品系列的中文名稱，例如 黏土人'],
   ['maker', 'string | null', '製造商'],
   ['jan', 'string | null', 'JAN / EAN 條碼'],
   ['price_jpy', 'number | null', '官方標示價格，日圓'],
@@ -512,7 +524,7 @@ const FIELDS = [
   ['last_checked', 'YYYY-MM-DD', '最後一次向官方確認的日期'],
 ];
 const apiItem = (i) => ({
-  id: i.id, name: i.name, series: i.series, category: i.category, maker: i.maker, jan: i.jan,
+  id: i.id, name: i.name, series: i.series, series_zh: zhSeries(i.series), category: i.category, category_zh: zhCategory(i.category), maker: i.maker, jan: i.jan,
   price_jpy: i.priceJpy, preorder_start: i.preorderStart, preorder_end: i.preorderEnd, preorder_end_at: i.preorderEndAt ?? null,
   release_month: i.releaseMonth ?? null, days_left: i.left,
   is_rerelease: i.isRerelease, has_bonus: !!i.bonus, thumbnail_url: i.thumb ?? null, image_url: i.image ?? null, official_url: i.url, page_url: abs(i.path), last_checked: i.fetchedAt,
@@ -643,7 +655,7 @@ put('/llms-full.txt', `# ${SITE.name}：開放預購中的商品
 
 | 預購截止日 | 剩餘天數 | 商品名稱 | 作品 | 系列 | 價格（日圓） | 再販 | 本站頁面 | 官方頁面 |
 |---|---|---|---|---|---|---|---|---|
-${[...dated, ...undated].map((i) => `| ${i.preorderEnd || '未標示'} | ${i.left ?? ''} | ${md(i.name)} | ${md(i.series)} | ${md(i.category)} | ${i.priceJpy ?? ''} | ${i.isRerelease ? '是' : ''} | ${abs(i.path)} | ${i.url} |`).join('\n')}
+${[...dated, ...undated].map((i) => `| ${i.preorderEnd || '未標示'} | ${i.left ?? ''} | ${md(i.name)} | ${md(i.series && seriesLabel(i.series))} | ${md(i.category && categoryLabel(i.category))} | ${i.priceJpy ?? ''} | ${i.isRerelease ? '是' : ''} | ${abs(i.path)} | ${i.url} |`).join('\n')}
 `);
 
 const atom = (path, title, entries) => `<?xml version="1.0" encoding="utf-8"?>

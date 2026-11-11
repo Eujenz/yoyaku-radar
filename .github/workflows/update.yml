@@ -23,7 +23,8 @@ env:
   CONTACT_EMAIL: ${{ vars.CONTACT_EMAIL }}
   THREADS_URL: ${{ vars.THREADS_URL }}
   NEWSLETTER_FORM_ACTION: ${{ vars.NEWSLETTER_FORM_ACTION }}
-  GOOGLE_SITE_VERIFICATION: ${{ vars.GOOGLE_SITE_VERIFICATION }}
+  # Public value: it is printed in every page's <head> for Google Search Console.
+  GOOGLE_SITE_VERIFICATION: ${{ vars.GOOGLE_SITE_VERIFICATION || 'krIgpb1XICddbYLmpTUL3K17qPesWzmLf7WTKHtfb_U' }}
   # An IndexNow key is public by design: it is served as a file on the site to prove ownership.
   INDEXNOW_KEY: ${{ vars.INDEXNOW_KEY || 'd14a451eea33258e70b1e81b8716b6a7' }}
 
