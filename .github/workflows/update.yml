@@ -1,0 +1,99 @@
+name: Update and deploy
+
+on:
+  schedule:
+    - cron: '17 0,10 * * *' # 09:17 and 19:17 Japan time
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  issues: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  SITE_URL: ${{ vars.SITE_URL }}
+  SITE_NAME: ${{ vars.SITE_NAME }}
+  CONTACT_EMAIL: ${{ vars.CONTACT_EMAIL }}
+  THREADS_URL: ${{ vars.THREADS_URL }}
+  NEWSLETTER_FORM_ACTION: ${{ vars.NEWSLETTER_FORM_ACTION }}
+  GOOGLE_SITE_VERIFICATION: ${{ vars.GOOGLE_SITE_VERIFICATION }}
+  INDEXNOW_KEY: ${{ vars.INDEXNOW_KEY }}
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Default SITE_URL to the GitHub Pages address
+        if: env.SITE_URL == ''
+        run: echo "SITE_URL=https://${GITHUB_REPOSITORY_OWNER,,}.github.io/${GITHUB_REPOSITORY#*/}" >> "$GITHUB_ENV"
+
+      - name: Fetch preorder data
+        if: github.event_name != 'push'
+        run: node scraper/gsc.mjs
+
+      - name: Check data
+        run: node scripts/check.mjs data
+
+      - name: Save data
+        if: github.event_name != 'push'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/items.json
+          git diff --cached --quiet || git commit -m "Update preorder data"
+          git push
+
+      - name: Build site
+        run: node site/build.mjs
+
+      - name: Check site
+        run: node scripts/check.mjs site
+
+      - name: Remember which pages were already live
+        run: curl -fsS "$SITE_URL/urls.txt" -o old-urls.txt || touch old-urls.txt
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - id: deploy
+        uses: actions/deploy-pages@v4
+
+      - name: Tell search engines about new pages (IndexNow)
+        if: env.INDEXNOW_KEY != ''
+        run: |
+          sort -u old-urls.txt > old.sorted
+          sort -u dist/urls.txt | comm -23 - old.sorted | head -n 5000 > new-urls.txt
+          [ -s new-urls.txt ] || exit 0
+          host=$(node -e "console.log(new URL(process.env.SITE_URL).host)")
+          node -e "
+            const fs = require('fs');
+            const urlList = fs.readFileSync('new-urls.txt', 'utf8').trim().split('\n');
+            process.stdout.write(JSON.stringify({ host: '$host', key: process.env.INDEXNOW_KEY, keyLocation: process.env.SITE_URL + '/' + process.env.INDEXNOW_KEY + '.txt', urlList }));
+          " > indexnow.json
+          curl -sS -o /dev/null -w "IndexNow: %{http_code}\n" -H 'content-type: application/json; charset=utf-8' -d @indexnow.json https://api.indexnow.org/indexnow || true
+
+      - name: Open or update an issue when the run fails
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          title="自動更新失敗"
+          body="Run: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          n=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --search "in:title $title" --json number --jq '.[0].number')
+          if [ -n "$n" ]; then gh issue comment "$n" --repo "$GITHUB_REPOSITORY" --body "$body"; else gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" --body "$body"; fi

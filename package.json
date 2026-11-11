@@ -1,0 +1,12 @@
+{
+  "name": "yoyaku-radar",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "scrape": "node scraper/gsc.mjs",
+    "build": "node site/build.mjs",
+    "check": "node scripts/check.mjs",
+    "serve": "node scripts/serve.mjs"
+  }
+}
