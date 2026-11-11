@@ -24,7 +24,8 @@ env:
   THREADS_URL: ${{ vars.THREADS_URL }}
   NEWSLETTER_FORM_ACTION: ${{ vars.NEWSLETTER_FORM_ACTION }}
   GOOGLE_SITE_VERIFICATION: ${{ vars.GOOGLE_SITE_VERIFICATION }}
-  INDEXNOW_KEY: ${{ vars.INDEXNOW_KEY }}
+  # An IndexNow key is public by design: it is served as a file on the site to prove ownership.
+  INDEXNOW_KEY: ${{ vars.INDEXNOW_KEY || 'd14a451eea33258e70b1e81b8716b6a7' }}
 
 jobs:
   update:
@@ -72,7 +73,13 @@ jobs:
           REQUIRE_FONTS: '1'
 
       - name: Remember which pages were already live
-        run: curl -fsS "$SITE_URL/urls.txt" -o old-urls.txt || touch old-urls.txt
+        run: |
+          # Until the IndexNow key file is live, treat every page as new so the first ping covers the whole site.
+          if curl -fsS "$SITE_URL/$INDEXNOW_KEY.txt" -o /dev/null; then
+            curl -fsS "$SITE_URL/urls.txt" -o old-urls.txt || touch old-urls.txt
+          else
+            touch old-urls.txt
+          fi
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
@@ -87,6 +94,7 @@ jobs:
           sort -u old-urls.txt > old.sorted
           sort -u dist/urls.txt | comm -23 - old.sorted | head -n 5000 > new-urls.txt
           [ -s new-urls.txt ] || exit 0
+          sleep 30 # let the new deployment (and the key file) go live first
           host=$(node -e "console.log(new URL(process.env.SITE_URL).host)")
           node -e "
             const fs = require('fs');
