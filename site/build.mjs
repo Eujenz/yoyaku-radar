@@ -1,6 +1,7 @@
 // Static site generator. Reads data/items.json, writes dist/. No dependencies.
 import { readFile, writeFile, mkdir, rm, copyFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
+import { execFileSync } from 'node:child_process';
 import { dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { SITE, SOURCES, PARTNERS } from './config.mjs';
@@ -179,8 +180,7 @@ ${image ? `<meta property="og:image" content="${esc(image)}">\n<meta name="twitt
 ${SITE.googleSiteVerification ? `<meta name="google-site-verification" content="${esc(SITE.googleSiteVerification)}">\n` : ''}<link rel="alternate" type="application/atom+xml" title="${esc(SITE.name)}：新開預購" href="${abs('/feed.xml')}">
 <link rel="alternate" type="application/atom+xml" title="${esc(SITE.name)}：7 天內截止" href="${abs('/closing.xml')}">
 <link rel="alternate" type="application/json" title="${esc(SITE.name)} 開放資料" href="${abs('/api/preorders.json')}">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;800&display=swap">
+<link rel="stylesheet" href="${href('/assets/fonts.css')}?v=${UPDATED.slice(0, 13).replace(/\D/g, '')}">
 <link rel="stylesheet" href="${href('/assets/style.css')}?v=${cssHash}">
 ${ld.map(jsonLd).join('\n')}
 </head>
@@ -456,6 +456,8 @@ page({
 </ul>
 <h2>誰在維護</h2>
 <p>本站由 AI 代理自動維護，有人類負責人監督。${SITE.contactEmail ? `發現資料錯誤，或你是權利人並希望調整收錄內容，請來信：<span>${esc(SITE.contactEmail)}</span>。` : ''}</p>
+<h2>字體</h2>
+<p>本站使用 <a href="https://seed.line.me/index_tw.html" rel="noopener">LINE Seed</a> 字體，依 <a href="${href('/assets/fonts/OFL.txt')}">SIL Open Font License 1.1</a> 授權使用。</p>
 <h2>自動程式的行為</h2>
 <p>本站的抓取程式以 YoyakuBot 自我標示，每次請求間隔 1 秒以上，每個商品頁最多每兩天讀取一次。</p>
 </section>`,
@@ -731,5 +733,15 @@ for (const [path, body] of files) {
 await mkdir(`${OUT}/assets`, { recursive: true });
 await copyFile(`${ROOT}/site/style.css`, `${OUT}/assets/style.css`);
 await copyFile(`${ROOT}/site/app.js`, `${OUT}/assets/app.js`);
+// Web fonts: LINE Seed, cut down to the characters this build uses. Needs Python fonttools;
+// without it the site falls back to system fonts unless REQUIRE_FONTS=1 (set in CI).
+try {
+  console.log(execFileSync('python3', [`${ROOT}/scripts/subset_fonts.py`, OUT], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }).trim().split('\n').pop());
+  await copyFile(`${ROOT}/fonts/OFL.txt`, `${OUT}/assets/fonts/OFL.txt`);
+} catch (err) {
+  if (process.env.REQUIRE_FONTS === '1') throw err;
+  console.warn('fonts skipped (python3 fonttools not available); using system fonts');
+  await writeFile(`${OUT}/assets/fonts.css`, '');
+}
 await writeFile(`${OUT}/urls.txt`, pages.map((p) => abs(p.path)).join('\n') + '\n');
 console.log(`built ${files.size} files: ${open.length} open items, ${closingSoon.length} closing within 7 days, ${series.length} series, ${categories.length} categories`);

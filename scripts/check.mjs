@@ -60,6 +60,7 @@ if (mode === 'site' || mode === 'all') {
     }
   }
   for (const f of ['api/preorders.json', 'api/closing-soon.json', 'api/openapi.json']) JSON.parse(await readFile(`${dist}/${f}`, 'utf8'));
+  if (process.env.REQUIRE_FONTS === '1' && !/@font-face/.test(await readFile(`${dist}/assets/fonts.css`, 'utf8'))) errors.push('web fonts missing');
   for (const f of ['llms.txt', 'llms-full.txt', 'robots.txt', 'sitemap.xml', 'feed.xml', 'closing.xml', 'calendar.ics'])
     if (!(await exists(`${dist}/${f}`))) errors.push(`missing ${f}`);
   console.log(`site: ${all.length} files, ${links} internal links checked`);

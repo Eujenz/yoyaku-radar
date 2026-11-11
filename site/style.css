@@ -21,8 +21,8 @@
   --closed-bg: #e9eaf1;
   --photo: #ffffff;
   --spot: rgba(25, 27, 54, 0.22);
-  --font: "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", "Hiragino Sans", "Yu Gothic", system-ui, sans-serif;
-  --display: "Rubik", "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", system-ui, sans-serif;
+  --font: "LINE Seed TW", "LINE Seed JP", "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", "Hiragino Sans", "Yu Gothic", system-ui, sans-serif;
+  --display: var(--font);
   --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
 }
 @media (prefers-color-scheme: dark) {

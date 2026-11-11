@@ -1,6 +1,6 @@
 # Yoyaku
 
-公仔與動漫周邊的預購截止日提醒網站。全自動：GitHub Actions 每天兩次抓取官方資料、檢查、重建並部署到 GitHub Pages。沒有伺服器，沒有相依套件（只需要 Node 22）。
+公仔與動漫周邊的預購截止日提醒網站。全自動：GitHub Actions 每天兩次抓取官方資料、檢查、重建並部署到 GitHub Pages。沒有伺服器，只需要 Node 22；網頁字體子集化另需 Python 的 fonttools（`pip install fonttools brotli`），沒裝時本機建站會改用系統字體。
 
 ## 運作方式
 
@@ -40,6 +40,10 @@ npm run serve    # 本機預覽
 - 圖片不存進本 repo，由訪客瀏覽器直接向官方網站載入；商品介紹文字不轉載。每件商品都連回官方頁面。
 - 抓取程式以 `YoyakuBot` 自我標示，請求間隔 1.2 秒，每個商品頁最多每兩天讀一次。
 - 有機器人驗證（例如 Cloudflare challenge）的網站一律不收錄。
+
+## 字體
+
+使用 LINE Seed TW，並以 LINE Seed JP 補足日文漢字，兩者皆為 SIL OFL 1.1 授權（見 `fonts/OFL.txt`）。原始字體檔在 `fonts/`，每次建站由 `scripts/subset_fonts.py` 依網站實際用到的字切出子集，約 340 KB。
 
 ## 變現
 

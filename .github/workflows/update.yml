@@ -58,11 +58,18 @@ jobs:
           git diff --cached --quiet || git commit -m "Update preorder data"
           git push
 
+      - name: Install font subsetting tools
+        run: pip install --quiet fonttools brotli
+
       - name: Build site
         run: node site/build.mjs
+        env:
+          REQUIRE_FONTS: '1'
 
       - name: Check site
         run: node scripts/check.mjs site
+        env:
+          REQUIRE_FONTS: '1'
 
       - name: Remember which pages were already live
         run: curl -fsS "$SITE_URL/urls.txt" -o old-urls.txt || touch old-urls.txt
