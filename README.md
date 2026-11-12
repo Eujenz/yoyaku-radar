@@ -1,6 +1,6 @@
 # Yoyaku
 
-公仔與動漫周邊的預購截止日提醒網站。全自動：GitHub Actions 每天兩次抓取官方資料、檢查、重建並部署到 GitHub Pages。沒有伺服器，只需要 Node 22；網頁字體子集化另需 Python 的 fonttools（`pip install fonttools brotli`），沒裝時本機建站會改用系統字體。
+公仔與動漫周邊的預購截止日提醒網站。全自動：GitHub Actions 每 4 小時抓取官方資料、檢查、重建並部署到 GitHub Pages。沒有伺服器，只需要 Node 22；網頁字體子集化另需 Python 的 fonttools（`pip install fonttools brotli`），沒裝時本機建站會改用系統字體。
 
 ## 運作方式
 
@@ -10,7 +10,7 @@
 | 檢查 | `scripts/check.mjs` | 資料或網站異常時中止部署（件數過少、欄位缺漏、壞連結、JSON 無效） |
 | 產生 | `site/build.mjs` | 產生 `dist/`：頁面、Atom、iCalendar、JSON API、`llms.txt`、sitemap |
 | 互動 | `site/app.js` | 收藏（我的展示櫃）、即時倒數、搜尋篩選排序，資料只存在訪客瀏覽器 |
-| 排程 | `.github/workflows/update.yml` | 每天 09:17 與 19:17（日本時間）執行，失敗時自動開 issue |
+| 排程 | `.github/workflows/update.yml` | 每 4 小時執行一次，失敗時自動開 issue |
 
 ```bash
 npm run scrape   # 抓資料（每秒不到 1 次請求，首次約 8 分鐘）

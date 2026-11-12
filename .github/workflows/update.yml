@@ -2,7 +2,8 @@ name: Update and deploy
 
 on:
   schedule:
-    - cron: '17 0,10 * * *' # 09:17 and 19:17 Japan time
+    # GitHub often starts scheduled runs hours late, so run every 4 hours to keep data fresh.
+    - cron: '23 */4 * * *'
   workflow_dispatch:
   push:
     branches: [main]

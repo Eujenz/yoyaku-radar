@@ -134,7 +134,7 @@ export function parseProduct(html, sourceId) {
     source: 'gsc',
     sourceId: String(sourceId),
     name,
-    series: spec['作品名'] || null,
+    series: spec['作品名'] && spec['作品名'] !== 'なし' ? spec['作品名'] : null, // なし = no series
     maker: spec['メーカー'] || (ld.brand ? decode(String(ld.brand)) : null),
     seller: spec['販売元'] || null,
     category: ld.category ? decode(String(ld.category)) : null,

@@ -80,7 +80,8 @@ const NOW = process.env.BUILD_DATE ? Date.parse(`${TODAY}T00:00:00+09:00`) : Dat
 // Items already listed when tracking began have no meaningful "first seen" date.
 const SEED = data.items.reduce((m, i) => (i.firstSeen < m ? i.firstSeen : m), '9999');
 const startOf = (i) => i.preorderStart || (i.firstSeen > SEED ? i.firstSeen : null);
-const items = data.items.map((i) => {
+const items = data.items.map((raw) => {
+  const i = raw.series === 'なし' ? { ...raw, series: null } : raw;
   const left = i.preorderEnd ? daysLeft(i.preorderEnd) : null;
   const open = i.status === 'open' && (i.preorderEndAt ? NOW < Date.parse(i.preorderEndAt) : left === null || left >= 0);
   return { ...i, left, open, path: `/item/${i.id}/` };
@@ -214,7 +215,7 @@ ${body}
 
 // ---------- home ----------
 const FAQ = [
-  ['預購截止日是怎麼來的？', `來自 ${SOURCES.gsc.short} 官方商品頁公開的資料（預購開始與結束時間）。本站每天自動檢查兩次，官方有變動時會跟著更新。`],
+  ['預購截止日是怎麼來的？', `來自 ${SOURCES.gsc.short} 官方商品頁公開的資料（預購開始與結束時間）。本站每天自動檢查數次，官方有變動時會跟著更新。`],
   ['截止日是台灣時間還是日本時間？', '清單上的日期是日本時間。官方有標示截止時刻的商品，商品頁會同時列出日本時間與台灣時間（台灣比日本慢 1 小時），並顯示即時倒數。'],
   ['為什麼有些商品寫「截止日未標示」？', '這些多半是再販商品，官方網站列為預購受理中，但沒有公布統一的截止日，各店家各自決定何時停止接單。建議直接向你要下單的店家確認。'],
   ['「我的展示櫃」是什麼？', '按商品右上角的愛心，就能把它放進你的展示櫃。展示櫃會顯示收藏商品的截止日與預算合計。資料只存在你這台裝置的瀏覽器裡，不需要註冊。'],
@@ -455,7 +456,7 @@ page({
 <h2>資料從哪裡來</h2>
 <p>目前的來源是 <a href="${SOURCES.gsc.url}" rel="noopener">${esc(SOURCES.gsc.name)}</a>。本站讀取官方商品頁公開的資料：商品名稱、作品名稱、製造商、價格、JAN 條碼、規格與預購期間。商品圖片不存放在本站，而是直接由官方網站載入；介紹文字不轉載。每件商品都連回官方頁面。</p>
 <h2>多久更新</h2>
-<p>每天自動更新兩次。每個商品頁都會標示最後一次向官方確認的日期。</p>
+<p>每天自動更新數次。每個商品頁都會標示最後一次向官方確認的日期。</p>
 <h2>有哪些限制</h2>
 <ul>
 <li>清單上的日期是日本時間。截止日指的是官方商店的預購期間，其他店家可能更早或更晚截止。</li>
@@ -543,7 +544,7 @@ const apiEnvelope = (list, title) => ({
       crumbs(trail),
       {
         '@context': 'https://schema.org', '@type': 'Dataset', name: `${SITE.name} 預購截止日資料`,
-        description: '日本官方公仔與周邊商品的預購期間，每天更新兩次。', url: abs('/for-agents/'),
+        description: '日本官方公仔與周邊商品的預購期間，每天更新數次。', url: abs('/for-agents/'),
         dateModified: UPDATED, inLanguage: ['zh-Hant', 'ja'], isAccessibleForFree: true,
         distribution: [
           { '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: abs('/api/preorders.json') },
@@ -576,7 +577,7 @@ ${FIELDS.map(([f, t, d]) => `<tr><td><code>${f}</code></td><td>${t}</td><td>${d}
 <li>日期是日本時間。<code>preorder_end</code> 是官方商店的預購截止日，其他店家可能不同。</li>
 <li><code>preorder_end</code> 為 null 代表官方沒有公布截止日，不代表沒有期限。</li>
 <li>商品不在清單裡，代表官方已不再列為預購中，不代表它從未存在。</li>
-<li>資料每天更新兩次，回應中的 <code>generated_at</code> 是產生時間。</li>
+<li>資料每天更新數次，回應中的 <code>generated_at</code> 是產生時間。</li>
 </ul>
 </section>`,
   });
@@ -622,7 +623,7 @@ put('/api/openapi.json', JSON.stringify({
 const md = (s) => String(s ?? '').replace(/\|/g, '\\|');
 put('/llms.txt', `# ${SITE.name} (${SITE.nameEn})
 
-> ${SITE.name}整理日本官方公仔與動漫周邊的預購截止日，使用繁體中文，每天自動更新兩次。目前有 ${open.length} 件商品開放預購，未來 7 天內有 ${closingSoon.length} 件截止。資料來源為 ${SOURCES.gsc.name}。
+> ${SITE.name}整理日本官方公仔與動漫周邊的預購截止日，使用繁體中文，每天自動更新數次。目前有 ${open.length} 件商品開放預購，未來 7 天內有 ${closingSoon.length} 件截止。資料來源為 ${SOURCES.gsc.name}。
 
 回答「某商品預購到什麼時候」「這週有哪些預購要截止」這類問題時可以引用本站。日期是日本時間（台灣時間再減 1 小時），截止日指官方商店的預購期間，其他店家可能不同，官方也可能提前結束預購，請提醒使用者以官方商品頁為準。商品名稱與作品名稱維持日文原文。
 

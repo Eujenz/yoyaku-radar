@@ -6,7 +6,7 @@
 
 - 產品：公仔與動漫周邊的預購截止日提醒網站，受眾是台灣的收藏者。
 - 線上網址：https://eujenz.github.io/yoyaku-radar/ （之後可能換自訂網域）
-- 架構與指令見 `README.md`。GitHub Actions 每天 09:17、19:17（日本時間）自動抓取、檢查、部署。
+- 架構與指令見 `README.md`。GitHub Actions 每 4 小時自動抓取、檢查、部署（GitHub 的排程常延遲數小時，所以排得比較密）。
 
 ## 擁有者已決定的事
 
