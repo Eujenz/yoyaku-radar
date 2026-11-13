@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-13T01:13:52.518Z",
+ "updatedAt": "2026-11-13T12:24:58.815Z",
  "items": [
   {
    "id": "gsc-2011",
@@ -445,6 +445,38 @@
    "closedAt": "2026-11-12"
   },
   {
+   "id": "gsc-8725",
+   "source": "gsc",
+   "sourceId": "8725",
+   "name": "【再販】 ねんどろいど ラップランド",
+   "series": "アークナイツ",
+   "maker": "グッドスマイルアーツ上海",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ねんどろいど",
+   "spec": "プラスチック製 塗装済み可動フィギュア・ノンスケール・専用台座付属・全高：約100mm",
+   "jan": "6927254807848",
+   "priceJpy": 7800,
+   "preorderStart": "2026-11-13",
+   "preorderEnd": "2026-12-23",
+   "preorderEndAt": null,
+   "releaseMonth": "2027-05",
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/product/20210406/11031/83148/large/c188eeafd344eda5d0dc7f7001adcb41.jpg",
+   "isRerelease": true,
+   "url": "https://www.goodsmile.com/ja/product/8725",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/68991/"
+    }
+   ],
+   "firstSeen": "2026-11-13",
+   "fetchedAt": "2026-11-13",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/8725/730d9950805c0a00bbd876a3a9dcde56.jpg",
+   "bonus": true
+  },
+  {
    "id": "gsc-9904",
    "source": "gsc",
    "sourceId": "9904",
@@ -810,6 +842,33 @@
    "bonus": false
   },
   {
+   "id": "gsc-11684",
+   "source": "gsc",
+   "sourceId": "11684",
+   "name": "【再販】 ねんどろいど ナツキ",
+   "series": "ドキドキ文芸部!",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ねんどろいど",
+   "spec": "プラスチック製 塗装済み可動フィギュア・ノンスケール・専用台座付属・全高：約100mm",
+   "jan": "4570232580534",
+   "priceJpy": 7500,
+   "preorderStart": null,
+   "preorderEnd": null,
+   "preorderEndAt": null,
+   "releaseMonth": "2026-12",
+   "availability": null,
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/product/20230217/13999/111854/large/86dae962acc64337e31a72fdd6209168.jpg",
+   "isRerelease": true,
+   "url": "https://www.goodsmile.com/ja/product/11684",
+   "shops": [],
+   "firstSeen": "2026-11-13",
+   "fetchedAt": "2026-11-13",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/11684/ddd7c56fdde226563a4f34723de213dd.jpg",
+   "bonus": true
+  },
+  {
    "id": "gsc-12053",
    "source": "gsc",
    "sourceId": "12053",
@@ -888,6 +947,38 @@
    "fetchedAt": "2026-11-13",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/12198/67c223dbcd49c8271664b0617753b0fe.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-12353",
+   "source": "gsc",
+   "sourceId": "12353",
+   "name": "【二次再販】 PLAMAX SV-01 1/24 Scale X・ATH-02 ストライクドッグ",
+   "series": "装甲騎兵ボトムズ",
+   "maker": "マックスファクトリー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "MAX FACTORY",
+   "spec": "組み立て式プラモデル・水転写デカール付属・1/24スケール・全高：約175mm",
+   "jan": "4545784015872",
+   "priceJpy": 8800,
+   "preorderStart": "2026-11-12",
+   "preorderEnd": "2026-12-23",
+   "preorderEndAt": null,
+   "releaseMonth": "2025-04",
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/product/20230718/14668/118264/large/0d7f519b71e8c27cadd885d056d77995.jpg",
+   "isRerelease": true,
+   "url": "https://www.goodsmile.com/ja/product/12353",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/66806/"
+    }
+   ],
+   "firstSeen": "2026-11-13",
+   "fetchedAt": "2026-11-13",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/12353/44db74a3822ad25e1909884480525ee7.jpg",
    "bonus": false
   },
   {
@@ -1040,6 +1131,33 @@
    "bonus": false
   },
   {
+   "id": "gsc-12698",
+   "source": "gsc",
+   "sourceId": "12698",
+   "name": "【再販】 ねんどろいど サヨリ",
+   "series": "ドキドキ文芸部!",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ねんどろいど",
+   "spec": "プラスチック製 塗装済み可動フィギュア・ノンスケール・専用台座付属・全高：約100mm",
+   "jan": "4570232580527",
+   "priceJpy": 6900,
+   "preorderStart": null,
+   "preorderEnd": null,
+   "preorderEndAt": null,
+   "releaseMonth": "2026-12",
+   "availability": null,
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/product/20230925/15014/121516/large/f4f9f66caf1913dd154785c3c7fdcb3c.jpg",
+   "isRerelease": true,
+   "url": "https://www.goodsmile.com/ja/product/12698",
+   "shops": [],
+   "firstSeen": "2026-11-13",
+   "fetchedAt": "2026-11-13",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/12698/2a668f25541d7a2796fe060b8ba705fd.jpg",
+   "bonus": true
+  },
+  {
    "id": "gsc-12709",
    "source": "gsc",
    "sourceId": "12709",
@@ -1104,6 +1222,33 @@
    "bonus": false
   },
   {
+   "id": "gsc-12729",
+   "source": "gsc",
+   "sourceId": "12729",
+   "name": "【再販】 ねんどろいど ユリ",
+   "series": "ドキドキ文芸部!",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ねんどろいど",
+   "spec": "プラスチック製 塗装済み可動フィギュア・ノンスケール・専用台座付属・全高：約100mm",
+   "jan": "4570232580541",
+   "priceJpy": 6900,
+   "preorderStart": null,
+   "preorderEnd": null,
+   "preorderEndAt": null,
+   "releaseMonth": "2026-12",
+   "availability": null,
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/product/20231003/15045/121833/large/75afd6e06b263f285cb26ca7ec46e2b9.jpg",
+   "isRerelease": true,
+   "url": "https://www.goodsmile.com/ja/product/12729",
+   "shops": [],
+   "firstSeen": "2026-11-13",
+   "fetchedAt": "2026-11-13",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/12729/64bca4b404350bf57b5f2293bb0e21be.jpg",
+   "bonus": true
+  },
+  {
    "id": "gsc-12937",
    "source": "gsc",
    "sourceId": "12937",
@@ -1133,6 +1278,38 @@
    "fetchedAt": "2026-11-13",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/12937/a64f46a6ec8e7167af50fc518ff6d8a8.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-12988",
+   "source": "gsc",
+   "sourceId": "12988",
+   "name": "【再販】 白銀ノエル",
+   "series": "ホロライブプロダクション",
+   "maker": "ファット・カンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "スケールフィギュア",
+   "spec": "プラスチック製塗装済み完成品・1/7スケール・専用台座付属・全高：約260mm",
+   "jan": "4580678968537",
+   "priceJpy": 29800,
+   "preorderStart": "2026-11-13",
+   "preorderEnd": "2027-01-13",
+   "preorderEndAt": null,
+   "releaseMonth": "2027-06",
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/12988/Y3N5d4phmUiPeZfK9Gs0zCauQnwRkcDt.jpg",
+   "isRerelease": true,
+   "url": "https://www.goodsmile.com/ja/product/12988",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/70940/"
+    }
+   ],
+   "firstSeen": "2026-11-13",
+   "fetchedAt": "2026-11-13",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/12988/Xa19QGNuhdwcgBp52KvEUbrmty4sAiVx.jpg",
    "bonus": false
   },
   {
@@ -1241,6 +1418,65 @@
    "fetchedAt": "2026-11-13",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/34665/ba7828df98ad89484b45dbadffa48014.jpg",
+   "bonus": true
+  },
+  {
+   "id": "gsc-35207",
+   "source": "gsc",
+   "sourceId": "35207",
+   "name": "MODEROID 超魔空戦神ガイオウ",
+   "series": "ヤマトタケル（TVアニメ）",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "MODEROID",
+   "spec": "組み立て式プラモデル・ノンスケール 【ガイオウ】全高：約175mm 【アマノシラトリ】全長：約205mm",
+   "jan": "4580828675216",
+   "priceJpy": 13500,
+   "preorderStart": null,
+   "preorderEnd": null,
+   "preorderEndAt": null,
+   "releaseMonth": null,
+   "availability": null,
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/35207/BNV1HWCnRKJbwzsPaTxh25F6eypG74fQ.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/35207",
+   "shops": [],
+   "firstSeen": "2026-11-13",
+   "fetchedAt": "2026-11-13",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/35207/0ghHVaz4jNiL28JyKfWwkTn53vDdRAU6.jpg",
+   "bonus": true
+  },
+  {
+   "id": "gsc-35762",
+   "source": "gsc",
+   "sourceId": "35762",
+   "name": "【再販】 ねんどろいど 海馬瀬人",
+   "series": "遊☆戯☆王デュエルモンスターズ",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ねんどろいど",
+   "spec": "プラスチック製 塗装済み可動フィギュア・ノンスケール・専用台座付属・全高：約100mm",
+   "jan": "4570232592063",
+   "priceJpy": 7400,
+   "preorderStart": "2026-11-13",
+   "preorderEnd": "2026-12-16",
+   "preorderEndAt": null,
+   "releaseMonth": "2027-03",
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/35762/u8Miwgpqd9YUt2vPjhaBAVLHD31nFZbN.jpg",
+   "isRerelease": true,
+   "url": "https://www.goodsmile.com/ja/product/35762",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/69951/"
+    }
+   ],
+   "firstSeen": "2026-11-13",
+   "fetchedAt": "2026-11-13",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/35762/nViAaz7FKWN5SEwjJLquT8t02vYhDcHM.jpg",
    "bonus": true
   },
   {
@@ -1601,6 +1837,38 @@
    "bonus": false
   },
   {
+   "id": "gsc-56810",
+   "source": "gsc",
+   "sourceId": "56810",
+   "name": "【再販】 ねんどろいど 在原七海",
+   "series": "RIDDLE JOKER",
+   "maker": "グッドスマイルアーツ上海",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ねんどろいど",
+   "spec": "プラスチック製 塗装済み可動フィギュア・ノンスケール・専用台座付属・全高：約100mm",
+   "jan": "6927254807329",
+   "priceJpy": 6800,
+   "preorderStart": "2026-11-12",
+   "preorderEnd": "2026-12-23",
+   "preorderEndAt": null,
+   "releaseMonth": "2027-05",
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/56810/bvpPWijABuMHsh9CQ8tZke3dT1FGrKmE.jpg",
+   "isRerelease": true,
+   "url": "https://www.goodsmile.com/ja/product/56810",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/72296/"
+    }
+   ],
+   "firstSeen": "2026-11-13",
+   "fetchedAt": "2026-11-13",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/56810/477e49be3908f045ab479c376d5b61e2.jpg",
+   "bonus": true
+  },
+  {
    "id": "gsc-56842",
    "source": "gsc",
    "sourceId": "56842",
@@ -1652,6 +1920,38 @@
    "fetchedAt": "2026-11-13",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/57432/MAs9F1TrqLK205VSJX8djfZGte7BuNiP.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-60105",
+   "source": "gsc",
+   "sourceId": "60105",
+   "name": "【再販】 PLAMAX SV-03 1/24 Scale X・ATH-P-RSC ブラッドサッカー",
+   "series": "装甲騎兵ボトムズ",
+   "maker": "マックスファクトリー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "MAX FACTORY",
+   "spec": "組み立て式プラモデル・水転写デカール付属・1/24スケール・全高：約177mm",
+   "jan": "4545784015865",
+   "priceJpy": 8800,
+   "preorderStart": "2026-11-12",
+   "preorderEnd": "2026-12-23",
+   "preorderEndAt": null,
+   "releaseMonth": "2027-04",
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/60105/1svBp8yjYWR950LV3xQ72wfMXcdZHDTh.jpg",
+   "isRerelease": true,
+   "url": "https://www.goodsmile.com/ja/product/60105",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/66807/"
+    }
+   ],
+   "firstSeen": "2026-11-13",
+   "fetchedAt": "2026-11-13",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/60105/35daf050744dfee35e01b69f324923e0.jpg",
    "bonus": false
   },
   {
@@ -3732,6 +4032,38 @@
    "bonus": false
   },
   {
+   "id": "gsc-1138622",
+   "source": "gsc",
+   "sourceId": "1138622",
+   "name": "ねんどろいど ガブリエル",
+   "series": "楽園追放 心のレゾナンス",
+   "maker": "グッドスマイルアーツ上海",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ねんどろいど",
+   "spec": "プラスチック製 塗装済み可動フィギュア・ノンスケール・専用台座付属・全高：約100mm",
+   "jan": "6927254805936",
+   "priceJpy": 6900,
+   "preorderStart": "2026-11-13",
+   "preorderEnd": "2027-01-06",
+   "preorderEndAt": "2027-01-06T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1138622/q3XwP6KfzmgHZFQDdEAvxYUy2ut5JRne.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1138622",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/59315/"
+    }
+   ],
+   "firstSeen": "2026-11-13",
+   "fetchedAt": "2026-11-13",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1138622/jMitk634psDGCqrhw75BU9uHxL2yaZ0V.jpg",
+   "bonus": false
+  },
+  {
    "id": "gsc-1138736",
    "source": "gsc",
    "sourceId": "1138736",
@@ -4999,6 +5331,70 @@
    "bonus": true
   },
   {
+   "id": "gsc-1140800",
+   "source": "gsc",
+   "sourceId": "1140800",
+   "name": "ねんどろいど アイルー リオレウス装備Ver. DX",
+   "series": "「モンスターハンター」シリーズ",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ねんどろいど",
+   "spec": "プラスチック製 塗装済み可動フィギュア・ノンスケール・専用台座付属・全高：約100mm",
+   "jan": "4570232596627",
+   "priceJpy": 9700,
+   "preorderStart": "2026-11-13",
+   "preorderEnd": "2026-12-23",
+   "preorderEndAt": "2026-12-23T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1140800/uadYwqzGA4xQLRtM0gTBZ1Nr8fkVJiXK.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1140800",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/62392/"
+    }
+   ],
+   "firstSeen": "2026-11-13",
+   "fetchedAt": "2026-11-13",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1140800/8EZxMLH2AncJ1sdkQh3KDTpguvtbaUPi.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-1140801",
+   "source": "gsc",
+   "sourceId": "1140801",
+   "name": "ねんどろいど アイルー リオレウス装備Ver.",
+   "series": "「モンスターハンター」シリーズ",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ねんどろいど",
+   "spec": "プラスチック製 塗装済み可動フィギュア・ノンスケール・専用台座付属・全高：約100mm",
+   "jan": "4570232596610",
+   "priceJpy": 7900,
+   "preorderStart": "2026-11-13",
+   "preorderEnd": "2026-12-23",
+   "preorderEndAt": "2026-12-23T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1140801/nVdJwUz5py96E82sNgrvh0qujAHMWcKt.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1140801",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/62393/"
+    }
+   ],
+   "firstSeen": "2026-11-13",
+   "fetchedAt": "2026-11-13",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1140801/aDSYH3biZEcU2CXA7pVqKLsyR8PTQW9M.jpg",
+   "bonus": false
+  },
+  {
    "id": "gsc-1140849",
    "source": "gsc",
    "sourceId": "1140849",
@@ -5051,6 +5447,42 @@
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1140968/sk4ftgH69ziUpX5VuMBE2h10LcYPba3A.jpg",
    "bonus": false
+  },
+  {
+   "id": "gsc-1140969",
+   "source": "gsc",
+   "sourceId": "1140969",
+   "name": "figma プリバティ",
+   "series": "勝利の女神：NIKKE",
+   "maker": "マックスファクトリー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "MAX FACTORY",
+   "spec": "プラスチック製 塗装済み可動フィギュア・ノンスケール・専用台座付属・全高：約150mm",
+   "jan": "4545784070192",
+   "priceJpy": 13500,
+   "preorderStart": null,
+   "preorderEnd": null,
+   "preorderEndAt": null,
+   "releaseMonth": null,
+   "availability": null,
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1140969/yRUm3Nnt4HL0JYjz5Xh9AKsPM7CBkDid.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1140969",
+   "shops": [
+    {
+     "name": "あみあみ",
+     "url": "https://www.amiami.jp/top/detail/detail?scode=FIGURE-195887"
+    },
+    {
+     "name": "アニメイト",
+     "url": "https://www.animate-onlineshop.jp/pd/3350517/"
+    }
+   ],
+   "firstSeen": "2026-11-13",
+   "fetchedAt": "2026-11-13",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1140969/i2Pw6Ud0fcCrFAXmQnvJu9WyM5NDRLhK.jpg",
+   "bonus": true
   },
   {
    "id": "gsc-1140977",
@@ -5135,9 +5567,10 @@
    ],
    "firstSeen": "2026-11-13",
    "fetchedAt": "2026-11-13",
-   "status": "open",
+   "status": "closed",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1140998/0zM6YTnWPbjgea1ihtBfXFUmHC3ASrqd.jpg",
-   "bonus": true
+   "bonus": true,
+   "closedAt": "2026-11-13"
   },
   {
    "id": "gsc-1140999",
@@ -5751,6 +6184,38 @@
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1141652/suE9eDxiNpq01TjVMg3LSZ7kGBUabKzw.jpg",
    "bonus": false
+  },
+  {
+   "id": "gsc-1141653",
+   "source": "gsc",
+   "sourceId": "1141653",
+   "name": "ねんどろいど 青眼の白龍",
+   "series": "遊☆戯☆王デュエルモンスターズ",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ねんどろいど",
+   "spec": "プラスチック製 塗装済み可動フィギュア・ノンスケール・専用台座付属・全高：約100mm",
+   "jan": "4570232593572",
+   "priceJpy": 8900,
+   "preorderStart": "2026-11-13",
+   "preorderEnd": "2026-12-16",
+   "preorderEndAt": "2026-12-16T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1141653/5wBHKd4WaRC8r1NTvztkyQngXeZ9MSL3.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1141653",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/63640/"
+    }
+   ],
+   "firstSeen": "2026-11-13",
+   "fetchedAt": "2026-11-13",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1141653/zHXSZFLb40Vdwmr8pf6KBkAPxv29nCRt.jpg",
+   "bonus": true
   },
   {
    "id": "gsc-1141695",
@@ -6483,6 +6948,38 @@
    "closedAt": "2026-11-12"
   },
   {
+   "id": "gsc-1142376",
+   "source": "gsc",
+   "sourceId": "1142376",
+   "name": "ねんどろいど エメトセルク",
+   "series": "ファイナルファンタジーXIV",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ねんどろいど",
+   "spec": "プラスチック製 塗装済み可動フィギュア・ノンスケール・専用台座付属・全高：約100mm",
+   "jan": "4570232596740",
+   "priceJpy": 7900,
+   "preorderStart": "2026-11-13",
+   "preorderEnd": "2026-12-23",
+   "preorderEndAt": "2026-12-23T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1142376/gcv5dVEnRpG7xaKNFUWryXj4L9ASPmBZ.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1142376",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/64869/"
+    }
+   ],
+   "firstSeen": "2026-11-13",
+   "fetchedAt": "2026-11-13",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1142376/dMZpfhwVCc8q4yjLsrR9QTntgWDx3Hek.jpg",
+   "bonus": true
+  },
+  {
    "id": "gsc-1142461",
    "source": "gsc",
    "sourceId": "1142461",
@@ -6509,6 +7006,38 @@
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1142461/1YV3mfk80s6CdpGZADQJFLXNH7PcBhn9.jpg",
    "bonus": true,
    "closedAt": "2026-11-12"
+  },
+  {
+   "id": "gsc-1142465",
+   "source": "gsc",
+   "sourceId": "1142465",
+   "name": "ねんどろいど マヒル",
+   "series": "恋と深空",
+   "maker": "グッドスマイルアーツ上海",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ねんどろいど",
+   "spec": "プラスチック製 塗装済み可動フィギュア・ノンスケール・専用台座付属・全高：約100mm",
+   "jan": "6976739636794",
+   "priceJpy": 7200,
+   "preorderStart": "2026-11-13",
+   "preorderEnd": "2026-12-16",
+   "preorderEndAt": "2026-12-16T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1142465/9zcUr2EJnj4NHqAgQTedmhuyxswMFv5X.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1142465",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/65033/"
+    }
+   ],
+   "firstSeen": "2026-11-13",
+   "fetchedAt": "2026-11-13",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1142465/XKS9Q3DaCNyB7zP210gFHmeRwbsWxT6h.jpg",
+   "bonus": true
   },
   {
    "id": "gsc-1142471",
@@ -7375,6 +7904,38 @@
    "bonus": false
   },
   {
+   "id": "gsc-1143766",
+   "source": "gsc",
+   "sourceId": "1143766",
+   "name": "MODEROID クリムゾン・タイフーン",
+   "series": "パシフィック・リム",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "MODEROID",
+   "spec": "組み立て式プラモデル・ノンスケール 全高：約200mm",
+   "jan": "4570232595804",
+   "priceJpy": 12000,
+   "preorderStart": "2026-11-13",
+   "preorderEnd": "2026-12-16",
+   "preorderEndAt": "2026-12-16T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1143766/rgbGdkXZFRu4UHaLSnJysK3Dp81Qj7tB.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1143766",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/66532/"
+    }
+   ],
+   "firstSeen": "2026-11-13",
+   "fetchedAt": "2026-11-13",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1143766/XkGvxAU5bahrCS27iPNZBuQyfLqg9s6p.jpg",
+   "bonus": false
+  },
+  {
    "id": "gsc-1143767",
    "source": "gsc",
    "sourceId": "1143767",
@@ -7650,6 +8211,38 @@
    "bonus": false
   },
   {
+   "id": "gsc-1143941",
+   "source": "gsc",
+   "sourceId": "1143941",
+   "name": "ねんどろいど 天童ケイ",
+   "series": "ブルーアーカイブ -Blue Archive-",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ねんどろいど",
+   "spec": "プラスチック製 塗装済み可動フィギュア・ノンスケール・専用台座付属・全高：約100mm",
+   "jan": "4570232595927",
+   "priceJpy": 7800,
+   "preorderStart": "2026-11-13",
+   "preorderEnd": "2026-12-23",
+   "preorderEndAt": "2026-12-23T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1143941/qrDYAEh89tGndSQHPuxL3R5M2fcpJwkv.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1143941",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/66787/"
+    }
+   ],
+   "firstSeen": "2026-11-13",
+   "fetchedAt": "2026-11-13",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1143941/07CcER4SNrFVz9ytf2aBjWe1KsbLvgd8.jpg",
+   "bonus": true
+  },
+  {
    "id": "gsc-1143954",
    "source": "gsc",
    "sourceId": "1143954",
@@ -7674,6 +8267,38 @@
    "fetchedAt": "2026-11-13",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1143954/fTsQ7jCnWh26JtSgGRa8xzruDiAp1ZPq.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-1144087",
+   "source": "gsc",
+   "sourceId": "1144087",
+   "name": "【再販】 どんぐりぬいぐるみ",
+   "series": "追放されたチート付与魔術師は気ままなセカンドライフを謳歌する。 ～俺は武器だけじゃなく、あらゆるものに『強化ポイント』を付与できるし、俺の意思でいつでも効果を解除できるけど、残った人たち大丈夫？～",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ぬいぐるみ",
+   "spec": "素材：ポリエステル、サイズ：全高約25cm",
+   "jan": "4570232586994",
+   "priceJpy": 4400,
+   "preorderStart": "2026-11-13",
+   "preorderEnd": "2026-12-09",
+   "preorderEndAt": null,
+   "releaseMonth": "2027-05",
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144087/8ipmYJL0z3Q7AW2hRVvBtNqxU5nHeKCZ.jpg",
+   "isRerelease": true,
+   "url": "https://www.goodsmile.com/ja/product/1144087",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/70581/"
+    }
+   ],
+   "firstSeen": "2026-11-13",
+   "fetchedAt": "2026-11-13",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144087/EJBphqkswRUfH8A9Sb5KCLVN2jDW7FTG.jpg",
    "bonus": false
   },
   {
@@ -7733,6 +8358,65 @@
    "fetchedAt": "2026-11-13",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144092/006fe24d4f3be54177999a4b9e21e721.jpg",
+   "bonus": true
+  },
+  {
+   "id": "gsc-1144115",
+   "source": "gsc",
+   "sourceId": "1144115",
+   "name": "ねんどろいど ギルベルタ",
+   "series": "アークナイツ：エンドフィールド",
+   "maker": "グッドスマイルアーツ上海",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ねんどろいど",
+   "spec": "プラスチック製 塗装済み可動フィギュア・ノンスケール・専用台座付属・全高：約100mm",
+   "jan": "6927254802423",
+   "priceJpy": 8900,
+   "preorderStart": "2026-11-13",
+   "preorderEnd": "2026-12-23",
+   "preorderEndAt": "2026-12-23T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144115/Qc9JGqnBVZHtePFSUuz8EhRXpaiAyY2M.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1144115",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/66918/"
+    }
+   ],
+   "firstSeen": "2026-11-13",
+   "fetchedAt": "2026-11-13",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144115/AsrE5TqQCG4RSHt2ebkzJhun3FxDiBUP.jpg",
+   "bonus": true
+  },
+  {
+   "id": "gsc-1144116",
+   "source": "gsc",
+   "sourceId": "1144116",
+   "name": "赤刃明霄チェン 昇進段階2VER.",
+   "series": "アークナイツ",
+   "maker": "グッドスマイルアーツ上海",
+   "seller": "グッドスマイルカンパニー",
+   "category": "スケールフィギュア",
+   "spec": "プラスチック製 塗装済み完成品・1/7スケール・専用台座付属・全高：約283mm",
+   "jan": "6927254806643",
+   "priceJpy": 31900,
+   "preorderStart": "2026-11-13",
+   "preorderEnd": "2026-12-23",
+   "preorderEndAt": "2026-12-23T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144116/ABkXJmsxEjeCHgG9YNPzZqwfTc1p2uRL.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1144116",
+   "shops": [],
+   "firstSeen": "2026-11-13",
+   "fetchedAt": "2026-11-13",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144116/KRftZu8ipcFX7qUNMSJWs026yr3wm4gC.jpg",
    "bonus": true
   },
   {
@@ -7911,6 +8595,60 @@
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144137/gh8a5vTkAiS4jZGmyQFc3ewn0dXpD6tx.jpg",
    "bonus": true
+  },
+  {
+   "id": "gsc-1144161",
+   "source": "gsc",
+   "sourceId": "1144161",
+   "name": "雲仙 艦船との一杯",
+   "series": "アズールレーン",
+   "maker": "ルミナスボックス",
+   "seller": "グッドスマイルカンパニー",
+   "category": "スケールフィギュア",
+   "spec": "プラスチック製塗装済み完成品・1/6スケール・専用台座付属・全高：約253mm",
+   "jan": "6973848370397",
+   "priceJpy": 27400,
+   "preorderStart": "2026-11-13",
+   "preorderEnd": "2026-12-23",
+   "preorderEndAt": "2026-12-23T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144161/uqJbgkYQEdUsvrxwCWGnfBTPD98V7ZtX.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1144161",
+   "shops": [],
+   "firstSeen": "2026-11-13",
+   "fetchedAt": "2026-11-13",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144161/mLSRjfs40uU3dh26wE1GcPYZJ9kezF8p.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-1144162",
+   "source": "gsc",
+   "sourceId": "1144162",
+   "name": "アンカレッジ 艦船との一杯",
+   "series": "アズールレーン",
+   "maker": "ルミナスボックス",
+   "seller": "グッドスマイルカンパニー",
+   "category": "スケールフィギュア",
+   "spec": "プラスチック製塗装済み完成品・1/6スケール・専用台座付属・全高：約252mm",
+   "jan": "6973848370403",
+   "priceJpy": 27400,
+   "preorderStart": "2026-11-13",
+   "preorderEnd": "2026-12-23",
+   "preorderEndAt": "2026-12-23T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144162/UnrfReihHJQXjE1LD9BxCAavSVG05Mdy.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1144162",
+   "shops": [],
+   "firstSeen": "2026-11-13",
+   "fetchedAt": "2026-11-13",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144162/JsrqgfCRFtLnkKD2wSPXYz069muTbAV4.jpg",
+   "bonus": false
   },
   {
    "id": "gsc-1144170",
@@ -8182,6 +8920,33 @@
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144471/R9WXgVkPuDxN4hind8GaY2AzEqbTctBU.jpg",
    "bonus": false,
    "closedAt": "2026-11-12"
+  },
+  {
+   "id": "gsc-1144476",
+   "source": "gsc",
+   "sourceId": "1144476",
+   "name": "ブラン - フォーチュンエクスプレス",
+   "series": "勝利の女神：NIKKE",
+   "maker": "グッドスマイルアーツ上海",
+   "seller": "グッドスマイルカンパニー",
+   "category": "スケールフィギュア",
+   "spec": "プラスチック製 塗装済みフィギュア・1/7ケール・専用台座付属・全高：約257mm",
+   "jan": "6927254807350",
+   "priceJpy": 26400,
+   "preorderStart": "2026-11-13",
+   "preorderEnd": "2026-12-23",
+   "preorderEndAt": "2026-12-23T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144476/8UqBsNb3CkKM2rgZYFe9LSTyi6fx1Xzu.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1144476",
+   "shops": [],
+   "firstSeen": "2026-11-13",
+   "fetchedAt": "2026-11-13",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144476/hQuirEc41Ad9e6wantPyHzfxkTgpsDFj.jpg",
+   "bonus": false
   },
   {
    "id": "gsc-1144539",
@@ -8520,6 +9285,38 @@
    "closedAt": "2026-11-12"
   },
   {
+   "id": "gsc-1144875",
+   "source": "gsc",
+   "sourceId": "1144875",
+   "name": "ブライス カワイイショウワシェリー",
+   "series": "Blythe",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "Blythe",
+   "spec": "人形本体：ABS、PVC、PP、PVDC他 ドレス一式：ポリエステル、綿・全高：約300mm",
+   "jan": "4570232588370",
+   "priceJpy": 24800,
+   "preorderStart": "2026-11-13",
+   "preorderEnd": "2026-12-02",
+   "preorderEndAt": "2026-12-02T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144875/ncAtBS0w6yzs2bdp3TuVKGNr7jW8HJ1i.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1144875",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/68145/"
+    }
+   ],
+   "firstSeen": "2026-11-13",
+   "fetchedAt": "2026-11-13",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144875/Ub9RDNYKwQq5zdFSVPLChWZcxpj7Gk04.jpg",
+   "bonus": false
+  },
+  {
    "id": "gsc-1144885",
    "source": "gsc",
    "sourceId": "1144885",
@@ -8682,9 +9479,10 @@
    ],
    "firstSeen": "2026-11-11",
    "fetchedAt": "2026-11-13",
-   "status": "open",
+   "status": "closed",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144965/DEkz5mwYKMsWXhFfHxN8jJSvu7QBP6ca.jpg",
-   "bonus": false
+   "bonus": false,
+   "closedAt": "2026-11-13"
   },
   {
    "id": "gsc-1145014",
@@ -8798,6 +9596,38 @@
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1145327/Yc8UW9fgkzXwN1yRspV4v3tZ5LCPShMe.jpg",
    "bonus": true
+  },
+  {
+   "id": "gsc-1145394",
+   "source": "gsc",
+   "sourceId": "1145394",
+   "name": "ねんどろいど メイリン",
+   "series": "カオスゼロナイトメア",
+   "maker": "グッドスマイルアーツ上海",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ねんどろいど",
+   "spec": "プラスチック製 塗装済み可動フィギュア・ノンスケール・専用台座付属・全高：約100mm",
+   "jan": "6927254800207",
+   "priceJpy": 8900,
+   "preorderStart": "2026-11-13",
+   "preorderEnd": "2026-12-23",
+   "preorderEndAt": "2026-12-23T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1145394/KLq6NcSG8Pk9jYp4h3s0yRQEaXWAHfV7.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1145394",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/69052/"
+    }
+   ],
+   "firstSeen": "2026-11-13",
+   "fetchedAt": "2026-11-13",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1145394/w5hkzB8KJUbaD4mup2AgrLxP3STWCHX9.jpg",
+   "bonus": false
   },
   {
    "id": "gsc-1145409",
@@ -10848,6 +11678,134 @@
    "fetchedAt": "2026-11-13",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147108/f1mnjUyVAT9CSxH0raB7eQGqvFWsz8JN.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-1147124",
+   "source": "gsc",
+   "sourceId": "1147124",
+   "name": "獣王武神ダンデヴァイン 上巻「THE合体 ダンデエース スペシャルカラー」付き特装版【完全生産限定版】",
+   "series": "獣王武神ダンデヴァイン",
+   "maker": "アニプレックス",
+   "seller": "グッドスマイルカンパニー",
+   "category": "DVD/BD/CD",
+   "spec": null,
+   "jan": "4534530167088",
+   "priceJpy": 34100,
+   "preorderStart": "2026-11-13",
+   "preorderEnd": "2027-01-27",
+   "preorderEndAt": "2027-01-27T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147124/5brWfq3QTXwENP2JtaFDHGYhRAZjeSx7.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1147124",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/71756/"
+    }
+   ],
+   "firstSeen": "2026-11-13",
+   "fetchedAt": "2026-11-13",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147124/muA8thdiUbs3YwXGEp9VeR2NcBfTj41F.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-1147125",
+   "source": "gsc",
+   "sourceId": "1147125",
+   "name": "獣王武神ダンデヴァイン 上巻【完全生産限定版】",
+   "series": "獣王武神ダンデヴァイン",
+   "maker": "アニプレックス",
+   "seller": "グッドスマイルカンパニー",
+   "category": "DVD/BD/CD",
+   "spec": null,
+   "jan": "4534530167095",
+   "priceJpy": 18700,
+   "preorderStart": "2026-11-13",
+   "preorderEnd": "2027-01-27",
+   "preorderEndAt": "2027-01-27T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147125/BhqbzPZacng750NwfX2rUkAm3vCKs19V.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1147125",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/71757/"
+    }
+   ],
+   "firstSeen": "2026-11-13",
+   "fetchedAt": "2026-11-13",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147125/MDXJtPFHp8udkcf21hvAVRNbYsyG9W7B.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-1147126",
+   "source": "gsc",
+   "sourceId": "1147126",
+   "name": "獣王武神ダンデヴァイン 下巻「B1サイズ 布ポスター」付き特装版【完全生産限定版】",
+   "series": "獣王武神ダンデヴァイン",
+   "maker": "アニプレックス",
+   "seller": "グッドスマイルカンパニー",
+   "category": "DVD/BD/CD",
+   "spec": null,
+   "jan": "4534530167101",
+   "priceJpy": 25300,
+   "preorderStart": "2026-11-13",
+   "preorderEnd": "2027-01-27",
+   "preorderEndAt": "2027-01-27T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147126/LNn0MmU58Y39SqzE1QuyPxvkwJ2Cjipe.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1147126",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/71758/"
+    }
+   ],
+   "firstSeen": "2026-11-13",
+   "fetchedAt": "2026-11-13",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147126/bW4VnpPAEmg1RCJjwrHcXGDfF0MTqkzd.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-1147127",
+   "source": "gsc",
+   "sourceId": "1147127",
+   "name": "獣王武神ダンデヴァイン 下巻【完全生産限定版】",
+   "series": "獣王武神ダンデヴァイン",
+   "maker": "アニプレックス",
+   "seller": "グッドスマイルカンパニー",
+   "category": "DVD/BD/CD",
+   "spec": null,
+   "jan": "4534530167118",
+   "priceJpy": 18700,
+   "preorderStart": "2026-11-13",
+   "preorderEnd": "2027-01-27",
+   "preorderEndAt": "2027-01-27T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147127/Xi3G05ceRhjQ4PdxV8ftvkzs6rDqJSA1.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1147127",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/71759/"
+    }
+   ],
+   "firstSeen": "2026-11-13",
+   "fetchedAt": "2026-11-13",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147127/6CBqNyLAu2zMmZFjkQRdWxVni3YpTcPX.jpg",
    "bonus": false
   },
   {
