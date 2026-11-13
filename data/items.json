@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-13T12:24:58.815Z",
+ "updatedAt": "2026-11-13T22:03:32.724Z",
  "items": [
   {
    "id": "gsc-2011",
@@ -190,7 +190,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-12",
+   "fetchedAt": "2026-11-14",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/5612/05d20e2937b13d98217a173da7fbf649.jpg",
    "bonus": true
@@ -728,7 +728,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-12",
+   "fetchedAt": "2026-11-14",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/11111/682552058deb91b03a71067ce49caa79.jpg",
    "bonus": true
@@ -1560,7 +1560,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-12",
+   "fetchedAt": "2026-11-14",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/36226/7ddf125dcfe14dff930289039e73ca13.jpg",
    "bonus": true
@@ -2871,7 +2871,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-12",
+   "fetchedAt": "2026-11-14",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1136216/JeTm718VkznZpDLuhC9NPWUgjvdxR32Y.jpg",
    "bonus": false
@@ -3853,10 +3853,37 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-12",
+   "fetchedAt": "2026-11-14",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1138061/0AU3d94agryLFzjBvXHVkmGYpiuq1MPT.jpg",
    "bonus": false
+  },
+  {
+   "id": "gsc-1138146",
+   "source": "gsc",
+   "sourceId": "1138146",
+   "name": "ねんどろいど キャストリス",
+   "series": "崩壊：スターレイル",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ねんどろいど",
+   "spec": "プラスチック製 塗装済み可動フィギュア・ノンスケール・専用台座付属・全高：約100mm",
+   "jan": "4580828676046",
+   "priceJpy": 7900,
+   "preorderStart": null,
+   "preorderEnd": null,
+   "preorderEndAt": null,
+   "releaseMonth": null,
+   "availability": null,
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1138146/f30b48f33c646a6fd06213db7eb77bde.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1138146",
+   "shops": [],
+   "firstSeen": "2026-11-14",
+   "fetchedAt": "2026-11-14",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1138146/YZuprVPqTWsmvNGA1LKdH96EfBnQha7i.jpg",
+   "bonus": true
   },
   {
    "id": "gsc-1138200",
@@ -4166,7 +4193,7 @@
    "url": "https://www.goodsmile.com/ja/product/1138939",
    "shops": [],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-12",
+   "fetchedAt": "2026-11-14",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1138939/XrkcJyF6hEZ5b9MVvAiKx803wazmNGn2.jpg",
    "bonus": true
@@ -4193,7 +4220,7 @@
    "url": "https://www.goodsmile.com/ja/product/1138940",
    "shops": [],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-12",
+   "fetchedAt": "2026-11-14",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1138940/Se6cEP5diXCVa3NvxqDUhkQr2G9pAYw7.jpg",
    "bonus": true
@@ -4572,7 +4599,7 @@
    "url": "https://www.goodsmile.com/ja/product/1138954",
    "shops": [],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-12",
+   "fetchedAt": "2026-11-14",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1138954/kbpRGWL4j0uNadVcZwFP9mHUr7QJyq1e.jpg",
    "bonus": true
@@ -4636,7 +4663,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-12",
+   "fetchedAt": "2026-11-14",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1138998/wzag4FPiNSd9KfQXUBquRnWVT0vGH8tb.jpg",
    "bonus": true
@@ -5707,7 +5734,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-12",
+   "fetchedAt": "2026-11-14",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1141072/WBAfhPu9TpHgmd2YVQsbZ84rxjey6vn5.jpg",
    "bonus": false
@@ -5879,7 +5906,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-12",
+   "fetchedAt": "2026-11-14",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1141405/tVTWQrMhx8v3m4YAbiGy9CgwK7526BaJ.jpg",
    "bonus": false
@@ -6634,7 +6661,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-12",
+   "fetchedAt": "2026-11-14",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1142176/E5eghai648jzmMu7xUtfQNsLPWvYnB91.jpg",
    "bonus": true
@@ -6693,7 +6720,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-12",
+   "fetchedAt": "2026-11-14",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1142330/ACF5NfgUaVr2RYvze89KsXumqQnMkjdT.jpg",
    "bonus": false
@@ -6779,7 +6806,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-12",
+   "fetchedAt": "2026-11-14",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1142352/iQJY0EpGr8BDus5U1W2KxzMCHb96d7mR.jpg",
    "bonus": false
@@ -7437,7 +7464,7 @@
    "source": "gsc",
    "sourceId": "1142838",
    "name": "THE合体 ディスプレイベース",
-   "series": "なし",
+   "series": null,
    "maker": "グッドスマイルカンパニー",
    "seller": "グッドスマイルカンパニー",
    "category": "THE合体",
@@ -7454,7 +7481,7 @@
    "url": "https://www.goodsmile.com/ja/product/1142838",
    "shops": [],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-12",
+   "fetchedAt": "2026-11-14",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1142838/2iv1EAYcdRkC5wbeh7s6TH0m3FZMgLQD.jpg",
    "bonus": false
@@ -7540,7 +7567,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-12",
+   "fetchedAt": "2026-11-14",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1142890/L54gKrhADFdVGmCYwiX8P6RjTxS7vunt.jpg",
    "bonus": false
@@ -8178,7 +8205,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-12",
+   "fetchedAt": "2026-11-14",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1143933/z702eMXJSFDqLBQRcxNvGrkAa5n1Tds4.jpg",
    "bonus": true
@@ -8446,7 +8473,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-12",
+   "fetchedAt": "2026-11-14",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144118/ZVb9JcS6UuhLafTyEtkQ3718eNq5vnw2.jpg",
    "bonus": false
@@ -8537,7 +8564,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-12",
+   "fetchedAt": "2026-11-14",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144129/PumZaEKt2bqikV5C4U637wJdpLhSW1vR.jpg",
    "bonus": true
@@ -8888,7 +8915,7 @@
    "url": "https://www.goodsmile.com/ja/product/1144470",
    "shops": [],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-12",
+   "fetchedAt": "2026-11-14",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144470/6UdZ7VTEbsrGPhzRuNYF9Ak2i0p4X5Qc.jpg",
    "bonus": false
@@ -9592,7 +9619,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-12",
+   "fetchedAt": "2026-11-14",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1145327/Yc8UW9fgkzXwN1yRspV4v3tZ5LCPShMe.jpg",
    "bonus": true
@@ -9683,7 +9710,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-12",
+   "fetchedAt": "2026-11-14",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1145497/pKi3LCj8VmWQfbDkNudy9UPcs62t0rgv.jpg",
    "bonus": false
@@ -9715,7 +9742,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-12",
+   "fetchedAt": "2026-11-14",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1145498/RNm80wM1j5ghU79vQqVJcadknbXYSDyZ.jpg",
    "bonus": false
@@ -10854,7 +10881,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-12",
+   "fetchedAt": "2026-11-14",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146773/WcKr65A1vDFhx2TG9jgtHf8dz4mU3RZV.jpg",
    "bonus": false
@@ -11157,7 +11184,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-12",
+   "fetchedAt": "2026-11-14",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146929/64999ce8ae89d3e8f73a3294f6f5cdcf.jpg",
    "bonus": false
@@ -11643,7 +11670,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-12",
+   "fetchedAt": "2026-11-14",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147075/RDHtprA9fWv3XxKPC8MnB67acEkZyuJz.jpg",
    "bonus": false
@@ -11867,7 +11894,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-12",
+   "fetchedAt": "2026-11-14",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147129/3141ddf3d98a92008cd3141847f5309f.jpg",
    "bonus": false
@@ -11899,7 +11926,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-12",
+   "fetchedAt": "2026-11-14",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147167/USqXsL9RxEjBNnrZGg0HPukwy3Q1WAm8.jpg",
    "bonus": false
@@ -12054,7 +12081,7 @@
    "url": "https://www.goodsmile.com/ja/product/1147367",
    "shops": [],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-12",
+   "fetchedAt": "2026-11-14",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147367/QH83r4YmSXWyvPhbiwAMzdapCZVeDu5k.jpg",
    "bonus": false
@@ -12086,7 +12113,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-12",
+   "fetchedAt": "2026-11-14",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147413/51GayTwMkL380xcC7VRpNA9j2g4YbQJh.jpg",
    "bonus": false
@@ -12118,7 +12145,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-12",
+   "fetchedAt": "2026-11-14",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147414/qX2J4vacZrnp379efsYwLkQMdAFUGS85.jpg",
    "bonus": false
