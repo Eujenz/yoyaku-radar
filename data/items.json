@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-15T21:07:40.796Z",
+ "updatedAt": "2026-11-16T06:52:14.573Z",
  "items": [
   {
    "id": "gsc-2011",
@@ -864,9 +864,10 @@
    "shops": [],
    "firstSeen": "2026-11-13",
    "fetchedAt": "2026-11-15",
-   "status": "open",
+   "status": "closed",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/11684/ddd7c56fdde226563a4f34723de213dd.jpg",
-   "bonus": true
+   "bonus": true,
+   "closedAt": "2026-11-16"
   },
   {
    "id": "gsc-12053",
@@ -1153,9 +1154,10 @@
    "shops": [],
    "firstSeen": "2026-11-13",
    "fetchedAt": "2026-11-15",
-   "status": "open",
+   "status": "closed",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/12698/2a668f25541d7a2796fe060b8ba705fd.jpg",
-   "bonus": true
+   "bonus": true,
+   "closedAt": "2026-11-16"
   },
   {
    "id": "gsc-12709",
@@ -1244,9 +1246,10 @@
    "shops": [],
    "firstSeen": "2026-11-13",
    "fetchedAt": "2026-11-15",
-   "status": "open",
+   "status": "closed",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/12729/64bca4b404350bf57b5f2293bb0e21be.jpg",
-   "bonus": true
+   "bonus": true,
+   "closedAt": "2026-11-16"
   },
   {
    "id": "gsc-12937",
@@ -1443,9 +1446,10 @@
    "shops": [],
    "firstSeen": "2026-11-13",
    "fetchedAt": "2026-11-15",
-   "status": "open",
+   "status": "closed",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/35207/0ghHVaz4jNiL28JyKfWwkTn53vDdRAU6.jpg",
-   "bonus": true
+   "bonus": true,
+   "closedAt": "2026-11-16"
   },
   {
    "id": "gsc-35762",
@@ -3886,9 +3890,10 @@
    "shops": [],
    "firstSeen": "2026-11-14",
    "fetchedAt": "2026-11-16",
-   "status": "open",
+   "status": "closed",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1138146/YZuprVPqTWsmvNGA1LKdH96EfBnQha7i.jpg",
-   "bonus": true
+   "bonus": true,
+   "closedAt": "2026-11-16"
   },
   {
    "id": "gsc-1138200",
@@ -5174,6 +5179,38 @@
    "bonus": false
   },
   {
+   "id": "gsc-1140171",
+   "source": "gsc",
+   "sourceId": "1140171",
+   "name": "POP UP PARADE ミタ L size",
+   "series": "MiSide : ミサイド",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "POP UP PARADE",
+   "spec": "プラスチック製 塗装済み完成品・ノンスケール・専用台座付属・全高：約230mm",
+   "jan": "4570232596078",
+   "priceJpy": 8800,
+   "preorderStart": "2026-11-16",
+   "preorderEnd": "2026-12-16",
+   "preorderEndAt": "2026-12-16T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1140171/GvZ4YpFtjkecUHP9zVRC3xm2sADwXyMg.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1140171",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/61475/"
+    }
+   ],
+   "firstSeen": "2026-11-16",
+   "fetchedAt": "2026-11-16",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1140171/FiTKx4RJtrUGB6gZPpb1dvAsumw7cV3X.jpg",
+   "bonus": false
+  },
+  {
    "id": "gsc-1140447",
    "source": "gsc",
    "sourceId": "1140447",
@@ -5512,9 +5549,10 @@
    ],
    "firstSeen": "2026-11-13",
    "fetchedAt": "2026-11-15",
-   "status": "open",
+   "status": "closed",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1140969/i2Pw6Ud0fcCrFAXmQnvJu9WyM5NDRLhK.jpg",
-   "bonus": true
+   "bonus": true,
+   "closedAt": "2026-11-16"
   },
   {
    "id": "gsc-1140977",
@@ -6332,7 +6370,7 @@
    "firstSeen": "2026-11-11",
    "fetchedAt": "2026-11-15",
    "status": "open",
-   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1141788/aJqKVbYAhiE5z9vekWtc7mFMGwgTDnRC.jpg",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1141788/WAvzcEDXfL1n0p8Sgq2wBx5Z4FPjVYU3.jpg",
    "bonus": false
   },
   {
@@ -8706,7 +8744,7 @@
    "firstSeen": "2026-11-11",
    "fetchedAt": "2026-11-15",
    "status": "open",
-   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144170/XP8KcZtFhJnbqeAQSLH9EM6BmCNVkT1w.jpg",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144170/H7duaRqcGNZpxJ1jwCSLDFE42WbPV6Xf.jpg",
    "bonus": false
   },
   {
@@ -9203,6 +9241,38 @@
    "closedAt": "2026-11-12"
   },
   {
+   "id": "gsc-1144661",
+   "source": "gsc",
+   "sourceId": "1144661",
+   "name": "ねんどろいど デュオ",
+   "series": "Duolingo",
+   "maker": "グッドスマイルアーツ上海",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ねんどろいど",
+   "spec": "プラスチック製 塗装済み可動フィギュア・ノンスケール・専用台座付属・全高：約80mm・磁石使用",
+   "jan": "6927254804373",
+   "priceJpy": 6800,
+   "preorderStart": "2026-11-16",
+   "preorderEnd": "2026-12-16",
+   "preorderEndAt": "2026-12-16T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144661/taFbVQ3EZvrXu7TiK0LzeyBMs12nfSDj.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1144661",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/67777/"
+    }
+   ],
+   "firstSeen": "2026-11-16",
+   "fetchedAt": "2026-11-16",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144661/MYyfk1ibTu42HPpeKns50xZFAjrGVdSa.jpg",
+   "bonus": true
+  },
+  {
    "id": "gsc-1144736",
    "source": "gsc",
    "sourceId": "1144736",
@@ -9510,11 +9580,37 @@
     }
    ],
    "firstSeen": "2026-11-11",
-   "fetchedAt": "2026-11-13",
-   "status": "closed",
+   "fetchedAt": "2026-11-16",
+   "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144965/DEkz5mwYKMsWXhFfHxN8jJSvu7QBP6ca.jpg",
-   "bonus": false,
-   "closedAt": "2026-11-13"
+   "bonus": false
+  },
+  {
+   "id": "gsc-1144991",
+   "source": "gsc",
+   "sourceId": "1144991",
+   "name": "Infinity Studio 『シン・エヴァンゲリオン劇場版:|| 』アスカ・ラングレー 1/2スケール",
+   "series": "シン・エヴァンゲリオン劇場版𝄇",
+   "maker": "Infinity Studio",
+   "seller": "グッドスマイルカンパニー",
+   "category": "スケールフィギュア",
+   "spec": "プラチナシリコン、ポリストーン、PU、LEDライト等 塗装済み完成品・1/2スケール・Size：H=98cm W=43cm L=40.5cm・電源：ACアダプター（5V／2A）（AC電源コード付属）",
+   "jan": "6972099322896",
+   "priceJpy": 193000,
+   "preorderStart": "2026-11-16",
+   "preorderEnd": "2026-12-16",
+   "preorderEndAt": "2026-12-16T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144991/rxJFka0LSGRBjNiMsTbYvQn7HdAzfWg5.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1144991",
+   "shops": [],
+   "firstSeen": "2026-11-16",
+   "fetchedAt": "2026-11-16",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144991/Ya3iDeX72MjHJg1nkrmNxVpQLuSAhEfv.jpg",
+   "bonus": false
   },
   {
    "id": "gsc-1145014",
@@ -10919,6 +11015,646 @@
    "bonus": false
   },
   {
+   "id": "gsc-1146811",
+   "source": "gsc",
+   "sourceId": "1146811",
+   "name": "【BOX】初音ミク レーシングミクVer.2026 トレーディング缶バッジ",
+   "series": "初音ミク GTプロジェクト",
+   "maker": "GoodSmile Moment",
+   "seller": "グッドスマイルカンパニー",
+   "category": "缶バッジ",
+   "spec": "素材：ブリキ サイズ：W70mm×H45mm 全9種 1BOX9pcs入り",
+   "jan": "6927254801129",
+   "priceJpy": 8712,
+   "preorderStart": "2026-11-16",
+   "preorderEnd": "2026-12-02",
+   "preorderEndAt": "2026-12-02T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146811/T5DYipnQ0ZbJsCqKdmxfw1Lzhk9WEX4G.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1146811",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/71156/"
+    }
+   ],
+   "firstSeen": "2026-11-16",
+   "fetchedAt": "2026-11-16",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146811/VW6KYRNtwcFAhGvDC13Mni8qJrbkZ7gP.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-1146812",
+   "source": "gsc",
+   "sourceId": "1146812",
+   "name": "初音ミク レーシングミクVer.2026 トレーディング缶バッジ",
+   "series": "初音ミク GTプロジェクト",
+   "maker": "GoodSmile Moment",
+   "seller": "グッドスマイルカンパニー",
+   "category": "缶バッジ",
+   "spec": "素材：ブリキ サイズ：W70mm×H45mm 全9種 1BOX9pcs入り",
+   "jan": "6927254801136",
+   "priceJpy": 968,
+   "preorderStart": "2026-11-16",
+   "preorderEnd": "2026-12-02",
+   "preorderEndAt": "2026-12-02T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146812/hqVN0ZUfMuLkHGQWX8yCsxmwg3pjBac1.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1146812",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/71097/"
+    }
+   ],
+   "firstSeen": "2026-11-16",
+   "fetchedAt": "2026-11-16",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146812/qxDuEPf4MX1a8cYFZWB62rCjgA3HVpkU.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-1146813",
+   "source": "gsc",
+   "sourceId": "1146813",
+   "name": "初音ミク レーシングミクVer.2026 アクリルスタンド A/B/C/D/E/F/G：初音ミク レーシングミクVer.2026 アクリルスタンド A",
+   "series": "初音ミク GTプロジェクト",
+   "maker": "GoodSmile Moment",
+   "seller": "グッドスマイルカンパニー",
+   "category": "アクリルスタンド",
+   "spec": "素材：アクリル サイズ：約W240mm×H160mm",
+   "jan": "6927254801143",
+   "priceJpy": 2200,
+   "preorderStart": "2026-11-16",
+   "preorderEnd": "2026-12-02",
+   "preorderEndAt": "2026-12-02T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146813/5hpWv302yndJXFHr1QN8w4BRxkDicC9V.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1146813",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/71098/"
+    }
+   ],
+   "firstSeen": "2026-11-16",
+   "fetchedAt": "2026-11-16",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146813/y3gd7PaeqtbLxFhjCMEz6cw8KBQnfJ0H.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-1146814",
+   "source": "gsc",
+   "sourceId": "1146814",
+   "name": "初音ミク レーシングミクVer.2026 アクリルパネル A/B/C/D/E：初音ミク レーシングミクVer.2026 アクリルパネル A",
+   "series": "初音ミク GTプロジェクト",
+   "maker": "GoodSmile Moment",
+   "seller": "グッドスマイルカンパニー",
+   "category": "その他（グッズ）",
+   "spec": "素材：アクリル サイズ：W210mm×H140mm",
+   "jan": "6927254801211",
+   "priceJpy": 2750,
+   "preorderStart": "2026-11-16",
+   "preorderEnd": "2026-12-02",
+   "preorderEndAt": "2026-12-02T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146814/Xf9cQu3y12BsEN5t4r7gDqTnZpaWeRUH.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1146814",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/71099/"
+    }
+   ],
+   "firstSeen": "2026-11-16",
+   "fetchedAt": "2026-11-16",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146814/dyaJGLPgYfTNn6Wwcr1V50E9KhmtXFxA.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-1146815",
+   "source": "gsc",
+   "sourceId": "1146815",
+   "name": "【BOX】初音ミク レーシングミクVer.2026 トレーディングリボンストラップ",
+   "series": "初音ミク GTプロジェクト",
+   "maker": "GoodSmile Moment",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ストラップ",
+   "spec": "素材：ポリエステル、合金 サイズ：約W50mm×H470mm 全8種 1BOX8pcs入り",
+   "jan": "6927254801266",
+   "priceJpy": 14080,
+   "preorderStart": "2026-11-16",
+   "preorderEnd": "2026-12-02",
+   "preorderEndAt": "2026-12-02T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146815/FREgJY14n8Gep3VfMCiudBW6z7NhkmSr.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1146815",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/71100/"
+    }
+   ],
+   "firstSeen": "2026-11-16",
+   "fetchedAt": "2026-11-16",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146815/zfc0XJK7hgPUL6urmHABVvWinyMwRGk1.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-1146816",
+   "source": "gsc",
+   "sourceId": "1146816",
+   "name": "初音ミク レーシングミクVer.2026 トレーディングリボンストラップ",
+   "series": "初音ミク GTプロジェクト",
+   "maker": "GoodSmile Moment",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ストラップ",
+   "spec": "素材：ポリエステル、合金 サイズ：約W50mm×H470mm",
+   "jan": "6927254801273",
+   "priceJpy": 1760,
+   "preorderStart": "2026-11-16",
+   "preorderEnd": "2026-12-02",
+   "preorderEndAt": "2026-12-02T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146816/W08e4a9DJfxEFv3izHZhBNdQ6TmGckX1.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1146816",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/71101/"
+    }
+   ],
+   "firstSeen": "2026-11-16",
+   "fetchedAt": "2026-11-16",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146816/dkW2C9sKBDftV8wa0Y4m6LAnTPeSX5p7.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-1146817",
+   "source": "gsc",
+   "sourceId": "1146817",
+   "name": "【BOX】初音ミク レーシングミクVer.2026 トレーディングホログラムチケット風カード",
+   "series": "初音ミク GTプロジェクト",
+   "maker": "GoodSmile Moment",
+   "seller": "グッドスマイルカンパニー",
+   "category": "その他（グッズ）",
+   "spec": "素材：紙 サイズ：W210mm×H80m 全9種 1BOX9pcs入り",
+   "jan": "6927254801280",
+   "priceJpy": 5445,
+   "preorderStart": "2026-11-16",
+   "preorderEnd": "2026-12-02",
+   "preorderEndAt": "2026-12-02T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146817/gzpUGvV3SEZwH84jukh7QByeL2tiW0aA.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1146817",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/71154/"
+    }
+   ],
+   "firstSeen": "2026-11-16",
+   "fetchedAt": "2026-11-16",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146817/Umj1NVWp9JGwb8vYPgK3tQF0Sdr765i2.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-1146818",
+   "source": "gsc",
+   "sourceId": "1146818",
+   "name": "初音ミク レーシングミクVer.2026 トレーディングホログラムチケット風カード",
+   "series": "初音ミク GTプロジェクト",
+   "maker": "GoodSmile Moment",
+   "seller": "グッドスマイルカンパニー",
+   "category": "その他（グッズ）",
+   "spec": "素材：紙 サイズ：W210mm×H80mm 全9種 1BOX9pcs入り",
+   "jan": "6927254801297",
+   "priceJpy": 605,
+   "preorderStart": "2026-11-16",
+   "preorderEnd": "2026-12-02",
+   "preorderEndAt": "2026-12-02T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146818/VcGp7Zqh1dUC63kMrJL2ywEjRnBNF8sH.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1146818",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/71102/"
+    }
+   ],
+   "firstSeen": "2026-11-16",
+   "fetchedAt": "2026-11-16",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146818/ecXW4j8nT3CbMLQJhkDsP5KtxYaiBgu2.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-1146819",
+   "source": "gsc",
+   "sourceId": "1146819",
+   "name": "初音ミク レーシングミクVer.2026 シール A/B/C/D/E/F/G：初音ミク レーシングミクVer.2026 シール A",
+   "series": "初音ミク GTプロジェクト",
+   "maker": "GoodSmile Moment",
+   "seller": "グッドスマイルカンパニー",
+   "category": "シール・ステッカー",
+   "spec": "素材：表層：TPU、基層：PET サイズ：A～E：W281mm×H152mm、F&G：W220mm×H225mm",
+   "jan": "6927254801303",
+   "priceJpy": 1320,
+   "preorderStart": "2026-11-16",
+   "preorderEnd": "2026-12-02",
+   "preorderEndAt": "2026-12-02T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146819/gWYxTQmkcw3D7daE8pyjJUZCG2KSM659.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1146819",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/71103/"
+    }
+   ],
+   "firstSeen": "2026-11-16",
+   "fetchedAt": "2026-11-16",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146819/51XCKehDaHBt4MGmfnTrvgUPkZ0x7zAb.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-1146820",
+   "source": "gsc",
+   "sourceId": "1146820",
+   "name": "【BOX】初音ミク レーシングミクVer.2026 トレーディングアクリルキーホルダー",
+   "series": "初音ミク GTプロジェクト",
+   "maker": "GoodSmile Moment",
+   "seller": "グッドスマイルカンパニー",
+   "category": "キーホルダー・キーチェーン",
+   "spec": "素材：アクリル、合金、PU サイズ：約W56mm×H90mm 全5種 1BOX5pcs入り",
+   "jan": "6927254801372",
+   "priceJpy": 6600,
+   "preorderStart": "2026-11-16",
+   "preorderEnd": "2026-12-02",
+   "preorderEndAt": "2026-12-02T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146820/czVgP8S0MXZBiT56YfUE4LGxtu3aqHNv.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1146820",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/71155/"
+    }
+   ],
+   "firstSeen": "2026-11-16",
+   "fetchedAt": "2026-11-16",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146820/cJyQ2WKjbXiut4nZ91ExAP6UGVHrhF0L.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-1146821",
+   "source": "gsc",
+   "sourceId": "1146821",
+   "name": "初音ミク レーシングミクVer.2026 トレーディングアクリルキーホルダー",
+   "series": "初音ミク GTプロジェクト",
+   "maker": "GoodSmile Moment",
+   "seller": "グッドスマイルカンパニー",
+   "category": "キーホルダー・キーチェーン",
+   "spec": "素材：アクリル、合金、PU サイズ：約W56mm×H90mm 全5種 1BOX5pcs入り",
+   "jan": "6927254801389",
+   "priceJpy": 1320,
+   "preorderStart": "2026-11-16",
+   "preorderEnd": "2026-12-02",
+   "preorderEndAt": "2026-12-02T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146821/BngHzu3LhiNkCxftwEDM2QeK1PY0vG9c.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1146821",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/71104/"
+    }
+   ],
+   "firstSeen": "2026-11-16",
+   "fetchedAt": "2026-11-16",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146821/4CJaZmWQn0Ei7rSzxuwghybRFTpje1dH.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-1146822",
+   "source": "gsc",
+   "sourceId": "1146822",
+   "name": "初音ミク レーシングミクVer.2026 応援タオル A/B：初音ミク レーシングミクVer.2026 応援タオル A",
+   "series": "初音ミク GTプロジェクト",
+   "maker": "GoodSmile Moment",
+   "seller": "グッドスマイルカンパニー",
+   "category": "その他（グッズ）",
+   "spec": "素材：ポリエステル サイズ：W100cm×H25cm",
+   "jan": "6927254801396",
+   "priceJpy": 1980,
+   "preorderStart": "2026-11-16",
+   "preorderEnd": "2026-12-02",
+   "preorderEndAt": "2026-12-02T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146822/xzVTmBKk0UGdEP2yAu1jYe6cLQwZ9RFa.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1146822",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/71105/"
+    }
+   ],
+   "firstSeen": "2026-11-16",
+   "fetchedAt": "2026-11-16",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146822/GYMqi6uVWN0bZASgr3n8RBQfhpwUTzdk.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-1146823",
+   "source": "gsc",
+   "sourceId": "1146823",
+   "name": "初音ミク レーシングミクVer.2026 ぬいぐるみセット",
+   "series": "初音ミク GTプロジェクト",
+   "maker": "GoodSmile Moment",
+   "seller": "グッドスマイルカンパニー",
+   "category": "その他（グッズ）",
+   "spec": "素材：ポリエステル サイズ：約W30cm×H15cm",
+   "jan": "6927254801419",
+   "priceJpy": 6160,
+   "preorderStart": "2026-11-16",
+   "preorderEnd": "2026-12-02",
+   "preorderEndAt": "2026-12-02T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146823/JhK0L5v43Q19cCd2xEWpFes7abTwS8kj.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1146823",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/71106/"
+    }
+   ],
+   "firstSeen": "2026-11-16",
+   "fetchedAt": "2026-11-16",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146823/4rPYa2gEJ0jnNzetKRy5M3kAmpB16LDv.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-1146824",
+   "source": "gsc",
+   "sourceId": "1146824",
+   "name": "初音ミク レーシングミクVer.2026 棒人間シリーズぬいぐるみストラップ A/B：初音ミク レーシングミクVer.2026 棒人間シリーズぬいぐるみストラップ A",
+   "series": "初音ミク GTプロジェクト",
+   "maker": "GoodSmile Moment",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ぬいぐるみ",
+   "spec": "素材：ポリエステル、合金 サイズ：約H13cm",
+   "jan": "6927254801426",
+   "priceJpy": 2420,
+   "preorderStart": "2026-11-16",
+   "preorderEnd": "2026-12-02",
+   "preorderEndAt": "2026-12-02T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146824/vrd7zAER4D6stQxqJmTFNfB3gGV5ZpX0.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1146824",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/71107/"
+    }
+   ],
+   "firstSeen": "2026-11-16",
+   "fetchedAt": "2026-11-16",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146824/hvaDypF7NVcg6eEUGSnK1RfqBWb9kHtm.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-1146825",
+   "source": "gsc",
+   "sourceId": "1146825",
+   "name": "初音ミク レーシングミクVer.2026 刺繍ワッペンシールセット",
+   "series": "初音ミク GTプロジェクト",
+   "maker": "GoodSmile Moment",
+   "seller": "グッドスマイルカンパニー",
+   "category": "その他（グッズ）",
+   "spec": "素材：ポリエステル、PET サイズ：約W55mm×H57mm 「初音ミク」約W51mm×H76mm /「ロゴ」約W61mm×H36mm",
+   "jan": "6927254801440",
+   "priceJpy": 2200,
+   "preorderStart": "2026-11-16",
+   "preorderEnd": "2026-12-02",
+   "preorderEndAt": "2026-12-02T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146825/KHgekPJ3RzEwt8fy1BZ45iD79Qd0YrCL.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1146825",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/71108/"
+    }
+   ],
+   "firstSeen": "2026-11-16",
+   "fetchedAt": "2026-11-16",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146825/3pLsfaQvNydgu4X60n59t8YkTrGW1m2x.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-1146826",
+   "source": "gsc",
+   "sourceId": "1146826",
+   "name": "初音ミク レーシングミクVer.2026 キャップ",
+   "series": "初音ミク GTプロジェクト",
+   "maker": "GoodSmile Moment",
+   "seller": "グッドスマイルカンパニー",
+   "category": "その他（グッズ）",
+   "spec": "素材：綿100% サイズ：頭囲約56cm",
+   "jan": "6927254801457",
+   "priceJpy": 4290,
+   "preorderStart": "2026-11-16",
+   "preorderEnd": "2026-12-02",
+   "preorderEndAt": "2026-12-02T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146826/cxa86LBvTn1jQpmiSE4NdVsRHArhqKY7.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1146826",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/71109/"
+    }
+   ],
+   "firstSeen": "2026-11-16",
+   "fetchedAt": "2026-11-16",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146826/HTKXEqedVj7YP6tQBwNWS29yhGimzc5r.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-1146827",
+   "source": "gsc",
+   "sourceId": "1146827",
+   "name": "初音ミク レーシングミクVer.2026 バッグ",
+   "series": "初音ミク GTプロジェクト",
+   "maker": "GoodSmile Moment",
+   "seller": "グッドスマイルカンパニー",
+   "category": "その他（グッズ）",
+   "spec": "素材：生地：ナイロン100%、裏地：ポリエステル100% サイズ：約W34cm*H20.5cm",
+   "jan": "6927254801464",
+   "priceJpy": 6380,
+   "preorderStart": "2026-11-16",
+   "preorderEnd": "2026-12-02",
+   "preorderEndAt": "2026-12-02T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146827/hjZ4GmY90ncr6BHgix2Atds3yafFzw7D.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1146827",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/71110/"
+    }
+   ],
+   "firstSeen": "2026-11-16",
+   "fetchedAt": "2026-11-16",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146827/ncjpyCYNUXkF7sMwKQG26taTZSJugRdD.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-1146828",
+   "source": "gsc",
+   "sourceId": "1146828",
+   "name": "初音ミク レーシングミクVer.2026 ジャージ M/L：初音ミク レーシングミクVer.2026 ジャージ M",
+   "series": "初音ミク GTプロジェクト",
+   "maker": "GoodSmile Moment",
+   "seller": "グッドスマイルカンパニー",
+   "category": "アパレル（半袖Tシャツ以外）",
+   "spec": "素材：生地：ポリエステル92％、ポリウレタン8％ サイズ：M / L",
+   "jan": "6927254801471",
+   "priceJpy": 12100,
+   "preorderStart": "2026-11-16",
+   "preorderEnd": "2026-12-02",
+   "preorderEndAt": "2026-12-02T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146828/7QMnCdwzS4pXWs2xuLGKTf5U6mNqktRF.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1146828",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/71111/"
+    }
+   ],
+   "firstSeen": "2026-11-16",
+   "fetchedAt": "2026-11-16",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146828/4mtR7eUL8gw1BJ3fQvMH5kpsXZzCYyax.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-1146829",
+   "source": "gsc",
+   "sourceId": "1146829",
+   "name": "初音ミク レーシングミクVer.2026 長柄傘",
+   "series": "初音ミク GTプロジェクト",
+   "maker": "GoodSmile Moment",
+   "seller": "グッドスマイルカンパニー",
+   "category": "その他（グッズ）",
+   "spec": "素材：傘面：ポリエステル100%、傘骨：グラスファイバー、ハンドル：ポリプロピレン サイズ：傘面の直径約108cm",
+   "jan": "6927254801495",
+   "priceJpy": 4180,
+   "preorderStart": "2026-11-16",
+   "preorderEnd": "2026-12-02",
+   "preorderEndAt": "2026-12-02T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146829/8vUQAN26MYEcJ5tXCkWfGbiSeRVjZy4D.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1146829",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/71112/"
+    }
+   ],
+   "firstSeen": "2026-11-16",
+   "fetchedAt": "2026-11-16",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146829/8zN4ZruW3F1DeHTVQS0mJ7s6kcibXvn9.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-1146830",
+   "source": "gsc",
+   "sourceId": "1146830",
+   "name": "初音ミク レーシングミクVer.2026 サンシェード",
+   "series": "初音ミク GTプロジェクト",
+   "maker": "GoodSmile Moment",
+   "seller": "グッドスマイルカンパニー",
+   "category": "その他（グッズ）",
+   "spec": "素材：ポリエステル サイズ：約W130cm×H70cm",
+   "jan": "6927254801501",
+   "priceJpy": 2420,
+   "preorderStart": "2026-11-16",
+   "preorderEnd": "2026-12-02",
+   "preorderEndAt": "2026-12-02T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146830/n8L9GrHcD5PxqM6Vp0X3FgtdAKREUjbC.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1146830",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/71113/"
+    }
+   ],
+   "firstSeen": "2026-11-16",
+   "fetchedAt": "2026-11-16",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146830/F0JBmp6K79uU8enfrGvxay25LP1SiDcR.jpg",
+   "bonus": false
+  },
+  {
    "id": "gsc-1146869",
    "source": "gsc",
    "sourceId": "1146869",
@@ -12194,6 +12930,70 @@
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147415/DQYH4Eer2wVBT9hL5caUsC67uytdkmWz.jpg",
    "bonus": true
+  },
+  {
+   "id": "gsc-1147421",
+   "source": "gsc",
+   "sourceId": "1147421",
+   "name": "アニメ「鬼滅の刃」 獪岳 ノンスケールフィギュア",
+   "series": "鬼滅の刃",
+   "maker": "クレーネル",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ノンスケールフィギュア",
+   "spec": "PVC＆ABS製塗装済み完成品・ノンスケール・全高：約155mm（椅子含む）",
+   "jan": "4571452944090",
+   "priceJpy": 6800,
+   "preorderStart": "2026-11-16",
+   "preorderEnd": "2027-02-10",
+   "preorderEndAt": "2027-02-10T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147421/561b06ad14371319b746599f3648feb4.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1147421",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/72625/"
+    }
+   ],
+   "firstSeen": "2026-11-16",
+   "fetchedAt": "2026-11-16",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147421/QYNBiyt41PcjUpJ3eD2wEgzVrvAK0khR.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-1147429",
+   "source": "gsc",
+   "sourceId": "1147429",
+   "name": "ぬいぐるみ 佐藤こはる",
+   "series": "塩対応の佐藤さんが俺にだけ甘い",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ぬいぐるみ",
+   "spec": "素材:ポリエステル サイズ:全高約17cm",
+   "jan": "4570232596863",
+   "priceJpy": 4950,
+   "preorderStart": "2026-11-16",
+   "preorderEnd": "2026-12-16",
+   "preorderEndAt": "2026-12-16T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147429/BD8zKqVmy3wiQEnWg4jLFpT9hbZANxPR.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1147429",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/72240/"
+    }
+   ],
+   "firstSeen": "2026-11-16",
+   "fetchedAt": "2026-11-16",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147429/aZ3P76twzryHSUi4hq0kAEeXm8xQV2jg.jpg",
+   "bonus": false
   }
  ]
 }
