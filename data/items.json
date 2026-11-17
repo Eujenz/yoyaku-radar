@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-16T18:51:17.593Z",
+ "updatedAt": "2026-11-17T13:39:55.933Z",
  "items": [
   {
    "id": "gsc-2011",
@@ -661,9 +661,10 @@
    "shops": [],
    "firstSeen": "2026-11-17",
    "fetchedAt": "2026-11-17",
-   "status": "open",
+   "status": "closed",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/10851/26c6dbf740005df26d7acdfa946cd357.jpg",
-   "bonus": false
+   "bonus": false,
+   "closedAt": "2026-11-17"
   },
   {
    "id": "gsc-10950",
@@ -2908,9 +2909,10 @@
    ],
    "firstSeen": "2026-11-12",
    "fetchedAt": "2026-11-16",
-   "status": "open",
+   "status": "closed",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1136216/JeTm718VkznZpDLuhC9NPWUgjvdxR32Y.jpg",
-   "bonus": false
+   "bonus": false,
+   "closedAt": "2026-11-17"
   },
   {
    "id": "gsc-1136217",
@@ -3592,6 +3594,33 @@
    "bonus": true
   },
   {
+   "id": "gsc-1137946",
+   "source": "gsc",
+   "sourceId": "1137946",
+   "name": "マリー（アイドル）",
+   "series": "ブルーアーカイブ -Blue Archive-",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "スケールフィギュア",
+   "spec": "プラスチック製 塗装済み完成品・1/7スケール・専用台座付属・全高：約230mm",
+   "jan": "4580828664265",
+   "priceJpy": 18800,
+   "preorderStart": null,
+   "preorderEnd": null,
+   "preorderEndAt": null,
+   "releaseMonth": null,
+   "availability": null,
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1137946/QAnTk0Pjhuqz1L6cRfSrbYXEyavs4DBW.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1137946",
+   "shops": [],
+   "firstSeen": "2026-11-17",
+   "fetchedAt": "2026-11-17",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1137946/CYQ7WmTViGPbdBRxSHf5hMK9tUFpjJ8X.jpg",
+   "bonus": true
+  },
+  {
    "id": "gsc-1137954",
    "source": "gsc",
    "sourceId": "1137954",
@@ -4037,7 +4066,7 @@
    "firstSeen": "2026-11-11",
    "fetchedAt": "2026-11-17",
    "status": "open",
-   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1138228/uQYwqZybWTgVamFpNDS3vJ2tAc5M78Hi.jpg",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1138228/jWG1x4QhZCHpF56wAdMyasL3vJNKcigE.jpg",
    "bonus": false
   },
   {
@@ -4701,9 +4730,10 @@
    ],
    "firstSeen": "2026-11-12",
    "fetchedAt": "2026-11-16",
-   "status": "open",
+   "status": "closed",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1138998/wzag4FPiNSd9KfQXUBquRnWVT0vGH8tb.jpg",
-   "bonus": true
+   "bonus": true,
+   "closedAt": "2026-11-17"
   },
   {
    "id": "gsc-1139008",
@@ -4792,9 +4822,10 @@
    "shops": [],
    "firstSeen": "2026-11-17",
    "fetchedAt": "2026-11-17",
-   "status": "open",
+   "status": "closed",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1139040/BMxnh0RA84PwU2fEdbH7VF5QizjCtery.jpg",
-   "bonus": false
+   "bonus": false,
+   "closedAt": "2026-11-17"
   },
   {
    "id": "gsc-1139077",
@@ -5287,9 +5318,10 @@
    "shops": [],
    "firstSeen": "2026-11-17",
    "fetchedAt": "2026-11-17",
-   "status": "open",
+   "status": "closed",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1140358/M7ArFLCYe49kS2cbKURn183wfZpjNGvx.jpg",
-   "bonus": false
+   "bonus": false,
+   "closedAt": "2026-11-17"
   },
   {
    "id": "gsc-1140447",
@@ -5859,9 +5891,10 @@
    ],
    "firstSeen": "2026-11-12",
    "fetchedAt": "2026-11-16",
-   "status": "open",
+   "status": "closed",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1141072/WBAfhPu9TpHgmd2YVQsbZ84rxjey6vn5.jpg",
-   "bonus": false
+   "bonus": false,
+   "closedAt": "2026-11-17"
   },
   {
    "id": "gsc-1141284",
@@ -6031,9 +6064,10 @@
    ],
    "firstSeen": "2026-11-12",
    "fetchedAt": "2026-11-16",
-   "status": "open",
+   "status": "closed",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1141405/tVTWQrMhx8v3m4YAbiGy9CgwK7526BaJ.jpg",
-   "bonus": false
+   "bonus": false,
+   "closedAt": "2026-11-17"
   },
   {
    "id": "gsc-1141447",
@@ -6845,9 +6879,10 @@
    ],
    "firstSeen": "2026-11-12",
    "fetchedAt": "2026-11-16",
-   "status": "open",
+   "status": "closed",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1142330/ACF5NfgUaVr2RYvze89KsXumqQnMkjdT.jpg",
-   "bonus": false
+   "bonus": false,
+   "closedAt": "2026-11-17"
   },
   {
    "id": "gsc-1142332",
@@ -6901,6 +6936,38 @@
    "fetchedAt": "2026-11-17",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1142333/qFuGpRD4BePMcnYrCiy6w8TxQULbjatA.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-1142344",
+   "source": "gsc",
+   "sourceId": "1142344",
+   "name": "ねんどろいど 木之本桜 My First Sparkle",
+   "series": "カードキャプターさくら",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ねんどろいど",
+   "spec": "プラスチック製 塗装済み可動フィギュア・ノンスケール・専用台座付属・全高：約100mm",
+   "jan": "4570232585188",
+   "priceJpy": 7800,
+   "preorderStart": null,
+   "preorderEnd": null,
+   "preorderEndAt": null,
+   "releaseMonth": null,
+   "availability": null,
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1142344/Y3BMEfw1hQJG6kAK4vnczemt7PWuLdsS.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1142344",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/64835/"
+    }
+   ],
+   "firstSeen": "2026-11-17",
+   "fetchedAt": "2026-11-17",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1142344/XzWdFDmnwCpAxG14ZhEHYQjB8aV0bcyt.jpg",
    "bonus": false
   },
   {
@@ -7692,9 +7759,10 @@
    ],
    "firstSeen": "2026-11-12",
    "fetchedAt": "2026-11-16",
-   "status": "open",
+   "status": "closed",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1142890/L54gKrhADFdVGmCYwiX8P6RjTxS7vunt.jpg",
-   "bonus": false
+   "bonus": false,
+   "closedAt": "2026-11-17"
   },
   {
    "id": "gsc-1142894",
@@ -8168,9 +8236,10 @@
    ],
    "firstSeen": "2026-11-11",
    "fetchedAt": "2026-11-17",
-   "status": "open",
+   "status": "closed",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1143803/KrbHw4Ttk3FYxAyQ96NBfupMZgiUsqeX.jpg",
-   "bonus": false
+   "bonus": false,
+   "closedAt": "2026-11-17"
   },
   {
    "id": "gsc-1143909",
@@ -8330,9 +8399,10 @@
    ],
    "firstSeen": "2026-11-12",
    "fetchedAt": "2026-11-16",
-   "status": "open",
+   "status": "closed",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1143933/z702eMXJSFDqLBQRcxNvGrkAa5n1Tds4.jpg",
-   "bonus": true
+   "bonus": true,
+   "closedAt": "2026-11-17"
   },
   {
    "id": "gsc-1143937",
@@ -8694,6 +8764,38 @@
    "bonus": true
   },
   {
+   "id": "gsc-1144130",
+   "source": "gsc",
+   "sourceId": "1144130",
+   "name": "ねんどろいど 安和すばる",
+   "series": "ガールズバンドクライ",
+   "maker": "グッドスマイルアーツ上海",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ねんどろいど",
+   "spec": "プラスチック製 塗装済み可動フィギュア・ノンスケール・専用台座付属・全高：約100mm",
+   "jan": "6927254800191",
+   "priceJpy": 9800,
+   "preorderStart": "2026-11-17",
+   "preorderEnd": "2026-12-23",
+   "preorderEndAt": "2026-12-23T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144130/1qaFwdZ0SUCJfi25VYP69tR7ekvgArE8.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1144130",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/66933/"
+    }
+   ],
+   "firstSeen": "2026-11-17",
+   "fetchedAt": "2026-11-17",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144130/5XU9d7LPTpm4yVMc2A3sFBa80S6Rk1DZ.jpg",
+   "bonus": true
+  },
+  {
    "id": "gsc-1144133",
    "source": "gsc",
    "sourceId": "1144133",
@@ -8964,6 +9066,74 @@
    "bonus": false
   },
   {
+   "id": "gsc-1144272",
+   "source": "gsc",
+   "sourceId": "1144272",
+   "name": "ぬいぐるみ ダンテ/カロン/ヴェルギリウス：ぬいぐるみ ダンテ",
+   "series": "Limbus Company",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ぬいぐるみ",
+   "spec": "素材:ポリエステル サイズ:全高約17cm",
+   "jan": "4570232580251",
+   "priceJpy": 4400,
+   "preorderStart": "2026-11-17",
+   "preorderEnd": "2026-12-16",
+   "preorderEndAt": "2026-12-16T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144272/JVerMmXD7s9g63RBjqcvwEY1GQfup0kt.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1144272",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/67094/"
+    }
+   ],
+   "firstSeen": "2026-11-17",
+   "fetchedAt": "2026-11-17",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144272/zJHSjp20E1bD45mT678vruKCQVsPgZiw.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-1144447",
+   "source": "gsc",
+   "sourceId": "1144447",
+   "name": "ねんどろいど タマ",
+   "series": "教育番組",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ねんどろいど",
+   "spec": "プラスチック製 塗装済み可動フィギュア・ノンスケール・専用台座付属・全高：約100mm ※一部フロッキー加工",
+   "jan": "4570232596566",
+   "priceJpy": 6800,
+   "preorderStart": "2026-11-17",
+   "preorderEnd": "2027-01-06",
+   "preorderEndAt": "2027-01-06T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144447/qwtujFkAHeMN8rv562K7b3D4LGTpZgEi.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1144447",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/67370/"
+    },
+    {
+     "name": "あみあみ",
+     "url": "https://www.amiami.jp/top/detail/detail?gcode=FIGURE-211406&page=top"
+    }
+   ],
+   "firstSeen": "2026-11-17",
+   "fetchedAt": "2026-11-17",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144447/WiNG3F69Ph5KMUsnCuH4vqrRmZbEaLVJ.jpg",
+   "bonus": true
+  },
+  {
    "id": "gsc-1144465",
    "source": "gsc",
    "sourceId": "1144465",
@@ -9151,6 +9321,134 @@
    "fetchedAt": "2026-11-17",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144540/T2Vi8wW7JbK1uUNmZSxp0rXADshcdB5G.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-1144542",
+   "source": "gsc",
+   "sourceId": "1144542",
+   "name": "ねんどろいどどーる 超絶最かわてんしちゃん",
+   "series": "TVアニメ『NEEDY GIRL OVERDOSE』",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ねんどろいどどーる",
+   "spec": "布・磁石・プラスチック製 塗装済み可動フィギュア・ノンスケール・専用台座付属・全高：約140mm",
+   "jan": "4570232596634",
+   "priceJpy": 11000,
+   "preorderStart": "2026-11-17",
+   "preorderEnd": "2027-01-06",
+   "preorderEndAt": "2027-01-06T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144542/ayXBKpDt0cgmfqv8J2Q9HnjNdYGx1Tuz.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1144542",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/67500/"
+    }
+   ],
+   "firstSeen": "2026-11-17",
+   "fetchedAt": "2026-11-17",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144542/NZ450jpiwU8mv9FhL6xVXgAEyMdbYGCq.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-1144543",
+   "source": "gsc",
+   "sourceId": "1144543",
+   "name": "ねんどろいどどーる おようふくセット 超絶最かわてんしちゃん",
+   "series": "TVアニメ『NEEDY GIRL OVERDOSE』",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ねんどろいどどーる",
+   "spec": "布・磁石・プラスチック製 塗装済み完成品",
+   "jan": "4570232596641",
+   "priceJpy": 5800,
+   "preorderStart": "2026-11-17",
+   "preorderEnd": "2027-01-06",
+   "preorderEndAt": "2027-01-06T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144543/3tmpiP8jMdcSfCYDwxabJk42y0n7uhVL.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1144543",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/67513/"
+    }
+   ],
+   "firstSeen": "2026-11-17",
+   "fetchedAt": "2026-11-17",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144543/wbA5LPiWXcEzhfVTpa8s3nq07mSrt42Z.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-1144544",
+   "source": "gsc",
+   "sourceId": "1144544",
+   "name": "ねんどろいどどーる あめちゃん",
+   "series": "TVアニメ『NEEDY GIRL OVERDOSE』",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ねんどろいどどーる",
+   "spec": "布・磁石・プラスチック製 塗装済み可動フィギュア・ノンスケール・専用台座付属・全高：約140mm",
+   "jan": "4570232597617",
+   "priceJpy": 11000,
+   "preorderStart": "2026-11-17",
+   "preorderEnd": "2027-01-06",
+   "preorderEndAt": "2027-01-06T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144544/cW1NtBK0mwSvnC5Js3dhEFzu9rgxAX6Z.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1144544",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/67501/"
+    }
+   ],
+   "firstSeen": "2026-11-17",
+   "fetchedAt": "2026-11-17",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144544/4smb7KcarYjevRF8kxtqX6Si3GQnMpgA.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-1144545",
+   "source": "gsc",
+   "sourceId": "1144545",
+   "name": "ねんどろいどどーる おようふくセット あめちゃん",
+   "series": "TVアニメ『NEEDY GIRL OVERDOSE』",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ねんどろいどどーる",
+   "spec": "布・磁石・プラスチック製 塗装済み完成品",
+   "jan": "4570232597624",
+   "priceJpy": 5800,
+   "preorderStart": "2026-11-17",
+   "preorderEnd": "2027-01-06",
+   "preorderEndAt": "2027-01-06T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144545/8uRnFHvX5ag2mZD4fU7KwCPhxb1GzyQd.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1144545",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/67502/"
+    }
+   ],
+   "firstSeen": "2026-11-17",
+   "fetchedAt": "2026-11-17",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144545/0fBAv6QPUswMJTgWCmZxu8NVX5icLdn7.jpg",
    "bonus": false
   },
   {
@@ -9409,7 +9707,7 @@
    "firstSeen": "2026-11-11",
    "fetchedAt": "2026-11-17",
    "status": "open",
-   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144805/N2tfxXUQph64dHy58G1FBYKzs3EiwPSM.jpg",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144805/5UXE8RJ9eKwZx36VdrW4kainmB7ycgLT.jpg",
    "bonus": true
   },
   {
@@ -9496,7 +9794,7 @@
    "firstSeen": "2026-11-13",
    "fetchedAt": "2026-11-17",
    "status": "open",
-   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144875/Ub9RDNYKwQq5zdFSVPLChWZcxpj7Gk04.jpg",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144875/5b5b9f05ab531a3b73ec871dec394b05.jpg",
    "bonus": false
   },
   {
@@ -9662,9 +9960,10 @@
    ],
    "firstSeen": "2026-11-11",
    "fetchedAt": "2026-11-16",
-   "status": "open",
+   "status": "closed",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144965/DEkz5mwYKMsWXhFfHxN8jJSvu7QBP6ca.jpg",
-   "bonus": false
+   "bonus": false,
+   "closedAt": "2026-11-17"
   },
   {
    "id": "gsc-1144991",
@@ -9805,6 +10104,70 @@
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1145327/Yc8UW9fgkzXwN1yRspV4v3tZ5LCPShMe.jpg",
    "bonus": true
+  },
+  {
+   "id": "gsc-1145373",
+   "source": "gsc",
+   "sourceId": "1145373",
+   "name": "POP UP PARADE BEACH QUEENS トール Lsize",
+   "series": "小林さんちのメイドラゴン",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "POP UP PARADE",
+   "spec": "プラスチック製 塗装済み完成品・ノンスケール・専用台座付属・全高：約230mm",
+   "jan": "4570232596658",
+   "priceJpy": 8800,
+   "preorderStart": "2026-11-17",
+   "preorderEnd": "2026-12-16",
+   "preorderEndAt": "2026-12-16T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1145373/9EsxcybS2Hi5fmrK8nUkJM1eta0BR7AX.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1145373",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/69001/"
+    }
+   ],
+   "firstSeen": "2026-11-17",
+   "fetchedAt": "2026-11-17",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1145373/4td8QpE7yvcAbHnRjqGsUYrhiVmu5J3g.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-1145374",
+   "source": "gsc",
+   "sourceId": "1145374",
+   "name": "POP UP PARADE BEACH QUEENS カンナ Lsize",
+   "series": "小林さんちのメイドラゴン",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "POP UP PARADE",
+   "spec": "プラスチック製 塗装済み完成品・ノンスケール・専用台座付属・全高：約170mm",
+   "jan": "4570232596665",
+   "priceJpy": 8800,
+   "preorderStart": "2026-11-17",
+   "preorderEnd": "2026-12-16",
+   "preorderEndAt": "2026-12-16T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1145374/ZKD2jRTJPY3evfWz7hEx0BgqnSXrV94s.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1145374",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/69002/"
+    }
+   ],
+   "firstSeen": "2026-11-17",
+   "fetchedAt": "2026-11-17",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1145374/g2MrLef8EbUFZjXJNw5R6GWTDKptCBkP.jpg",
+   "bonus": false
   },
   {
    "id": "gsc-1145394",
@@ -11006,7 +11369,7 @@
    "firstSeen": "2026-11-11",
    "fetchedAt": "2026-11-17",
    "status": "open",
-   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146765/sJDThwzd3vW5kUmRF1jqbHa29CYPNrGL.jpg",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146765/668f0f761c52df72ca6989c9a083bda1.jpg",
    "bonus": false
   },
   {
@@ -11980,6 +12343,33 @@
    "bonus": false
   },
   {
+   "id": "gsc-1146921",
+   "source": "gsc",
+   "sourceId": "1146921",
+   "name": "ミカ（水着） メモリアルロビーVer.",
+   "series": "ブルーアーカイブ -Blue Archive-",
+   "maker": "グッドスマイルアーツ上海",
+   "seller": "グッドスマイルカンパニー",
+   "category": "スケールフィギュア",
+   "spec": "プラスチック製 塗装済み完成品・1/7スケール・専用台座付属・全高：約150mm",
+   "jan": "6927254807855",
+   "priceJpy": 21800,
+   "preorderStart": "2026-11-17",
+   "preorderEnd": "2026-12-23",
+   "preorderEndAt": "2026-12-23T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146921/P6qhyKe3wvLjSxVi4XBWDC5tQUpfsgZ9.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1146921",
+   "shops": [],
+   "firstSeen": "2026-11-17",
+   "fetchedAt": "2026-11-17",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146921/XMLJ7bDqEpk4PsWdZBmfxtT3gFa2y0hi.jpg",
+   "bonus": false
+  },
+  {
    "id": "gsc-1146929",
    "source": "gsc",
    "sourceId": "1146929",
@@ -12462,7 +12852,7 @@
    "firstSeen": "2026-11-11",
    "fetchedAt": "2026-11-17",
    "status": "open",
-   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147053/QuKSLa0wEUhTPA9k28griYvNX7CcjBHx.jpg",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147053/QpPw2HduUbNgv45kyz0DLatK1Jes9xS7.jpg",
    "bonus": false
   },
   {
@@ -12526,7 +12916,7 @@
    "firstSeen": "2026-11-11",
    "fetchedAt": "2026-11-17",
    "status": "open",
-   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147108/f1mnjUyVAT9CSxH0raB7eQGqvFWsz8JN.jpg",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147108/dWyCcTasw9nJ6t10YDAvZ2mfe5PE7GLg.jpg",
    "bonus": false
   },
   {
