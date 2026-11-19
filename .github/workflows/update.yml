@@ -41,9 +41,9 @@ jobs:
         with:
           node-version: 22
 
-      - name: Default SITE_URL to the GitHub Pages address
+      - name: Default SITE_URL to the custom domain
         if: env.SITE_URL == ''
-        run: echo "SITE_URL=https://${GITHUB_REPOSITORY_OWNER,,}.github.io/${GITHUB_REPOSITORY#*/}" >> "$GITHUB_ENV"
+        run: echo "SITE_URL=https://yoyaku.fans" >> "$GITHUB_ENV"
 
       - name: Fetch preorder data
         if: github.event_name != 'push'

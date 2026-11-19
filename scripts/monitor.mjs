@@ -1,6 +1,6 @@
 // Probe the live site from the outside. Exit code 1 (with a human-readable report on stdout) when anything is wrong.
 // Usage: SITE_URL=https://... [GITHUB_REPOSITORY=owner/repo] [GITHUB_TOKEN=...] node scripts/monitor.mjs
-const site = (process.env.SITE_URL || 'https://eujenz.github.io/yoyaku-radar').replace(/\/+$/, '');
+const site = (process.env.SITE_URL || 'https://yoyaku.fans').replace(/\/+$/, '');
 const repo = process.env.GITHUB_REPOSITORY || 'Eujenz/yoyaku-radar';
 const MAX_AGE_HOURS = Number(process.env.MAX_AGE_HOURS || 24);
 const problems = [];

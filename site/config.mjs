@@ -1,6 +1,6 @@
 // Everything a human owner may want to change lives here or in the matching env var.
 const env = process.env;
-const url = (env.SITE_URL || 'https://eujenz.github.io/yoyaku-radar').replace(/\/+$/, '');
+const url = (env.SITE_URL || 'https://yoyaku.fans').replace(/\/+$/, '');
 
 export const SITE = {
   name: env.SITE_NAME || 'Yoyaku',
