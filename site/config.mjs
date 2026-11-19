@@ -8,7 +8,7 @@ export const SITE = {
   tagline: '公仔・周邊預購截止日與再販提醒',
   url,
   base: new URL(url).pathname.replace(/\/+$/, ''), // '' or '/yoyaku-radar'
-  contactEmail: env.CONTACT_EMAIL || null,
+  contactEmail: env.CONTACT_EMAIL || 'hello@yoyaku.fans', // Cloudflare Email Routing, receive-only
   threadsUrl: env.THREADS_URL || null,
   // Newsletter: set once a provider is chosen; until then the subscribe page offers RSS + calendar only.
   newsletterFormAction: env.NEWSLETTER_FORM_ACTION || null,
