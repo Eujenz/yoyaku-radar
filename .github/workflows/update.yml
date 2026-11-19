@@ -28,6 +28,8 @@ env:
   GOOGLE_SITE_VERIFICATION: ${{ vars.GOOGLE_SITE_VERIFICATION || 'Lpfk-QHNh2xbyTzVGv8p1HvSZmonfSg0vOx2kYscW2Y' }}
   # An IndexNow key is public by design: it is served as a file on the site to prove ownership.
   INDEXNOW_KEY: ${{ vars.INDEXNOW_KEY || 'd14a451eea33258e70b1e81b8716b6a7' }}
+  # Cloudflare Web Analytics site token. Public by design (printed in every page). Empty = no analytics.
+  CF_ANALYTICS_TOKEN: ${{ vars.CF_ANALYTICS_TOKEN || '' }}
 
 jobs:
   update:

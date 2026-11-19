@@ -13,6 +13,8 @@ export const SITE = {
   // Newsletter: set once a provider is chosen; until then the subscribe page offers RSS + calendar only.
   newsletterFormAction: env.NEWSLETTER_FORM_ACTION || null,
   googleSiteVerification: env.GOOGLE_SITE_VERIFICATION || null,
+  // Cloudflare Web Analytics site token (public: it is printed in every page). Unset = no analytics script.
+  cfAnalyticsToken: env.CF_ANALYTICS_TOKEN || null,
   indexNowKey: env.INDEXNOW_KEY || null,
   // Set to true once any link below earns a commission; the site then shows a disclosure line.
   affiliateActive: env.AFFILIATE_ACTIVE === '1',
