@@ -83,10 +83,16 @@ const startOf = (i) => i.preorderStart || (i.firstSeen > SEED ? i.firstSeen : nu
 const items = data.items.map((raw) => {
   const i = raw.series === 'なし' ? { ...raw, series: null } : raw;
   const left = i.preorderEnd ? daysLeft(i.preorderEnd) : null;
-  const open = i.status === 'open' && (i.preorderEndAt ? NOW < Date.parse(i.preorderEndAt) : left === null || left >= 0);
-  return { ...i, left, open, path: `/item/${i.id}/` };
+  // Announcement-only sources (stage 'announced') publish a release month and price but no preorder window,
+  // so they are never counted as open preorders.
+  const announced = i.stage === 'announced';
+  const open = !announced && i.status === 'open' && (i.preorderEndAt ? NOW < Date.parse(i.preorderEndAt) : left === null || left >= 0);
+  return { ...i, left, open, announced, path: `/item/${i.id}/` };
 });
 const open = items.filter((i) => i.open);
+const upcoming = items
+  .filter((i) => i.announced && i.status === 'open')
+  .sort((a, b) => (a.releaseMonth || '9999').localeCompare(b.releaseMonth || '9999') || a.name.localeCompare(b.name, 'ja'));
 const byDeadline = (a, b) =>
   (a.preorderEnd || '9999').localeCompare(b.preorderEnd || '9999') || a.name.localeCompare(b.name, 'ja');
 const dated = open.filter((i) => i.preorderEnd).sort(byDeadline);
@@ -119,6 +125,7 @@ const HEART = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.35l-1
 // Card titles drop the 【再販】 prefix (it becomes a tag); item pages keep the official name.
 const shortName = (i) => i.name.replace(/^【[^】]*(?:再販|受注)】\s*/, '');
 function chip(i) {
+  if (i.announced) return '<span class="chip unknown">新品預告</span>';
   if (!i.open) return '<span class="chip closed">預購已截止</span>';
   if (i.left === null) return '<span class="chip unknown">截止日未標示</span>';
   const cls = i.left <= 3 ? 'urgent' : i.left <= 7 ? 'soon' : '';
@@ -203,7 +210,7 @@ ${ld.map(jsonLd).join('\n')}
 ${body}
 </main>
 <footer class="site-footer"><div class="wrap">
-<nav aria-label="頁尾"><a href="${href('/about/')}">關於本站與資料來源</a><a href="${href('/for-agents/')}">給 AI 代理與開發者</a><a href="${href('/feed.xml')}">RSS</a><a href="${href('/calendar.ics')}">行事曆</a>${SITE.threadsUrl ? `<a href="${esc(SITE.threadsUrl)}" rel="me">Threads</a>` : ''}</nav>
+<nav aria-label="頁尾"><a href="${href('/upcoming/')}">新品預告</a><a href="${href('/about/')}">關於本站與資料來源</a><a href="${href('/for-agents/')}">給 AI 代理與開發者</a><a href="${href('/feed.xml')}">RSS</a><a href="${href('/calendar.ics')}">行事曆</a>${SITE.threadsUrl ? `<a href="${esc(SITE.threadsUrl)}" rel="me">Threads</a>` : ''}</nav>
 <p>資料最後更新：${esc(updatedText)}（台灣時間）。清單上的日期皆為日本時間。價格、截止時間與是否提前結束，請以官方商品頁為準。</p>
 <p>本站整理官方公開的商品資訊並連回官方頁面，不販售商品，與各製造商沒有合作或隸屬關係。商品圖片直接由官方網站載入，圖片、商品名稱與作品名稱的權利屬於各權利人。${SITE.affiliateActive ? '部分店家連結為聯盟行銷連結，你透過連結購買時本站可能獲得分潤，價格不受影響。' : ''}</p>
 </div></footer>
@@ -222,7 +229,7 @@ const FAQ = [
   ['「我的展示櫃」是什麼？', '按商品右上角的愛心，就能把它放進你的展示櫃。展示櫃會顯示收藏商品的截止日與預算合計。資料只存在你這台裝置的瀏覽器裡，不需要註冊。'],
   ['錯過預購還買得到嗎？', '預購截止後通常只能等再販，或在二手市場購買，價格常比定價高。本站會把再販商品標示出來。'],
   ['你們有賣商品嗎？', '沒有。本站只提供截止日提醒，每件商品都會連到官方商品頁，請在官方或你習慣的店家下單。'],
-  ['目前收錄哪些廠商？', `目前收錄 ${SOURCES.gsc.short} 官網上架的預購商品，包含它代理銷售的其他品牌。之後會逐步增加其他廠商。`],
+  ['目前收錄哪些廠商？', `預購截止日收錄 ${SOURCES.gsc.short} 官網上架的預購商品，包含它代理銷售的其他品牌。另外有 ${SOURCES.mh.short}、${SOURCES.alter.short} 的新品預告（只有發售月份與價格，沒有預購截止日），見「新品預告」頁。`],
 ];
 const topSeries = series.slice(0, 30);
 // The spotlight: the priciest piece closing within a week. Missing it costs the most.
@@ -322,6 +329,23 @@ ${shelf(list)}`,
   });
 }
 
+// ---------- announced products (sources without a preorder window) ----------
+{
+  const trail = [['首頁', '/'], ['新品預告', '/upcoming/']];
+  const bySource = Object.entries(SOURCES).filter(([k]) => upcoming.some((i) => i.source === k)).map(([, v]) => v.short);
+  page({
+    path: '/upcoming/',
+    title: '新品預告與預定發售',
+    description: `${bySource.join('、')}公布的新品，共 ${upcoming.length} 件，依預定發售月份排列。這些官方網站沒有公布預購截止日。`,
+    ld: [crumbs(trail), itemList(upcoming, '新品預告')],
+    body: `${crumbNav(trail)}
+<section class="stack"><h1>新品預告與預定發售</h1>
+<p class="lede">${esc(bySource.join('、'))}官方公布的新品，共 ${upcoming.length} 件，依預定發售月份排列。</p>
+<p class="note">這些來源只公布發售月份與價格，沒有公布預購開始與截止日，所以不列入「開放預購」的數字。何時開放預購、哪些店家受理，請看各商品的官方頁面。</p></section>
+${shelf(upcoming)}`,
+  });
+}
+
 // ---------- series / category ----------
 function groupPages(groups, { root, rootTitle, label, intro, zh }) {
   const trail = [['首頁', '/'], [rootTitle, root]];
@@ -361,7 +385,9 @@ for (const i of items) {
   const src = SOURCES[i.source];
   const trail = [['首頁', '/'], ...(i.series && seriesPath.has(i.series) ? [[zhSeries(i.series) || i.series, seriesPath.get(i.series)]] : []), [i.name, i.path]];
   const checked = fmtLong(i.fetchedAt);
-  const answer = !i.open
+  const answer = i.announced
+    ? `「${i.name}」是${src.short}公布的新品${i.releaseMonth ? `，預定 ${i.releaseText || fmtMonth(i.releaseMonth)}發售` : ''}${i.priceJpy ? `，官方標示價格為 ${yen(i.priceJpy)}` : ''}。官方沒有公布預購開始與截止日，請留意官方與各店家的公告。`
+    : !i.open
     ? `「${i.name}」的預購已經截止${i.preorderEnd ? `（截止日為 ${fmtLong(i.preorderEnd)}）` : ''}。之後若有再販，本站會重新列出。`
     : i.preorderEnd
       ? `「${i.name}」在官方商店的預購截止於 ${fmtLong(i.preorderEnd)}${i.preorderEndAt ? ` ${fmtTime(i.preorderEndAt)}` : '（日本時間）'}，${i.left === 0 ? '也就是今天' : `距離今天還有 ${i.left} 天`}${i.priceJpy ? `。官方標示價格為 ${yen(i.priceJpy)}` : ''}。`
@@ -372,8 +398,8 @@ for (const i of items) {
     ['製造商', i.maker && `<span lang="ja">${esc(i.maker)}</span>`],
     ['官方標示價格', i.priceJpy && `${yen(i.priceJpy)}（日圓）`],
     ['預購開始', i.preorderStart && fmtDate(i.preorderStart)],
-    ['預購截止', i.preorderEnd ? `${fmtDate(i.preorderEnd)}${i.preorderEndAt ? ` ${fmtTime(i.preorderEndAt)}` : ''}` : i.open ? '官方未標示，請向各店家確認' : null],
-    [i.isRerelease ? '預定再販' : '預定發售', i.releaseMonth && fmtMonth(i.releaseMonth)],
+    ['預購截止', i.preorderEnd ? `${fmtDate(i.preorderEnd)}${i.preorderEndAt ? ` ${fmtTime(i.preorderEndAt)}` : ''}` : i.open ? '官方未標示，請向各店家確認' : i.announced ? '官方尚未公布' : null],
+    [i.isRerelease ? '預定再販' : '預定發售', i.releaseMonth && (i.releaseText || fmtMonth(i.releaseMonth))],
     ['類型', i.isRerelease ? '再販' : null],
     ['官方特典', i.bonus ? '有（內容請見官方商品頁）' : null],
     ['JAN 條碼', i.jan],
@@ -385,7 +411,7 @@ for (const i of items) {
     path: i.path,
     lastmod: i.closedAt || i.fetchedAt,
     image: i.image || i.thumb,
-    title: `${i.name} 預購截止日${i.preorderEnd ? ` ${fmtDate(i.preorderEnd)}` : ''}`,
+    title: i.announced ? `${i.name} 發售日與價格` : `${i.name} 預購截止日${i.preorderEnd ? ` ${fmtDate(i.preorderEnd)}` : ''}`,
     description: `${answer}${zhSeries(i.series) ? `作品：${zhSeries(i.series)}。` : ''}資料來源：${src.name}，最後確認於 ${checked}。`,
     ld: [
       crumbs(trail),
@@ -399,7 +425,7 @@ for (const i of items) {
         ...(i.priceJpy ? {
           offers: {
             '@type': 'Offer', url: i.url, price: i.priceJpy, priceCurrency: 'JPY',
-            availability: i.open ? 'https://schema.org/PreOrder' : 'https://schema.org/SoldOut',
+            ...(i.announced ? {} : { availability: i.open ? 'https://schema.org/PreOrder' : 'https://schema.org/SoldOut' }),
             ...(i.preorderStart ? { availabilityStarts: i.preorderStart } : {}),
             ...(i.preorderEnd ? { availabilityEnds: i.preorderEnd } : {}),
             seller: { '@type': 'Organization', name: i.seller || src.short },
@@ -415,9 +441,9 @@ for (const i of items) {
 <div class="actions">${chip(i)}${i.isRerelease ? '<span class="tag">再販</span>' : ''}${i.bonus ? '<span class="tag">特典</span>' : ''}${i.priceJpy ? `<span class="price">${yen(i.priceJpy)}</span>` : ''}</div>
 ${clock(i)}
 <p class="answer">${esc(answer)}</p>
-<div class="actions"><a class="btn" href="${esc(i.url)}" rel="noopener">前往官方商品頁預購</a><button class="fav wide" type="button" aria-pressed="false">${HEART}<span class="fav-label">放進我的展示櫃</span></button></div>
-<div class="stack"><h2>其他購買管道</h2>
-<div class="actions">${i.shops.map((s) => `<a class="btn ghost" href="${esc(s.url)}" rel="noopener nofollow" lang="ja">${esc(s.name)}<small lang="zh-Hant">官方列出的販售店</small></a>`).join('')}${PARTNERS.map((p) => `<a class="btn ghost" href="${esc(p.url(partnerItem))}" rel="noopener nofollow${SITE.affiliateActive ? ' sponsored' : ''}">${esc(p.name)}<small>${esc(p.note)}</small></a>`).join('')}</div>
+<div class="actions"><a class="btn" href="${esc(i.url)}" rel="noopener">${i.announced ? '前往官方商品頁' : '前往官方商品頁預購'}</a><button class="fav wide" type="button" aria-pressed="false">${HEART}<span class="fav-label">放進我的展示櫃</span></button></div>
+<div class="stack">${i.announced ? '' : `<h2>其他購買管道</h2>
+<div class="actions">${i.shops.map((s) => `<a class="btn ghost" href="${esc(s.url)}" rel="noopener nofollow" lang="ja">${esc(s.name)}<small lang="zh-Hant">官方列出的販售店</small></a>`).join('')}${PARTNERS.map((p) => `<a class="btn ghost" href="${esc(p.url(partnerItem))}" rel="noopener nofollow${SITE.affiliateActive ? ' sponsored' : ''}">${esc(p.name)}<small>${esc(p.note)}</small></a>`).join('')}</div>`}
 <p class="note">各店家的價格、特典與截止時間可能不同。資料來源：<a href="${esc(i.url)}" rel="noopener">${esc(src.name)}</a>，最後確認於 ${checked}。官方可能提前結束預購，下單前請再確認。</p></div>
 </div>
 </section>
@@ -455,7 +481,7 @@ page({
 <section class="stack prose"><h1>關於本站與資料來源</h1>
 <p>${esc(SITE.name)}只做一件事：告訴你公仔與周邊的預購什麼時候截止，讓你不必因為忘記日期而去買高價二手。</p>
 <h2>資料從哪裡來</h2>
-<p>目前的來源是 <a href="${SOURCES.gsc.url}" rel="noopener">${esc(SOURCES.gsc.name)}</a>。本站讀取官方商品頁公開的資料：商品名稱、作品名稱、製造商、價格、JAN 條碼、規格與預購期間。商品圖片不存放在本站，而是直接由官方網站載入；介紹文字不轉載。每件商品都連回官方頁面。</p>
+<p>預購截止日來自 <a href="${SOURCES.gsc.url}" rel="noopener">${esc(SOURCES.gsc.name)}</a>。另外也整理 <a href="${SOURCES.mh.url}" rel="noopener">${esc(SOURCES.mh.name)}</a>與 <a href="${SOURCES.alter.url}" rel="noopener">${esc(SOURCES.alter.name)}</a>公布的新品，這兩家只公布發售月份與價格，沒有預購期間，所以放在<a href="${href('/upcoming/')}">新品預告</a>，不計入預購數字。本站讀取官方公開的資料：商品名稱、作品名稱、製造商、價格、JAN 條碼、規格、發售月份與預購期間。商品圖片不存放在本站，而是直接由官方網站載入；介紹文字不轉載。每件商品都連回官方頁面。</p>
 <h2>多久更新</h2>
 <p>每天自動更新數次。每個商品頁都會標示最後一次向官方確認的日期。</p>
 <h2>有哪些限制</h2>
@@ -463,7 +489,7 @@ page({
 <li>清單上的日期是日本時間。截止日指的是官方商店的預購期間，其他店家可能更早或更晚截止。</li>
 <li>部分商品（多為再販）官方沒有公布截止日，本站會標示為「截止日未標示」。</li>
 <li>官方可能提前結束預購，或在預購期間變更價格與日期。</li>
-<li>目前只收錄一家官方網站的商品，其他店家的獨立預購期間不在範圍內。</li>
+<li>預購截止日目前只有 Good Smile Company 一家提供；MegaHouse 與 ALTER 只有發售月份，其他店家的獨立預購期間不在範圍內。</li>
 <li>本站不販售商品，也不代購。</li>
 </ul>
 <h2>誰在維護</h2>

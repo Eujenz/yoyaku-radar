@@ -7,6 +7,7 @@
 | 步驟 | 檔案 | 說明 |
 |---|---|---|
 | 抓取 | `scraper/gsc.mjs` | 讀取 Good Smile Company 官網的預購清單與商品頁結構化資料，寫入 `data/items.json` |
+| 抓取（新品預告） | `scraper/megahouse.mjs`、`scraper/alter.mjs` | 讀取 MegaHouse、ALTER 官網公布的新品（發售月份、價格），標記為 `stage: 'announced'`。這兩家沒有預購截止日，所以不計入「開放預購」，只出現在「新品預告」頁。單一來源失敗不會擋住部署 |
 | 檢查 | `scripts/check.mjs` | 資料或網站異常時中止部署（件數過少、欄位缺漏、壞連結、JSON 無效） |
 | 產生 | `site/build.mjs` | 產生 `dist/`：頁面、Atom、iCalendar、JSON API、`llms.txt`、sitemap |
 | 互動 | `site/app.js` | 收藏（我的展示櫃）、即時倒數、搜尋篩選排序，資料只存在訪客瀏覽器 |
@@ -14,6 +15,7 @@
 
 ```bash
 npm run scrape   # 抓資料（每秒不到 1 次請求，首次約 8 分鐘）
+node scraper/megahouse.mjs && node scraper/alter.mjs   # 新品預告來源（約 1 分鐘）
 npm run build    # 產生 dist/
 npm run check    # 檢查資料與網站
 npm run serve    # 本機預覽
