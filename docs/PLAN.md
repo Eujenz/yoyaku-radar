@@ -34,7 +34,7 @@
 
 ### 尚未開始
 
-流量統計、Threads、電子報、分潤連結。（自訂網域與 Search Console 已於 2026-11-19 完成。）
+Threads、電子報、分潤連結、流量儀表板（4.2 第 3 步之後）。（自訂網域、Search Console、Cloudflare Web Analytics 追蹤碼已於 2026-11-19 完成。）
 
 ### 已知問題
 
@@ -64,7 +64,7 @@
 | 順序 | 事項 | 解鎖的工作 | 交付方式 |
 |---|---|---|---|
 | 1 | ~~買自訂網域~~（完成：yoyaku.fans） | 5.1 換網域 | 告知網域名稱，依 5.1 設定 DNS 與 Pages |
-| 2 | Cloudflare 帳號與 Web Analytics | 4.2 流量儀表板 | 網站代碼直接告知；API 權杖用安全表單（`request_credential`）提供 |
+| 2 | ~~Cloudflare 帳號與 Web Analytics~~（追蹤碼已上線；唯讀 API 權杖待提供） | 4.2 流量儀表板 | 網站代碼直接告知；API 權杖用安全表單（`request_credential`）提供 |
 | 3 | ~~Search Console 完成驗證並提交 sitemap~~（完成） | 5.2 搜尋成效檢視 | 告知已完成 |
 | 4 | 事業專用信箱 | 分潤申請、權利人聯絡 | 告知信箱地址 |
 | 5 | Threads 帳號與發文權杖 | 6 Threads | 權杖存進 repo secrets：`THREADS_TOKEN`、`THREADS_USER_ID` |
@@ -98,7 +98,7 @@
 
 **做法（以 Cloudflare Web Analytics 為例，API 細節需查證）**
 
-1. 在 `site/build.mjs` 的頁面範本加入追蹤程式，代碼由環境變數 `CF_ANALYTICS_TOKEN` 帶入，沒設定就不輸出。
+1. ~~在 `site/build.mjs` 的頁面範本加入追蹤程式~~（完成：代碼是 `update.yml` 的 `CF_ANALYTICS_TOKEN` 預設值。DNS 是灰色雲朵，所以用手動 JS snippet，不是自動注入）。
 2. 導購點擊：在 `site/app.js` 對「前往官方商品頁」與「其他購買管道」的連結加上點擊事件記錄。若統計服務不支援自訂事件，改用中繼頁 `/go/` 記錄，但要確認不影響分潤連結的追蹤。
 3. 提出把 `api.cloudflare.com` 加入環境允許清單，並用 `request_credential` 向擁有者要唯讀 API 權杖。
 4. 寫 `scripts/traffic.mjs`：抓過去 30 天的每日瀏覽數、訪客數、來源、熱門頁面，存成 `data/traffic.json`。
