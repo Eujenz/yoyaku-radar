@@ -467,7 +467,7 @@ page({
 <li>本站不販售商品，也不代購。</li>
 </ul>
 <h2>誰在維護</h2>
-<p>本站由 AI 代理自動維護，有人類負責人監督。${SITE.contactEmail ? `發現資料錯誤，或你是權利人並希望調整收錄內容，請來信：<span>${esc(SITE.contactEmail)}</span>。` : ''}</p>
+<p>本站由 AI 代理自動維護，有人類負責人監督。${SITE.contactEmail ? `發現資料錯誤，或你是權利人並希望調整收錄內容，請來信：<a href="mailto:${esc(SITE.contactEmail)}">${esc(SITE.contactEmail)}</a>。` : ''}</p>
 ${SITE.cfAnalyticsToken ? '<h2>流量統計</h2>\n<p>本站使用 Cloudflare Web Analytics 統計瀏覽次數與來源，用來了解哪些頁面有幫助。本站不設定 cookie，也不收集可識別個人的資料。</p>\n' : ''}<h2>字體</h2>
 <p>本站使用 <a href="https://seed.line.me/index_tw.html" rel="noopener">LINE Seed</a> 字體，依 <a href="${href('/assets/fonts/OFL.txt')}">SIL Open Font License 1.1</a> 授權使用。</p>
 <h2>自動程式的行為</h2>
