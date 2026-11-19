@@ -11,8 +11,10 @@ const errors = [];
 const warn = [];
 
 if (mode === 'data' || mode === 'all') {
-  const { items, updatedAt } = JSON.parse(await readFile(`${ROOT}/data/items.json`, 'utf8'));
-  const open = items.filter((i) => i.status === 'open');
+  const { items, updatedAt, sourceUpdatedAt = {} } = JSON.parse(await readFile(`${ROOT}/data/items.json`, 'utf8'));
+  // Deadline and price thresholds apply to the preorder source (Good Smile). Announcement-only sources
+  // (stage 'announced') have no preorder window by design and are checked separately below.
+  const open = items.filter((i) => i.status === 'open' && i.stage !== 'announced');
   if (open.length < 20) errors.push(`only ${open.length} open items`);
   const ageH = (Date.now() - Date.parse(updatedAt)) / 36e5;
   if (ageH > 36) errors.push(`data is ${ageH.toFixed(0)} hours old`);
@@ -29,6 +31,15 @@ if (mode === 'data' || mode === 'all') {
   if (rate('preorderEnd') < 0.35) errors.push(`only ${(rate('preorderEnd') * 100).toFixed(0)}% of open items have a deadline`);
   if (rate('priceJpy') < 0.6) errors.push(`only ${(rate('priceJpy') * 100).toFixed(0)}% of open items have a price`);
   if (rate('series') < 0.5) warn.push(`only ${(rate('series') * 100).toFixed(0)}% of open items have a series`);
+  for (const src of [...new Set(items.filter((i) => i.stage === 'announced').map((i) => i.source))]) {
+    const list = items.filter((i) => i.source === src);
+    const share = (k) => list.filter((i) => i[k]).length / list.length;
+    if (list.length >= 5 && share('priceJpy') < 0.6) errors.push(`${src}: only ${(share('priceJpy') * 100).toFixed(0)}% of items have a price`);
+    if (list.length >= 5 && share('releaseMonth') < 0.8) errors.push(`${src}: only ${(share('releaseMonth') * 100).toFixed(0)}% of items have a release month`);
+    const age = (Date.now() - Date.parse(sourceUpdatedAt[src])) / 36e5;
+    if (!(age <= 72)) warn.push(`${src}: source data is ${Number.isFinite(age) ? age.toFixed(0) + ' hours old' : 'missing an update time'}`);
+    console.log(`data: ${src} ${list.length} announced items`);
+  }
   console.log(`data: ${items.length} items, ${open.length} open, deadline ${(rate('preorderEnd') * 100).toFixed(0)}%, price ${(rate('priceJpy') * 100).toFixed(0)}%, series ${(rate('series') * 100).toFixed(0)}%`);
 }
 

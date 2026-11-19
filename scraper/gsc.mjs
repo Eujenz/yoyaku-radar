@@ -156,8 +156,11 @@ export function parseProduct(html, sourceId) {
 async function main() {
   const now = today();
   let prev = [];
+  let sourceUpdatedAt;
   try {
-    prev = JSON.parse(await readFile(DATA_FILE, 'utf8')).items;
+    const file = JSON.parse(await readFile(DATA_FILE, 'utf8'));
+    prev = file.items;
+    sourceUpdatedAt = file.sourceUpdatedAt; // written by the other sources' scrapers
   } catch {}
   const byId = new Map(prev.map((i) => [i.id, i]));
   const prevActive = prev.filter((i) => i.status === 'open').length;
@@ -219,7 +222,7 @@ async function main() {
   }
   items.sort((a, b) => a.id.localeCompare(b.id, 'en', { numeric: true }));
   await mkdir(dirname(DATA_FILE), { recursive: true });
-  await writeFile(DATA_FILE, JSON.stringify({ updatedAt: new Date().toISOString(), items }, null, 1) + '\n');
+  await writeFile(DATA_FILE, JSON.stringify({ updatedAt: new Date().toISOString(), sourceUpdatedAt, items }, null, 1) + '\n');
   const open = items.filter((i) => i.status === 'open').length;
   console.log(`done: fetched ${ok}, failed ${failed}, open ${open}, total kept ${items.length}`);
 }

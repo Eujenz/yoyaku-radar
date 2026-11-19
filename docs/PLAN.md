@@ -123,7 +123,9 @@
 | MegaHouse `www.megahobby.jp/products/order_calender/` | 當月開放預購的商品、發售月、價格 | 沒有截止日 |
 | ALTER `alter-web.jp/products/` | 商品、作品、發售月、價格、規格 | 沒有截止日 |
 
-**做法**
+**狀態（2026-11-19）**：MegaHouse、ALTER 已完成。這兩家沒有預購截止日，也沒有「預購是否開放」的資訊，所以資料標為 `stage: 'announced'`，放在 `/upcoming/` 新品預告頁，不計入開放預購的數字、API、feed 與行事曆。擴充時沿用 `scraper/lib.mjs`。另外 `data/items.json` 的 `updatedAt` 只代表 Good Smile 的抓取時間，其他來源的時間記在 `sourceUpdatedAt`。
+
+**做法（原規劃）**
 
 1. 每個來源一個檔案 `scraper/<代號>.mjs`，輸出與現有 `gsc` 相同的欄位；沒有截止日就留空。
 2. `site/config.mjs` 的 `SOURCES` 加入來源；`scripts/check.mjs` 的門檻改成分來源計算，避免沒有截止日的來源把整體比例拉低而擋住部署。

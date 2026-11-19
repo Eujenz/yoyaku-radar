@@ -20,6 +20,9 @@ export const SITE = {
 
 export const SOURCES = {
   gsc: { name: 'Good Smile Company 官方網站', short: 'Good Smile Company', url: 'https://www.goodsmile.com/ja' },
+  // Announcement-only sources: release month and price, no preorder window (see stage: 'announced').
+  mh: { name: 'MegaHouse（メガホビ）官方網站', short: 'MegaHouse', url: 'https://www.megahobby.jp/products/order_calender/' },
+  alter: { name: 'ALTER 官方網站', short: 'ALTER', url: 'https://alter-web.jp/products/' },
 };
 
 // "Where to buy" links shown on every item page, after the official shop.

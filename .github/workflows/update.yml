@@ -49,6 +49,18 @@ jobs:
         if: github.event_name != 'push'
         run: node scraper/gsc.mjs
 
+      # Announcement-only sources. A failure here must not block the Good Smile data or the deploy;
+      # the previous items stay in data/items.json and scripts/check.mjs warns when they get stale.
+      - name: Fetch MegaHouse announcements
+        if: github.event_name != 'push'
+        continue-on-error: true
+        run: node scraper/megahouse.mjs
+
+      - name: Fetch ALTER announcements
+        if: github.event_name != 'push'
+        continue-on-error: true
+        run: node scraper/alter.mjs
+
       - name: Check data
         run: node scripts/check.mjs data
 
