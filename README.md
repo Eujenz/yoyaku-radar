@@ -11,6 +11,7 @@
 | 檢查 | `scripts/check.mjs` | 資料或網站異常時中止部署（件數過少、欄位缺漏、壞連結、JSON 無效） |
 | 產生 | `site/build.mjs` | 產生 `dist/`：頁面、Atom、iCalendar、JSON API、`llms.txt`、sitemap |
 | 互動 | `site/app.js` | 收藏（我的展示櫃）、即時倒數、搜尋篩選排序，資料只存在訪客瀏覽器 |
+| 社群 | `scripts/threads_post.mjs`、`.github/workflows/threads.yml` | 依 `social/queue.json` 每天兩個時段發 Threads，只發已核准的項目；未設定權杖時不做任何事 |
 | 排程 | `.github/workflows/update.yml` | 每 4 小時執行一次，失敗時自動開 issue |
 
 ```bash

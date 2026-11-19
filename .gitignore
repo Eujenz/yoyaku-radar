@@ -2,3 +2,4 @@ dist/
 node_modules/
 *.log
 preview-*.png
+.new-threads-token
