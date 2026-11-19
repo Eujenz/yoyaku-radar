@@ -29,7 +29,7 @@ env:
   # An IndexNow key is public by design: it is served as a file on the site to prove ownership.
   INDEXNOW_KEY: ${{ vars.INDEXNOW_KEY || 'd14a451eea33258e70b1e81b8716b6a7' }}
   # Cloudflare Web Analytics site token. Public by design (printed in every page). Empty = no analytics.
-  CF_ANALYTICS_TOKEN: ${{ vars.CF_ANALYTICS_TOKEN || '' }}
+  CF_ANALYTICS_TOKEN: ${{ vars.CF_ANALYTICS_TOKEN || '126d55aa46dd40ffa10b7e7c1e54cfc9' }}
 
 jobs:
   update:

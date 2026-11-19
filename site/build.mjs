@@ -215,7 +215,7 @@ ${body}
 <p>本站整理官方公開的商品資訊並連回官方頁面，不販售商品，與各製造商沒有合作或隸屬關係。商品圖片直接由官方網站載入，圖片、商品名稱與作品名稱的權利屬於各權利人。${SITE.affiliateActive ? '部分店家連結為聯盟行銷連結，你透過連結購買時本站可能獲得分潤，價格不受影響。' : ''}</p>
 </div></footer>
 <script src="${href('/assets/app.js')}?v=${jsHash}" defer></script>
-${SITE.cfAnalyticsToken ? `<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='${esc(JSON.stringify({ token: SITE.cfAnalyticsToken }))}'></script>\n` : ''}
+${SITE.cfAnalyticsToken ? `<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='${esc(JSON.stringify({ token: SITE.cfAnalyticsToken }))}'></script>\n` : ''}
 </body>
 </html>
 `);
