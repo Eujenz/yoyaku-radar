@@ -22,7 +22,7 @@
 
 | 項目 | 狀態 |
 |---|---|
-| 網站 | https://eujenz.github.io/yoyaku-radar/ ，GitHub Pages，靜態網站 |
+| 網站 | https://yoyaku.fans/ ，GitHub Pages，靜態網站。DNS 在 Cloudflare（DNS only，不開 proxy），已強制 HTTPS；舊網址 `eujenz.github.io/yoyaku-radar/` 自動轉址 |
 | 資料來源 | Good Smile Company 官網，約 470 件預購中 |
 | 自動更新 | GitHub Actions 每 4 小時：抓取 → 檢查 → 建站 → 部署。失敗時自動開 issue「自動更新失敗」 |
 | 介面 | 展示櫃風格、官方縮圖、收藏（我的展示櫃）、即時倒數、搜尋篩選排序、回訪 NEW 標記 |
@@ -34,7 +34,7 @@
 
 ### 尚未開始
 
-流量統計、自訂網域、Threads、電子報、分潤連結、第二個資料來源。
+流量統計、Threads、電子報、分潤連結。（自訂網域與 Search Console 已於 2026-11-19 完成。）
 
 ### 已知問題
 
@@ -44,7 +44,7 @@
 4. **約一半商品沒有截止日**：多為再販，官方沒公布統一截止日，網站標示「截止日未標示」。
 5. **圖片是外連官方網站**：對方若擋外部載入，圖片會變成「尚無圖片」。若權利人要求撤下，必須照辦。
 6. **沒有聯絡管道**：「關於」頁依擁有者決定不放信箱。等事業專用信箱建立後，請再向擁有者確認是否放上。
-7. **Search Console**：驗證碼已上線，但擁有者是否已完成驗證並提交 sitemap，尚未確認。
+7. **Search Console**：2026-11-19 擁有者已驗證 `https://yoyaku.fans` 並提交 sitemap。驗證碼在 `update.yml` 的 `GOOGLE_SITE_VERIFICATION` 預設值。
 
 ### 執行環境的限制
 
@@ -63,9 +63,9 @@
 
 | 順序 | 事項 | 解鎖的工作 | 交付方式 |
 |---|---|---|---|
-| 1 | 買自訂網域 | 5.1 換網域 | 告知網域名稱，依 5.1 設定 DNS 與 Pages |
+| 1 | ~~買自訂網域~~（完成：yoyaku.fans） | 5.1 換網域 | 告知網域名稱，依 5.1 設定 DNS 與 Pages |
 | 2 | Cloudflare 帳號與 Web Analytics | 4.2 流量儀表板 | 網站代碼直接告知；API 權杖用安全表單（`request_credential`）提供 |
-| 3 | Search Console 完成驗證並提交 sitemap | 5.2 搜尋成效檢視 | 告知已完成 |
+| 3 | ~~Search Console 完成驗證並提交 sitemap~~（完成） | 5.2 搜尋成效檢視 | 告知已完成 |
 | 4 | 事業專用信箱 | 分潤申請、權利人聯絡 | 告知信箱地址 |
 | 5 | Threads 帳號與發文權杖 | 6 Threads | 權杖存進 repo secrets：`THREADS_TOKEN`、`THREADS_USER_ID` |
 | 6 | 分潤帳號 | 7 營收 | 告知追蹤連結或代碼 |
@@ -144,7 +144,9 @@
 
 ## 5. 搜尋與 AI 能見度
 
-### 5.1 換自訂網域（等擁有者第 1 項）
+### 5.1 換自訂網域（2026-11-19 完成）
+
+Cloudflare 的 DNS 記錄必須維持灰色雲朵（DNS only），開 proxy 會讓 GitHub 無法更新 HTTPS 憑證。Pages 不要關閉：網域仍指向 GitHub 時關閉 Pages，有被他人接管網域的風險。
 
 **為什麼重要**：目前網站在 `eujenz.github.io` 的子路徑下，Google 不會讀到我們的 `robots.txt` 與 sitemap 宣告；網域是自己的，才能換主機而不丟排名。
 
