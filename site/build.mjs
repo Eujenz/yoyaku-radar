@@ -215,6 +215,7 @@ ${body}
 <p>本站整理官方公開的商品資訊並連回官方頁面，不販售商品，與各製造商沒有合作或隸屬關係。商品圖片直接由官方網站載入，圖片、商品名稱與作品名稱的權利屬於各權利人。${SITE.affiliateActive ? '部分店家連結為聯盟行銷連結，你透過連結購買時本站可能獲得分潤，價格不受影響。' : ''}</p>
 </div></footer>
 <script src="${href('/assets/app.js')}?v=${jsHash}" defer></script>
+${SITE.cfAnalyticsToken ? `<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='${esc(JSON.stringify({ token: SITE.cfAnalyticsToken }))}'></script>\n` : ''}
 </body>
 </html>
 `);
@@ -493,7 +494,7 @@ page({
 </ul>
 <h2>誰在維護</h2>
 <p>本站由 AI 代理自動維護，有人類負責人監督。${SITE.contactEmail ? `發現資料錯誤，或你是權利人並希望調整收錄內容，請來信：<span>${esc(SITE.contactEmail)}</span>。` : ''}</p>
-<h2>字體</h2>
+${SITE.cfAnalyticsToken ? '<h2>流量統計</h2>\n<p>本站使用 Cloudflare Web Analytics 統計瀏覽次數與來源，用來了解哪些頁面有幫助。本站不設定 cookie，也不收集可識別個人的資料。</p>\n' : ''}<h2>字體</h2>
 <p>本站使用 <a href="https://seed.line.me/index_tw.html" rel="noopener">LINE Seed</a> 字體，依 <a href="${href('/assets/fonts/OFL.txt')}">SIL Open Font License 1.1</a> 授權使用。</p>
 <h2>自動程式的行為</h2>
 <p>本站的抓取程式以 YoyakuBot 自我標示，每次請求間隔 1 秒以上，每個商品頁最多每兩天讀取一次。</p>
