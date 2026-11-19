@@ -205,6 +205,8 @@ Agent 讀不到 Search Console。每月請擁有者匯出「成效」報表（�
 **狀態（2026-11-19）**：程式與 workflow 已完成並用 DRY_RUN 測過，等權杖啟用。Threads API 已對照官方文件核對（兩步發文、等 30 秒、500 字、表情符號依 UTF-8 位元組計、長期權杖 60 天、滿 24 小時可更新、每 24 小時 250 則）。
 - 佇列只發 `approved: true` 的項目，第一週審稿期由擁有者同意後才把 `approved` 設為 true。
 - 時段：台灣時間約 12:00（am）與 20:00（pm），各有一次備援。
+- 避免制式：即時資料貼文沒有寫 `text` 時，開頭句、列表格式、結尾句從詞庫挑選，每則 2 到 4 件；3 天內提過的商品不再提；每則隨機延後 0 到 40 分鐘發出。用詞不得假裝有個人經歷（「我買了」之類），帳號簡介要寫明是非官方整理帳號。
+- 每週的佇列以手寫的收藏話題、動畫話題為主（PLAN 6.2 的 40%），即時資料貼文只佔一部分，且其中約每五則才附一次連結。
 - 即時資料類型 `live`：`closing`（兩天內截止）、`new`（7 天內開放）、`rerelease`（10 天內截止的再販）。符合的商品少於 2 件就跳過並記錄。
 - 權杖每週一自動更新。若更新後權杖字串改變，需要 repo secret `THREADS_SECRETS_PAT`（只給本 repo「Secrets: write」的 fine-grained PAT）才能自動寫回；沒有的話 run 會失敗並開 issue「Threads 發文失敗」，請擁有者手動更新。
 - 擁有者啟用步驟：在 Meta 開發者後台建立 Threads 應用程式，授權 `threads_basic` 與 `threads_content_publish`，取得長期權杖與 Threads 使用者 ID，存成 repo secrets `THREADS_TOKEN`、`THREADS_USER_ID`。手動執行 workflow 時預設是 dry run。
