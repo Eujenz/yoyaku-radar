@@ -166,6 +166,11 @@ const crumbs = (trail) => ({
 const crumbNav = (trail) =>
   `<nav class="crumbs" aria-label="麵包屑">${trail.map(([name, path], n) => (n < trail.length - 1 ? `<a href="${href(path)}">${esc(name)}</a>` : esc(name))).join(' › ')}</nav>`;
 
+// Links to the search landing pages (PLAN 5.2), shown on the home and list pages.
+const QUICK = [['/week/', '本週截止'], ['/rerelease/', '再販'], ['/bonus/', '有特典'], ['/upcoming/', '新品預告']];
+const quickLinks = (current) =>
+  `<p class="note">快速找：${QUICK.filter(([p]) => p !== current).map(([p, t]) => `<a href="${href(p)}">${t}</a>`).join('・')}</p>`;
+
 const hash = async (f) => createHash('sha1').update(await readFile(`${ROOT}/site/${f}`)).digest('hex').slice(0, 8);
 const cssHash = await hash('style.css');
 const jsHash = await hash('app.js');
@@ -275,7 +280,8 @@ ${clock(featured) || chip(featured)}
 <div class="section-head"><h2>7 天內截止</h2><a href="${href('/closing/')}">看全部 ${open.length} 件 →</a></div>
 <p class="note" id="since" hidden></p>
 ${closingOnHome.length ? shelf(closingOnHome) : '<p class="note">未來 7 天內沒有預購截止。</p>'}
-${closingSoon.length > closingOnHome.length ? `<p class="note">還有 ${closingSoon.length - closingOnHome.length} 件在 7 天內截止，<a href="${href('/closing/')}">到全部預購查看</a>。</p>` : ''}
+${closingSoon.length > closingOnHome.length ? `<p class="note">還有 ${closingSoon.length - closingOnHome.length} 件在 7 天內截止，<a href="${href('/week/')}">看本週截止</a>。</p>` : ''}
+${quickLinks('/')}
 </section>
 <section class="stack">
 <div class="section-head"><h2>新上架</h2><a href="${href('/new/')}">看更多 →</a></div>
@@ -302,6 +308,7 @@ ${FAQ.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></de
     body: `${crumbNav(trail)}
 <section class="stack"><h1>全部預購與截止日</h1>
 <p class="lede">共 ${open.length} 件開放預購，預設依截止日由近到遠排列。</p>
+${quickLinks('/closing/')}
 <div class="tools" id="shelf-tools" data-target="#all">
 <div class="field grow"><label for="filter">搜尋商品、作品或系列</label><input id="filter" type="search" autocomplete="off" placeholder="例如：ねんどろいど、原神、figma"></div>
 <div class="field"><label for="sort">排序</label><select id="sort"><option value="end">截止日近到遠</option><option value="new">最新上架</option><option value="price-asc">價格低到高</option><option value="price-desc">價格高到低</option></select></div>
@@ -325,6 +332,64 @@ ${shelf([...dated, ...undated], 'all')}`,
     ld: [crumbs(trail), itemList(list, '新上架的預購')],
     body: `${crumbNav(trail)}
 <section class="stack"><h1>新上架的預購</h1><p class="lede">最近開放預購的商品，由新到舊排列。</p><p class="note" id="since" hidden></p></section>
+${shelf(list)}`,
+  });
+}
+
+// ---------- search landing pages (PLAN 5.2): this week / rereleases / bonuses ----------
+{
+  const trail = [['首頁', '/'], ['本週截止', '/week/']];
+  const days = new Map();
+  for (const i of closingSoon) {
+    if (!days.has(i.preorderEnd)) days.set(i.preorderEnd, []);
+    days.get(i.preorderEnd).push(i);
+  }
+  const first = closingSoon[0];
+  const summary = first
+    ? `未來 7 天（${fmtLong(TODAY)}起）共有 ${closingSoon.length} 件公仔與周邊預購截止，分布在 ${days.size} 天。最快截止的是「${first.name}」，截止日為 ${fmtLong(first.preorderEnd)}（日本時間）。`
+    : `未來 7 天（${fmtLong(TODAY)}起）沒有官方公布截止日的預購。`;
+  page({
+    path: '/week/',
+    title: '本週預購截止的公仔與周邊',
+    description: summary,
+    ld: [crumbs(trail), itemList(closingSoon, '本週預購截止')],
+    body: `${crumbNav(trail)}
+<section class="stack"><h1>本週預購截止</h1><p class="answer">${esc(summary)}</p>
+<p class="note">日期為日本時間，依截止日分組。官方可能提前結束預購，下單前請到官方商品頁確認。</p>${quickLinks('/week/')}</section>
+${[...days].map(([d, list]) => `<section class="stack"><h2>${fmtDate(d)} 截止（${list.length} 件）</h2>${shelf(list)}</section>`).join('\n')}`,
+  });
+}
+{
+  const trail = [['首頁', '/'], ['再販預購', '/rerelease/']];
+  const list = [...dated, ...undated].filter((i) => i.isRerelease);
+  const withEnd = list.filter((i) => i.preorderEnd);
+  const soon = upcoming.filter((i) => i.isRerelease);
+  const summary = `目前有 ${list.length} 件再販的公仔與周邊開放預購，其中 ${withEnd.length} 件有官方截止日${withEnd[0] ? `，最快截止的是「${withEnd[0].name}」，截止日為 ${fmtLong(withEnd[0].preorderEnd)}（日本時間）` : ''}。其餘官方沒有公布統一截止日，各店家各自決定何時停止接單。`;
+  page({
+    path: '/rerelease/',
+    title: '公仔再販預購一覽',
+    description: summary,
+    ld: [crumbs(trail), itemList(list, '再販預購一覽')],
+    body: `${crumbNav(trail)}
+<section class="stack"><h1>公仔再販預購一覽</h1><p class="answer">${esc(summary)}</p>
+<p class="note">再販是官方重新生產已發售過的商品。依截止日由近到遠排列，沒有截止日的排在後面。</p>${quickLinks('/rerelease/')}</section>
+${shelf(list)}
+${soon.length ? `<section class="stack"><h2>即將再販（新品預告）</h2><p class="note">以下是官方已公布、但沒有公布預購期間的再販商品。</p>${shelf(soon)}</section>` : ''}`,
+  });
+}
+{
+  const trail = [['首頁', '/'], ['有特典的預購', '/bonus/']];
+  const list = [...dated, ...undated].filter((i) => i.bonus);
+  const withEnd = list.filter((i) => i.preorderEnd);
+  const summary = `目前有 ${list.length} 件官方標示附特典的公仔與周邊開放預購${withEnd[0] ? `，最快截止的是「${withEnd[0].name}」，截止日為 ${fmtLong(withEnd[0].preorderEnd)}（日本時間）` : ''}。特典的內容與取得方式依商品而不同，請見各商品的官方頁面。`;
+  page({
+    path: '/bonus/',
+    title: '附特典的公仔預購',
+    description: summary,
+    ld: [crumbs(trail), itemList(list, '附特典的預購')],
+    body: `${crumbNav(trail)}
+<section class="stack"><h1>附特典的公仔預購</h1><p class="answer">${esc(summary)}</p>
+<p class="note">「特典」依官方商品清單上的標示。依截止日由近到遠排列。</p>${quickLinks('/bonus/')}</section>
 ${shelf(list)}`,
   });
 }
@@ -666,6 +731,10 @@ put('/llms.txt', `# ${SITE.name} (${SITE.nameEn})
 
 - [全部預購與截止日](${abs('/closing/')})
 - [新上架的預購](${abs('/new/')})
+- [本週預購截止](${abs('/week/')})：未來 7 天截止，依日期分組
+- [再販預購一覽](${abs('/rerelease/')})
+- [附特典的預購](${abs('/bonus/')})
+- [新品預告](${abs('/upcoming/')})：MegaHouse、ALTER 公布的新品，沒有預購截止日
 - [依作品找預購](${abs('/series/')})
 - [依系列找預購](${abs('/category/')})
 - [關於本站與資料來源](${abs('/about/')})
