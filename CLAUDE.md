@@ -6,6 +6,7 @@
 
 - 產品：公仔與動漫周邊的預購截止日提醒網站，受眾是台灣的收藏者。
 - 線上網址：https://eujenz.github.io/yoyaku-radar/ （之後可能換自訂網域）
+- 完整營運計畫（待辦、做法、完成條件、何時要問擁有者）見 `docs/PLAN.md`。
 - 架構與指令見 `README.md`。GitHub Actions 每 4 小時自動抓取、檢查、部署（GitHub 的排程常延遲數小時，所以排得比較密）。
 
 ## 擁有者已決定的事
@@ -26,6 +27,7 @@
 
 ## 例行檢查
 
+0. 先確認線上首頁回應 200；不是的話視為重大事故，立刻回報擁有者（2026-11-17 曾因 Pages 被關閉下線兩天）。
 1. 最近的 workflow run 是否成功：`https://api.github.com/repos/Eujenz/yoyaku-radar/actions/runs?per_page=5`
 2. 線上 `api/preorders.json` 的 `generated_at` 是否在 24 小時內。
 3. repo 是否有標題為「自動更新失敗」的 issue。
