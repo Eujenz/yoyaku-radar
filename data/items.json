@@ -1,8 +1,8 @@
 {
- "updatedAt": "2026-11-19T02:37:11.771Z",
+ "updatedAt": "2026-11-20T01:17:40.552Z",
  "sourceUpdatedAt": {
   "mh": "2026-11-19T02:59:49.499Z",
-  "alter": "2026-11-19T03:00:40.000Z"
+  "alter": "2026-11-20T01:18:18.799Z"
  },
  "items": [
   {
@@ -3410,7 +3410,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/36226/s24LyW57zxSVvZK9Ei6chfQ3GdgAFpBb.jpg",
    "bonus": true
@@ -4173,6 +4173,33 @@
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/60602/C7rpWkKxNHi1yLnQvtGRPE4J5UbwsZme.jpg",
    "bonus": true
+  },
+  {
+   "id": "gsc-60708",
+   "source": "gsc",
+   "sourceId": "60708",
+   "name": "オグリキャップ",
+   "series": "ウマ娘 プリティーダービー",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "スケールフィギュア",
+   "spec": "プラスチック製 塗装済み完成品・1/7スケール・専用台座付属・全高：約245mm",
+   "jan": "4580828664142",
+   "priceJpy": 23800,
+   "preorderStart": null,
+   "preorderEnd": null,
+   "preorderEndAt": null,
+   "releaseMonth": null,
+   "availability": null,
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/60708/gNt1iuCJQZMrSkWERpU0Fx8enqVyzK3c.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/60708",
+   "shops": [],
+   "firstSeen": "2026-11-20",
+   "fetchedAt": "2026-11-20",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/60708/bw6QiTgZXNd4WBYLKueJnC5mMvESVA3q.jpg",
+   "bonus": false
   },
   {
    "id": "gsc-60715",
@@ -6275,7 +6302,7 @@
    "preorderEndAt": "2026-12-23T23:59:59+09:00",
    "releaseMonth": null,
    "availability": "PreOrder",
-   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1138061/Zhv4GLiNRBXryzf3t6muJxUMPVWn05s2.jpg",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1138061/PpQYmdjt41fF8wWAgaL9uRNqn6VBhiCv.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1138061",
    "shops": [
@@ -6285,7 +6312,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1138061/P0GmHpnqLuTbAsNgxri6f9DW7zZEF51J.jpg",
    "bonus": false
@@ -7632,6 +7659,33 @@
    "bonus": true
   },
   {
+   "id": "gsc-1139166",
+   "source": "gsc",
+   "sourceId": "1139166",
+   "name": "ブラインドボックスシリーズ レーシングミクオールスターズ フィギュアコレクション Vol.1",
+   "series": "初音ミク GTプロジェクト",
+   "maker": "グッドスマイルレーシング",
+   "seller": "グッドスマイルカンパニー",
+   "category": "トレーディング・カプセルトイ",
+   "spec": "プラスチック製 塗装済み完成品・ノンスケール・専用台座付属・全高：約75mm",
+   "jan": "4570232593336",
+   "priceJpy": 2200,
+   "preorderStart": null,
+   "preorderEnd": null,
+   "preorderEndAt": null,
+   "releaseMonth": null,
+   "availability": null,
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1139166/2nR4QgBMdujwUZb8i5xCqSYVhv01c6DH.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1139166",
+   "shops": [],
+   "firstSeen": "2026-11-20",
+   "fetchedAt": "2026-11-20",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1139166/6QH1kAMyWt9pqvSfPuirKXBLN7gTwh83.jpg",
+   "bonus": false
+  },
+  {
    "id": "gsc-1139184",
    "source": "gsc",
    "sourceId": "1139184",
@@ -7945,6 +7999,70 @@
    "closedAt": "2026-11-19"
   },
   {
+   "id": "gsc-1139825",
+   "source": "gsc",
+   "sourceId": "1139825",
+   "name": "ねんどろいど マイメロディ",
+   "series": "マイメロディ",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ねんどろいど",
+   "spec": "プラスチック製 塗装済み可動フィギュア・ノンスケール・専用台座付属・全高：約90mm",
+   "jan": "4570232592704",
+   "priceJpy": 6500,
+   "preorderStart": "2026-11-19",
+   "preorderEnd": "2027-01-06",
+   "preorderEndAt": "2027-01-06T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1139825/nkXPbQarGv783BU2M5Aue4q6tSTWxhK9.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1139825",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/60971/"
+    }
+   ],
+   "firstSeen": "2026-11-20",
+   "fetchedAt": "2026-11-20",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1139825/578a4877be2094d8215860a7edc77699.jpg",
+   "bonus": true
+  },
+  {
+   "id": "gsc-1139827",
+   "source": "gsc",
+   "sourceId": "1139827",
+   "name": "ねんどろいど クロミ",
+   "series": "クロミ",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ねんどろいど",
+   "spec": "プラスチック製 塗装済み可動フィギュア・ノンスケール・専用台座付属・全高：約90mm",
+   "jan": "4570232592711",
+   "priceJpy": 6500,
+   "preorderStart": "2026-11-19",
+   "preorderEnd": "2027-01-06",
+   "preorderEndAt": "2027-01-06T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1139827/bq68WEXCTka1v04h3tGzVNBHPgFrAKiw.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1139827",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/60973/"
+    }
+   ],
+   "firstSeen": "2026-11-20",
+   "fetchedAt": "2026-11-20",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1139827/VChAUnYsdJBeqw3LStH52gucmp1DRjKy.jpg",
+   "bonus": true
+  },
+  {
    "id": "gsc-1139900",
    "source": "gsc",
    "sourceId": "1139900",
@@ -8074,7 +8192,7 @@
    "preorderEndAt": "2026-12-16T23:59:59+09:00",
    "releaseMonth": null,
    "availability": "PreOrder",
-   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1140171/GvZ4YpFtjkecUHP9zVRC3xm2sADwXyMg.jpg",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1140171/t4fegx0nv38qVZysCL9QSFE2XJHMUBAz.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1140171",
    "shops": [
@@ -8084,7 +8202,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1140171/AgNauMpVTQzJfRebZUL032BSCmEDqPsc.jpg",
    "bonus": false
@@ -8170,6 +8288,38 @@
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1140447/X9yQ0eiBmKjgCAL2YWx6ERNFf8vpHMhU.jpg",
    "bonus": false,
    "closedAt": "2026-11-19"
+  },
+  {
+   "id": "gsc-1140600",
+   "source": "gsc",
+   "sourceId": "1140600",
+   "name": "ねんどろいど ガメラ（1996）",
+   "series": "ガメラ2 レギオン襲来",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ねんどろいど",
+   "spec": "プラスチック製 塗装済み可動フィギュア・ノンスケール・専用台座付属・全高：約100mm",
+   "jan": "4570232597648",
+   "priceJpy": 8900,
+   "preorderStart": "2026-11-19",
+   "preorderEnd": "2027-01-06",
+   "preorderEndAt": "2027-01-06T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1140600/xJ7VFqRe16CXscjSHNE2Kum9BZdw4QWD.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1140600",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/62095/"
+    }
+   ],
+   "firstSeen": "2026-11-20",
+   "fetchedAt": "2026-11-20",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1140600/WwAvUpaB1dh6mJqtyK4PQEgfsruFHiYR.jpg",
+   "bonus": true
   },
   {
    "id": "gsc-1140601",
@@ -9964,7 +10114,7 @@
    "preorderEndAt": "2026-12-16T23:59:59+09:00",
    "releaseMonth": null,
    "availability": "PreOrder",
-   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1142176/EvpWT85MkS4jGuNrLm6PbV9c173eZQHU.jpg",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1142176/UKfxCrnti3P9YEvaW0mcHqL5ZsXp2dkg.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1142176",
    "shops": [
@@ -9974,7 +10124,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1142176/F25exmGSasytEf9g3zJD8pwCQTiBPNd0.jpg",
    "bonus": true
@@ -10204,7 +10354,7 @@
    "preorderEndAt": "2026-12-09T23:59:59+09:00",
    "releaseMonth": null,
    "availability": "PreOrder",
-   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1142352/LrHhg3dwXRpAE0UPav68fiskcnNJC7Bj.jpg",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1142352/xW8g2u1Fa03cGiYEprqDNjZKPfRBk6vH.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1142352",
    "shops": [
@@ -10214,7 +10364,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1142352/B6PhrW1JiAqdKnekHzUupmXsVYC5FyLj.jpg",
    "bonus": false
@@ -10576,6 +10726,38 @@
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1142461/1YV3mfk80s6CdpGZADQJFLXNH7PcBhn9.jpg",
    "bonus": true,
    "closedAt": "2026-11-12"
+  },
+  {
+   "id": "gsc-1142464",
+   "source": "gsc",
+   "sourceId": "1142464",
+   "name": "Mini Memory フェルン&シュタルク",
+   "series": "葬送のフリーレン",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "その他フィギュア",
+   "spec": "プラスチック製 塗装済み完成品・ノンスケール・専用台座付属・全高：約100mm（セリフボード含み：約110mm）",
+   "jan": "4570232592780",
+   "priceJpy": 6800,
+   "preorderStart": "2026-11-19",
+   "preorderEnd": "2026-12-23",
+   "preorderEndAt": "2026-12-23T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1142464/6XQMLecSU2D34A7VCWib90dzEJafuxtH.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1142464",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/65032/"
+    }
+   ],
+   "firstSeen": "2026-11-20",
+   "fetchedAt": "2026-11-20",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1142464/9EniKsBaTkLbQrGx3MPegWc4UCzw1qud.jpg",
+   "bonus": false
   },
   {
    "id": "gsc-1142465",
@@ -11146,7 +11328,7 @@
    "url": "https://www.goodsmile.com/ja/product/1142838",
    "shops": [],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1142838/2iv1EAYcdRkC5wbeh7s6TH0m3FZMgLQD.jpg",
    "bonus": false
@@ -11544,6 +11726,38 @@
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1143266/K04bV3ncZgF2v16jLwMkizpRftANQPXx.jpg",
    "bonus": false
+  },
+  {
+   "id": "gsc-1143269",
+   "source": "gsc",
+   "sourceId": "1143269",
+   "name": "ねんどろいど 狛治 べーしっく",
+   "series": "鬼滅の刃",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ねんどろいど",
+   "spec": "プラスチック製 塗装済み可動フィギュア・ノンスケール・専用台座付属・全高：約100mm",
+   "jan": "4570232594463",
+   "priceJpy": 3900,
+   "preorderStart": "2026-11-19",
+   "preorderEnd": "2027-01-06",
+   "preorderEndAt": "2027-01-06T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1143269/8P0N7BtTgqf9AXmEhcz4WFs3ZvLJka6u.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1143269",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/65897/"
+    }
+   ],
+   "firstSeen": "2026-11-20",
+   "fetchedAt": "2026-11-20",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1143269/zmBte8MQNYnr5WPC1xq0yUJgL3RXKpVS.jpg",
+   "bonus": true
   },
   {
    "id": "gsc-1143314",
@@ -12269,7 +12483,7 @@
    "preorderEndAt": "2026-12-23T23:59:59+09:00",
    "releaseMonth": null,
    "availability": "PreOrder",
-   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144118/WpCaHxZ9Q3Ni8U21KgFGfSEehqkT4s7u.jpg",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144118/LcQN7id2V984Hzpx6ewDFgr5f1CjPGyU.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1144118",
    "shops": [
@@ -12279,7 +12493,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144118/RTCwEnK8pPVk14ybYjWHsFJx6ZBS9imc.jpg",
    "bonus": false
@@ -12360,7 +12574,7 @@
    "preorderEndAt": "2026-12-23T23:59:59+09:00",
    "releaseMonth": null,
    "availability": "PreOrder",
-   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144129/35UcA4v1pKj7rnYEtVuybZPmaDsCR2we.jpg",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144129/902f726a23a270dffb36d9efb939672e.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1144129",
    "shops": [
@@ -12370,7 +12584,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144129/3dd3d1271aebe77624b8b3d63a1c39d4.jpg",
    "bonus": true
@@ -12898,15 +13112,15 @@
    "priceJpy": 29900,
    "preorderStart": "2026-11-06",
    "preorderEnd": "2026-12-09",
-   "preorderEndAt": "2026-12-09T23:59:00+09:00",
+   "preorderEndAt": "2026-12-09T23:59:59+09:00",
    "releaseMonth": null,
    "availability": "PreOrder",
-   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144470/kvbzN9FKnYcUrtHiSa1CxTfwDA2jJdsV.jpg",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144470/Zd4RUGhzxyWaYgTQC09n6PNit5evfwks.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1144470",
    "shops": [],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144470/rDcjbpEB3qitJAhmu2g8PMeUCHzGxak1.jpg",
    "bonus": false
@@ -13333,7 +13547,7 @@
    "preorderEndAt": "2026-12-16T23:59:59+09:00",
    "releaseMonth": null,
    "availability": "PreOrder",
-   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144661/taFbVQ3EZvrXu7TiK0LzeyBMs12nfSDj.jpg",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144661/v9bCQWgYMa3PiwRhznX0c567rutE2dGH.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1144661",
    "shops": [
@@ -13343,7 +13557,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144661/My2KbYxsVE7fjZJABTe5SwtH8zq6Q0cd.jpg",
    "bonus": true
@@ -13709,7 +13923,7 @@
    "url": "https://www.goodsmile.com/ja/product/1144991",
    "shops": [],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144991/Ya3iDeX72MjHJg1nkrmNxVpQLuSAhEfv.jpg",
    "bonus": false
@@ -13770,6 +13984,33 @@
    "bonus": false
   },
   {
+   "id": "gsc-1145227",
+   "source": "gsc",
+   "sourceId": "1145227",
+   "name": "ちょこぷに ぬいぐるみ ケイ",
+   "series": "ブルーアーカイブ -Blue Archive-",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ぬいぐるみ",
+   "spec": "素材:ポリエステル サイズ:全高約17cm",
+   "jan": "4570232589179",
+   "priceJpy": 4950,
+   "preorderStart": null,
+   "preorderEnd": null,
+   "preorderEndAt": null,
+   "releaseMonth": null,
+   "availability": null,
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1145227/f4brB2ZCYHTPz8G9tsemdgXjxNSqn0vM.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1145227",
+   "shops": [],
+   "firstSeen": "2026-11-20",
+   "fetchedAt": "2026-11-20",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1145227/mSMjXHf8dyUPLF4RvpG1NnTDw6erAxJ2.jpg",
+   "bonus": false
+  },
+  {
    "id": "gsc-1145300",
    "source": "gsc",
    "sourceId": "1145300",
@@ -13813,7 +14054,7 @@
    "preorderEndAt": "2026-12-23T23:59:59+09:00",
    "releaseMonth": null,
    "availability": "PreOrder",
-   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1145327/6mpVZNG7i50AsETdwRkDz1FgLy3nBPXq.jpg",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1145327/etzc8w6niHFBkS5f0Wu4xDQjhq3XG9Md.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1145327",
    "shops": [
@@ -13823,7 +14064,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1145327/GsW3h6MiP9ZYfn7cxBv5zdtNbVSem4FX.jpg",
    "bonus": true
@@ -13978,7 +14219,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1145497/pKi3LCj8VmWQfbDkNudy9UPcs62t0rgv.jpg",
    "bonus": false
@@ -14010,10 +14251,42 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1145498/RNm80wM1j5ghU79vQqVJcadknbXYSDyZ.jpg",
    "bonus": false
+  },
+  {
+   "id": "gsc-1145514",
+   "source": "gsc",
+   "sourceId": "1145514",
+   "name": "ねんどろいど 藤林杏",
+   "series": "CLANNAD",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ねんどろいど",
+   "spec": "プラスチック製 塗装済み可動フィギュア・ノンスケール・専用台座付属・全高：約100mm",
+   "jan": "4570232596689",
+   "priceJpy": 6800,
+   "preorderStart": "2026-11-19",
+   "preorderEnd": "2027-01-06",
+   "preorderEndAt": "2027-01-06T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1145514/cb5qdmheD6tU9LA70T1nrzF4wp3H2fuM.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1145514",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/69318/"
+    }
+   ],
+   "firstSeen": "2026-11-20",
+   "fetchedAt": "2026-11-20",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1145514/vB0s4RPVXZgrNYDzWFaqnb1J6kGxL28u.jpg",
+   "bonus": true
   },
   {
    "id": "gsc-1145519",
@@ -14956,6 +15229,38 @@
    "bonus": false
   },
   {
+   "id": "gsc-1146663",
+   "source": "gsc",
+   "sourceId": "1146663",
+   "name": "【BOX】ブラインドボックスシリーズ レーシングミクオールスターズ フィギュアコレクション Vol.1（8個入）",
+   "series": "初音ミク GTプロジェクト",
+   "maker": "グッドスマイルレーシング",
+   "seller": "グッドスマイルカンパニー",
+   "category": "トレーディング・カプセルトイ",
+   "spec": "プラスチック製 塗装済み完成品・ノンスケール・専用台座付属・全高：約75mm",
+   "jan": "4570232593343",
+   "priceJpy": 17600,
+   "preorderStart": null,
+   "preorderEnd": null,
+   "preorderEndAt": null,
+   "releaseMonth": null,
+   "availability": null,
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146663/NyvraUR12QcPf0jn5sFdHA8gC9D6Ei7L.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1146663",
+   "shops": [
+    {
+     "name": "あみあみ",
+     "url": "https://www.amiami.jp/top/detail/detail?scode=GOODS-04870572"
+    }
+   ],
+   "firstSeen": "2026-11-20",
+   "fetchedAt": "2026-11-20",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146663/Ycygk5KniJzVhMHqafNmrbsPQUGvT8w0.jpg",
+   "bonus": false
+  },
+  {
    "id": "gsc-1146684",
    "source": "gsc",
    "sourceId": "1146684",
@@ -15322,7 +15627,7 @@
    "preorderEndAt": "2026-12-16T23:59:59+09:00",
    "releaseMonth": null,
    "availability": "PreOrder",
-   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146773/WRqpyc1v6PQB0Ne2UmtL49aXZFgksfSn.jpg",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146773/RuVp3NWeXS1B7UjxMJYHCGdZgwitLThr.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1146773",
    "shops": [
@@ -15332,7 +15637,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146773/e70JB3XLwgTEA9QPFjtcvxsHVqU8GM6f.jpg",
    "bonus": false
@@ -15381,7 +15686,7 @@
    "preorderEndAt": "2026-12-02T23:59:59+09:00",
    "releaseMonth": null,
    "availability": "PreOrder",
-   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146811/T5DYipnQ0ZbJsCqKdmxfw1Lzhk9WEX4G.jpg",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146811/7SuMnjxsUHaJF6TbhwQKcDY4GvyCztL3.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1146811",
    "shops": [
@@ -15391,7 +15696,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146811/hgLJUuK95RV4d3np8WBQTYsx6kXCfqyr.jpg",
    "bonus": false
@@ -15413,7 +15718,7 @@
    "preorderEndAt": "2026-12-02T23:59:59+09:00",
    "releaseMonth": null,
    "availability": "PreOrder",
-   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146812/hqVN0ZUfMuLkHGQWX8yCsxmwg3pjBac1.jpg",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146812/3V1DdgwSyZQbX2JNL5qz0j9RHa6hAT4K.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1146812",
    "shops": [
@@ -15423,7 +15728,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146812/6KCEHa84tRJjm9PxL0ngeFwi7DZ5zAS1.jpg",
    "bonus": false
@@ -15445,7 +15750,7 @@
    "preorderEndAt": "2026-12-02T23:59:59+09:00",
    "releaseMonth": null,
    "availability": "PreOrder",
-   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146813/5hpWv302yndJXFHr1QN8w4BRxkDicC9V.jpg",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146813/Akmj9xfzJ3DB5nLPK71gbGTQYdNUXuvw.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1146813",
    "shops": [
@@ -15455,7 +15760,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146813/3g0iK8PYe19aQuXTM7HxbfyLFk2npDcV.jpg",
    "bonus": false
@@ -15477,7 +15782,7 @@
    "preorderEndAt": "2026-12-02T23:59:59+09:00",
    "releaseMonth": null,
    "availability": "PreOrder",
-   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146814/Xf9cQu3y12BsEN5t4r7gDqTnZpaWeRUH.jpg",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146814/aKsdzSyxwg91fpWjHuq5UCm8VirBLtXv.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1146814",
    "shops": [
@@ -15487,7 +15792,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146814/VE5w2eASQ8gC7uKi0xLb6JkzrdFqUTmH.jpg",
    "bonus": false
@@ -15509,7 +15814,7 @@
    "preorderEndAt": "2026-12-02T23:59:59+09:00",
    "releaseMonth": null,
    "availability": "PreOrder",
-   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146815/FREgJY14n8Gep3VfMCiudBW6z7NhkmSr.jpg",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146815/bJU7DTfARiPLg6kVvGry9CBxaq18XFHK.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1146815",
    "shops": [
@@ -15519,7 +15824,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146815/apXSG80fMPt1s5uWq7jA4crJFHvEbYBy.jpg",
    "bonus": false
@@ -15541,7 +15846,7 @@
    "preorderEndAt": "2026-12-02T23:59:59+09:00",
    "releaseMonth": null,
    "availability": "PreOrder",
-   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146816/W08e4a9DJfxEFv3izHZhBNdQ6TmGckX1.jpg",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146816/6bhRKgd7e9STGnfmj4XH2qDtcEQ3PZy5.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1146816",
    "shops": [
@@ -15551,7 +15856,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146816/Tv4kcAXxgenLDraHMbUz0PEhWs1VS2JQ.jpg",
    "bonus": false
@@ -15573,7 +15878,7 @@
    "preorderEndAt": "2026-12-02T23:59:59+09:00",
    "releaseMonth": null,
    "availability": "PreOrder",
-   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146817/gzpUGvV3SEZwH84jukh7QByeL2tiW0aA.jpg",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146817/EDbTRd6YS4aQA58fFVCpmk3z0NgcLXeB.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1146817",
    "shops": [
@@ -15583,7 +15888,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146817/vGrwqNfuZ175cepTXj0mY9RFUCEHP8yD.jpg",
    "bonus": false
@@ -15605,7 +15910,7 @@
    "preorderEndAt": "2026-12-02T23:59:59+09:00",
    "releaseMonth": null,
    "availability": "PreOrder",
-   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146818/VcGp7Zqh1dUC63kMrJL2ywEjRnBNF8sH.jpg",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146818/HQJ5ydcbC8jKxRkS27FBug4hrUi3pGXa.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1146818",
    "shops": [
@@ -15615,7 +15920,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146818/kp9fbXRHMNEhzVP2awABYm3enDcg78Ud.jpg",
    "bonus": false
@@ -15637,7 +15942,7 @@
    "preorderEndAt": "2026-12-02T23:59:59+09:00",
    "releaseMonth": null,
    "availability": "PreOrder",
-   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146819/gWYxTQmkcw3D7daE8pyjJUZCG2KSM659.jpg",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146819/ptU8e4z0V2guJLyGDHXhTWrsRFiMKB13.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1146819",
    "shops": [
@@ -15647,7 +15952,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146819/usAiJpB1Fd640bjX9vk7TnrP8yKwqc5S.jpg",
    "bonus": false
@@ -15669,7 +15974,7 @@
    "preorderEndAt": "2026-12-02T23:59:59+09:00",
    "releaseMonth": null,
    "availability": "PreOrder",
-   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146820/czVgP8S0MXZBiT56YfUE4LGxtu3aqHNv.jpg",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146820/1ezy6xB4F8nmCKbPVtE9dQfkpv0X3NUR.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1146820",
    "shops": [
@@ -15679,7 +15984,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146820/xGqvXQaPHJFkcwm63f8SjUr5NenMpCgz.jpg",
    "bonus": false
@@ -15701,7 +16006,7 @@
    "preorderEndAt": "2026-12-02T23:59:59+09:00",
    "releaseMonth": null,
    "availability": "PreOrder",
-   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146821/BngHzu3LhiNkCxftwEDM2QeK1PY0vG9c.jpg",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146821/ahZBSAVm0RE2ec7j3fnMsqyYCri8wPtG.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1146821",
    "shops": [
@@ -15711,7 +16016,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146821/Bry4LSvZY28hfJNdD1RQEC7FAzVgjXk9.jpg",
    "bonus": false
@@ -15733,7 +16038,7 @@
    "preorderEndAt": "2026-12-02T23:59:59+09:00",
    "releaseMonth": null,
    "availability": "PreOrder",
-   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146822/xzVTmBKk0UGdEP2yAu1jYe6cLQwZ9RFa.jpg",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146822/2yVr34A6ztNF9fZeuPEWikdHbYU5vn8L.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1146822",
    "shops": [
@@ -15743,7 +16048,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146822/Uzk0TeqNuLcRnDA5Vv1mZpBMaGx8gt7s.jpg",
    "bonus": false
@@ -15765,7 +16070,7 @@
    "preorderEndAt": "2026-12-02T23:59:59+09:00",
    "releaseMonth": null,
    "availability": "PreOrder",
-   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146823/JhK0L5v43Q19cCd2xEWpFes7abTwS8kj.jpg",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146823/gbempxPEfX1hwWRdZA4Kk3Hat6qJL5vz.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1146823",
    "shops": [
@@ -15775,7 +16080,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146823/zjtVngpwU4q1sWLNmvhT0abyFcSi7QEB.jpg",
    "bonus": false
@@ -15797,7 +16102,7 @@
    "preorderEndAt": "2026-12-02T23:59:59+09:00",
    "releaseMonth": null,
    "availability": "PreOrder",
-   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146824/vrd7zAER4D6stQxqJmTFNfB3gGV5ZpX0.jpg",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146824/M2dgiHVw3QtJacnPe6XE1zArfZ0mx4Wq.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1146824",
    "shops": [
@@ -15807,7 +16112,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146824/LD4YRPSgZKqHFNv8k5fT71naxAbMGseQ.jpg",
    "bonus": false
@@ -15829,7 +16134,7 @@
    "preorderEndAt": "2026-12-02T23:59:59+09:00",
    "releaseMonth": null,
    "availability": "PreOrder",
-   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146825/KHgekPJ3RzEwt8fy1BZ45iD79Qd0YrCL.jpg",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146825/1bfJXhLPt2E7HcyU8jSxiY5Td6gkvmaW.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1146825",
    "shops": [
@@ -15839,7 +16144,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146825/uVKpZF0NEgG2ctYa5JqMTQHw6zvRnDik.jpg",
    "bonus": false
@@ -15861,7 +16166,7 @@
    "preorderEndAt": "2026-12-02T23:59:59+09:00",
    "releaseMonth": null,
    "availability": "PreOrder",
-   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146826/cxa86LBvTn1jQpmiSE4NdVsRHArhqKY7.jpg",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146826/Zy1YA89uLMh07ga42XFcrDnqsxJmPptd.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1146826",
    "shops": [
@@ -15871,7 +16176,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146826/UmSy8LhKr9kDj5EeqTNYx2sf0iXgBuPZ.jpg",
    "bonus": false
@@ -15893,7 +16198,7 @@
    "preorderEndAt": "2026-12-02T23:59:59+09:00",
    "releaseMonth": null,
    "availability": "PreOrder",
-   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146827/hjZ4GmY90ncr6BHgix2Atds3yafFzw7D.jpg",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146827/uFm6YRL0ed3HBgxQqhJzNU75fEVac9iZ.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1146827",
    "shops": [
@@ -15903,7 +16208,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146827/Yrx1ZnzVBNyDf4jmud8ETPHAKXqwach0.jpg",
    "bonus": false
@@ -15925,7 +16230,7 @@
    "preorderEndAt": "2026-12-02T23:59:59+09:00",
    "releaseMonth": null,
    "availability": "PreOrder",
-   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146828/7QMnCdwzS4pXWs2xuLGKTf5U6mNqktRF.jpg",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146828/5zyv4gnZaK0esWf9NYPEhx7CiFbRDuJU.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1146828",
    "shops": [
@@ -15935,7 +16240,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146828/fxhuY9HiMAKEW3a0rG45eg1nL2pDJyTF.jpg",
    "bonus": false
@@ -15957,7 +16262,7 @@
    "preorderEndAt": "2026-12-02T23:59:59+09:00",
    "releaseMonth": null,
    "availability": "PreOrder",
-   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146829/8vUQAN26MYEcJ5tXCkWfGbiSeRVjZy4D.jpg",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146829/SBVrbhATK2a8XCpu5P3mJkvLQcwneyRq.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1146829",
    "shops": [
@@ -15967,7 +16272,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146829/NaQ4EYdHcfvMAtV2RgnFyuWkbC3PrzZj.jpg",
    "bonus": false
@@ -15989,7 +16294,7 @@
    "preorderEndAt": "2026-12-02T23:59:59+09:00",
    "releaseMonth": null,
    "availability": "PreOrder",
-   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146830/n8L9GrHcD5PxqM6Vp0X3FgtdAKREUjbC.jpg",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146830/grEzK1FWsNQMkqbXhfB4AwyeRctaiD8P.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1146830",
    "shops": [
@@ -15999,7 +16304,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146830/1Nw4FgCcYpDK5V2EUhX0AdinyWHb8suB.jpg",
    "bonus": false
@@ -16300,7 +16605,7 @@
    "preorderEndAt": "2026-12-23T23:59:59+09:00",
    "releaseMonth": null,
    "availability": "PreOrder",
-   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146929/ffbc67529ad2ae4b3ef00538326d164b.jpg",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146929/4cc117d3b7d233bd41e3bc7a8b174239.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1146929",
    "shops": [
@@ -16310,7 +16615,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146929/439b4bedbb657741edc0b7f49a711925.jpg",
    "bonus": false
@@ -16787,7 +17092,7 @@
    "preorderEndAt": "2027-01-06T23:59:59+09:00",
    "releaseMonth": null,
    "availability": "PreOrder",
-   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147075/CVvd1axPZSsmrYDb7zgfwF2NGic4B5MR.jpg",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147075/vPh79Ue3rbAgNy8FwHGLdCimkpB6jS2M.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1147075",
    "shops": [
@@ -16797,7 +17102,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147075/QLAR73Nxvj245d8H9qhwrTzZumP1fJFB.jpg",
    "bonus": false
@@ -17011,7 +17316,7 @@
    "preorderEndAt": "2026-11-25T23:59:59+09:00",
    "releaseMonth": null,
    "availability": "PreOrder",
-   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147129/tWfiqp85KFMVQSrPGnZdA0jDesUwBkXC.jpg",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147129/rWT2ZCLSjg1dmcG0JxYBX9KiHwthkMQA.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1147129",
    "shops": [
@@ -17021,7 +17326,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147129/fhTyMLp0Z49KcuwD3BFJxPvrQqnCbi8R.jpg",
    "bonus": false
@@ -17043,7 +17348,7 @@
    "preorderEndAt": "2026-12-23T23:59:59+09:00",
    "releaseMonth": null,
    "availability": "PreOrder",
-   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147167/9YLFA42u5nQJXH6tGpCfeh18Z3BsiqTy.jpg",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147167/7a2c0269d912249b134c761e97776372.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1147167",
    "shops": [
@@ -17053,7 +17358,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147167/f16146c264fa49335444cdf7fc59fa9b.jpg",
    "bonus": false
@@ -17203,12 +17508,12 @@
    "preorderEndAt": "2027-02-17T23:59:59+09:00",
    "releaseMonth": null,
    "availability": "PreOrder",
-   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147367/WGMTnSL7eCcUk1hvBDiKupFXaxNmPwHQ.jpg",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147367/EFARJaZMfu69iW7kyNg12eU3CrvsBtG4.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1147367",
    "shops": [],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147367/a0txL4Z7umRpGTENFMknf5Jdryqw3vBe.jpg",
    "bonus": false
@@ -17604,7 +17909,7 @@
    "preorderEndAt": "2026-12-23T23:59:59+09:00",
    "releaseMonth": null,
    "availability": "PreOrder",
-   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147413/08wekmLCaJGutUisPyhjZRDfrxVN56Tb.jpg",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147384/pdr6ciuKMbLq38F5GTP0wD2esC7SvgEj.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1147413",
    "shops": [
@@ -17614,7 +17919,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-18",
+   "fetchedAt": "2026-11-20",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147413/89e0ec5f3a0022ebba311a283c26a20a.jpg",
    "bonus": false
@@ -17965,6 +18270,38 @@
    "fetchedAt": "2026-11-19",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147659/mhysGZV5aTEBYk6rRjMNqHFApngPQDx4.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-1147697",
+   "source": "gsc",
+   "sourceId": "1147697",
+   "name": "幽鬼 バニーVer.",
+   "series": "死亡遊戯で飯を食う。",
+   "maker": "FREEing",
+   "seller": "グッドスマイルカンパニー",
+   "category": "スケールフィギュア",
+   "spec": "プラスチック製塗装済み完成品・1/4スケール・全高：約440mm",
+   "jan": "4570001515330",
+   "priceJpy": 39600,
+   "preorderStart": "2026-11-19",
+   "preorderEnd": "2027-01-13",
+   "preorderEndAt": "2027-01-13T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147697/n56y9UbzZKkGxwLvq4CmfiMe1Sa8jhtF.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1147697",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/72578/"
+    }
+   ],
+   "firstSeen": "2026-11-20",
+   "fetchedAt": "2026-11-20",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147697/ks4HWgXvTyuBpFJEPYLjVcR573rnmiGa.jpg",
    "bonus": false
   },
   {
