@@ -33,8 +33,9 @@ async function get(url) {
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       return await res.text();
     } catch (err) {
-      if (attempt >= 3) throw new Error(`GET ${url} failed: ${err.message}`);
-      await sleep(3000 * attempt);
+      // 503s from the site have lasted minutes, so back off for longer (15 s, 30 s, 45 s) before giving up.
+      if (attempt >= 4) throw new Error(`GET ${url} failed: ${err.message}`);
+      await sleep(15000 * attempt);
     }
   }
 }

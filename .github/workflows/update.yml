@@ -47,8 +47,13 @@ jobs:
         if: env.SITE_URL == ''
         run: echo "SITE_URL=https://yoyaku.fans" >> "$GITHUB_ENV"
 
+      # If Good Smile is unreachable, keep going with the last good data so the site is still rebuilt
+      # (countdowns and "closed" labels depend on the build date). The run is failed at the end instead,
+      # which opens the 自動更新失敗 issue; scripts/check.mjs blocks the deploy once the data is 36 h old.
       - name: Fetch preorder data
+        id: gsc
         if: github.event_name != 'push'
+        continue-on-error: true
         run: node scraper/gsc.mjs
 
       # Announcement-only sources. A failure here must not block the Good Smile data or the deploy;
@@ -98,11 +103,16 @@ jobs:
           fi
 
       - uses: actions/configure-pages@v5
+      # The artifact name carries the attempt number: "Re-run" otherwise finds two artifacts named
+      # github-pages in the same run and the deploy fails.
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
+          name: github-pages-${{ github.run_attempt }}
       - id: deploy
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages-${{ github.run_attempt }}
 
       - name: Tell search engines about new pages (IndexNow)
         if: env.INDEXNOW_KEY != ''
@@ -118,6 +128,12 @@ jobs:
             process.stdout.write(JSON.stringify({ host: '$host', key: process.env.INDEXNOW_KEY, keyLocation: process.env.SITE_URL + '/' + process.env.INDEXNOW_KEY + '.txt', urlList }));
           " > indexnow.json
           curl -sS -o /dev/null -w "IndexNow: %{http_code}\n" -H 'content-type: application/json; charset=utf-8' -d @indexnow.json https://api.indexnow.org/indexnow || true
+
+      - name: Fail the run when the Good Smile scrape failed
+        if: steps.gsc.outcome == 'failure'
+        run: |
+          echo "The site was rebuilt with the previous Good Smile data, but the scrape failed (see the Fetch preorder data step)." >&2
+          exit 1
 
       - name: Open or update an issue when the run fails
         if: failure()
