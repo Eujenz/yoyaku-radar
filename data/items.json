@@ -1,8 +1,8 @@
 {
- "updatedAt": "2026-11-21T12:51:06.314Z",
+ "updatedAt": "2026-11-21T21:46:35.328Z",
  "sourceUpdatedAt": {
-  "mh": "2026-11-21T12:51:07.687Z",
-  "alter": "2026-11-21T12:51:09.305Z"
+  "mh": "2026-11-21T21:47:05.634Z",
+  "alter": "2026-11-21T21:47:07.386Z"
  },
  "items": [
   {
@@ -2298,7 +2298,7 @@
     }
    ],
    "firstSeen": "2026-11-20",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/10540/ebe49afb0d23b400cbd82aa89c4e92bd.jpg",
    "bonus": true
@@ -2616,7 +2616,7 @@
     }
    ],
    "firstSeen": "2026-11-20",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/11554/f28fc200211965571039a5e2e6a38892.jpg",
    "bonus": false
@@ -3502,7 +3502,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/36226/s24LyW57zxSVvZK9Ei6chfQ3GdgAFpBb.jpg",
    "bonus": true
@@ -4288,7 +4288,7 @@
    "url": "https://www.goodsmile.com/ja/product/60708",
    "shops": [],
    "firstSeen": "2026-11-20",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/60708/bw6QiTgZXNd4WBYLKueJnC5mMvESVA3q.jpg",
    "bonus": false
@@ -6404,7 +6404,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1138061/P0GmHpnqLuTbAsNgxri6f9DW7zZEF51J.jpg",
    "bonus": false
@@ -7772,7 +7772,7 @@
    "url": "https://www.goodsmile.com/ja/product/1139166",
    "shops": [],
    "firstSeen": "2026-11-20",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1139166/6QH1kAMyWt9pqvSfPuirKXBLN7gTwh83.jpg",
    "bonus": false
@@ -8117,7 +8117,7 @@
     }
    ],
    "firstSeen": "2026-11-20",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1139825/578a4877be2094d8215860a7edc77699.jpg",
    "bonus": true
@@ -8149,7 +8149,7 @@
     }
    ],
    "firstSeen": "2026-11-20",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1139827/VChAUnYsdJBeqw3LStH52gucmp1DRjKy.jpg",
    "bonus": true
@@ -8294,7 +8294,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1140171/AgNauMpVTQzJfRebZUL032BSCmEDqPsc.jpg",
    "bonus": false
@@ -8408,7 +8408,7 @@
     }
    ],
    "firstSeen": "2026-11-20",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1140600/WwAvUpaB1dh6mJqtyK4PQEgfsruFHiYR.jpg",
    "bonus": true
@@ -8603,7 +8603,7 @@
     }
    ],
    "firstSeen": "2026-11-20",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1140674/bg8hJXnisR9utYyqfSDdM2UTFGevW4wL.jpg",
    "bonus": false
@@ -9353,7 +9353,7 @@
     }
    ],
    "firstSeen": "2026-11-20",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1141456/cPziMwRyghFk4SfKNLnj7vxr50bde9a8.jpg",
    "bonus": true
@@ -10089,7 +10089,7 @@
     }
    ],
    "firstSeen": "2026-11-20",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1142162/W3RuXZf2eqFtY8PTSL95VagrnQHjB6dp.jpg",
    "bonus": false
@@ -10312,7 +10312,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1142176/F25exmGSasytEf9g3zJD8pwCQTiBPNd0.jpg",
    "bonus": true
@@ -10552,7 +10552,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1142352/B6PhrW1JiAqdKnekHzUupmXsVYC5FyLj.jpg",
    "bonus": false
@@ -10806,7 +10806,7 @@
     }
    ],
    "firstSeen": "2026-11-20",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1142377/NgiCaXDS6npBUjHqxw9zd1Gkr04ut3mc.jpg",
    "bonus": false
@@ -10974,7 +10974,7 @@
     }
    ],
    "firstSeen": "2026-11-20",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1142464/9EniKsBaTkLbQrGx3MPegWc4UCzw1qud.jpg",
    "bonus": false
@@ -11471,7 +11471,7 @@
     }
    ],
    "firstSeen": "2026-11-20",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1142747/FWGKnwLb6eDSMQmjYkgdUPBzEp5Rt9Zc.jpg",
    "bonus": false
@@ -11580,7 +11580,7 @@
    "url": "https://www.goodsmile.com/ja/product/1142838",
    "shops": [],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1142838/2iv1EAYcdRkC5wbeh7s6TH0m3FZMgLQD.jpg",
    "bonus": false
@@ -11755,7 +11755,7 @@
     }
    ],
    "firstSeen": "2026-11-20",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1143250/ENGiynY51vP8MR7V6daQjhmFSfUXuwzB.jpg",
    "bonus": true
@@ -12038,7 +12038,7 @@
     }
    ],
    "firstSeen": "2026-11-20",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1143269/zmBte8MQNYnr5WPC1xq0yUJgL3RXKpVS.jpg",
    "bonus": true
@@ -12265,7 +12265,7 @@
     }
    ],
    "firstSeen": "2026-11-20",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1143776/hi9pqdRtPsLgx4Y8zJSkZDT5acX1MKv6.jpg",
    "bonus": false
@@ -12297,7 +12297,7 @@
     }
    ],
    "firstSeen": "2026-11-20",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1143777/evNk8P07R4WfwFngcVME3GdJQiTtUyqK.jpg",
    "bonus": false
@@ -12329,7 +12329,7 @@
     }
    ],
    "firstSeen": "2026-11-20",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1143778/AJVeRpHuYjUDBCSP6xyTMZikXqndhf4w.jpg",
    "bonus": false
@@ -12873,7 +12873,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144118/RTCwEnK8pPVk14ybYjWHsFJx6ZBS9imc.jpg",
    "bonus": false
@@ -12927,7 +12927,7 @@
    "url": "https://www.goodsmile.com/ja/product/1144121",
    "shops": [],
    "firstSeen": "2026-11-20",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144121/m1GPa3B2WgbhJ70EFUTuHfjzw8veDM9Z.jpg",
    "bonus": false
@@ -12991,7 +12991,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144129/3dd3d1271aebe77624b8b3d63a1c39d4.jpg",
    "bonus": true
@@ -13055,7 +13055,7 @@
     }
    ],
    "firstSeen": "2026-11-20",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144132/3pD6Wd5F0g4syXnUZEzjRi8e9avAVwb2.jpg",
    "bonus": true
@@ -13114,7 +13114,7 @@
     }
    ],
    "firstSeen": "2026-11-20",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144134/Qtrb5qSYakuRGWUX7dCgcMzifP9HJFen.jpg",
    "bonus": true
@@ -13505,7 +13505,7 @@
     }
    ],
    "firstSeen": "2026-11-20",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144444/ZxKgqypWfuT96kc4E3MCnUQsXRh15a7G.jpg",
    "bonus": true
@@ -13537,7 +13537,7 @@
     }
    ],
    "firstSeen": "2026-11-20",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144445/tcYq35ehX8uaENFHvUM7fDsWAR64CwSQ.jpg",
    "bonus": true
@@ -13682,7 +13682,7 @@
    "url": "https://www.goodsmile.com/ja/product/1144470",
    "shops": [],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144470/rDcjbpEB3qitJAhmu2g8PMeUCHzGxak1.jpg",
    "bonus": false
@@ -14119,7 +14119,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144661/My2KbYxsVE7fjZJABTe5SwtH8zq6Q0cd.jpg",
    "bonus": true
@@ -14485,7 +14485,7 @@
    "url": "https://www.goodsmile.com/ja/product/1144991",
    "shops": [],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144991/Ya3iDeX72MjHJg1nkrmNxVpQLuSAhEfv.jpg",
    "bonus": false
@@ -14567,7 +14567,7 @@
    "url": "https://www.goodsmile.com/ja/product/1145227",
    "shops": [],
    "firstSeen": "2026-11-20",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1145227/mSMjXHf8dyUPLF4RvpG1NnTDw6erAxJ2.jpg",
    "bonus": false
@@ -14626,7 +14626,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1145327/GsW3h6MiP9ZYfn7cxBv5zdtNbVSem4FX.jpg",
    "bonus": true
@@ -14781,7 +14781,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1145497/pKi3LCj8VmWQfbDkNudy9UPcs62t0rgv.jpg",
    "bonus": false
@@ -14813,7 +14813,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1145498/RNm80wM1j5ghU79vQqVJcadknbXYSDyZ.jpg",
    "bonus": false
@@ -14845,7 +14845,7 @@
     }
    ],
    "firstSeen": "2026-11-20",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1145514/vB0s4RPVXZgrNYDzWFaqnb1J6kGxL28u.jpg",
    "bonus": true
@@ -15562,7 +15562,7 @@
     }
    ],
    "firstSeen": "2026-11-20",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146562/cJQPNVaLEAGRfsCmHdgSBKWb9qDx3ijz.jpg",
    "bonus": false
@@ -15849,7 +15849,7 @@
     }
    ],
    "firstSeen": "2026-11-20",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146663/Ycygk5KniJzVhMHqafNmrbsPQUGvT8w0.jpg",
    "bonus": false
@@ -16231,7 +16231,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146773/e70JB3XLwgTEA9QPFjtcvxsHVqU8GM6f.jpg",
    "bonus": false
@@ -16290,7 +16290,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146811/hgLJUuK95RV4d3np8WBQTYsx6kXCfqyr.jpg",
    "bonus": false
@@ -16322,7 +16322,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146812/6KCEHa84tRJjm9PxL0ngeFwi7DZ5zAS1.jpg",
    "bonus": false
@@ -16354,7 +16354,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146813/3g0iK8PYe19aQuXTM7HxbfyLFk2npDcV.jpg",
    "bonus": false
@@ -16386,7 +16386,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146814/VE5w2eASQ8gC7uKi0xLb6JkzrdFqUTmH.jpg",
    "bonus": false
@@ -16418,7 +16418,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146815/apXSG80fMPt1s5uWq7jA4crJFHvEbYBy.jpg",
    "bonus": false
@@ -16450,7 +16450,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146816/Tv4kcAXxgenLDraHMbUz0PEhWs1VS2JQ.jpg",
    "bonus": false
@@ -16482,7 +16482,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146817/vGrwqNfuZ175cepTXj0mY9RFUCEHP8yD.jpg",
    "bonus": false
@@ -16514,7 +16514,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146818/kp9fbXRHMNEhzVP2awABYm3enDcg78Ud.jpg",
    "bonus": false
@@ -16546,7 +16546,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146819/usAiJpB1Fd640bjX9vk7TnrP8yKwqc5S.jpg",
    "bonus": false
@@ -16578,7 +16578,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146820/xGqvXQaPHJFkcwm63f8SjUr5NenMpCgz.jpg",
    "bonus": false
@@ -16610,7 +16610,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146821/Bry4LSvZY28hfJNdD1RQEC7FAzVgjXk9.jpg",
    "bonus": false
@@ -16642,7 +16642,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146822/Uzk0TeqNuLcRnDA5Vv1mZpBMaGx8gt7s.jpg",
    "bonus": false
@@ -16674,7 +16674,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146823/zjtVngpwU4q1sWLNmvhT0abyFcSi7QEB.jpg",
    "bonus": false
@@ -16706,7 +16706,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146824/LD4YRPSgZKqHFNv8k5fT71naxAbMGseQ.jpg",
    "bonus": false
@@ -16738,7 +16738,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146825/uVKpZF0NEgG2ctYa5JqMTQHw6zvRnDik.jpg",
    "bonus": false
@@ -16770,7 +16770,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146826/UmSy8LhKr9kDj5EeqTNYx2sf0iXgBuPZ.jpg",
    "bonus": false
@@ -16802,7 +16802,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146827/Yrx1ZnzVBNyDf4jmud8ETPHAKXqwach0.jpg",
    "bonus": false
@@ -16834,7 +16834,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146828/fxhuY9HiMAKEW3a0rG45eg1nL2pDJyTF.jpg",
    "bonus": false
@@ -16866,7 +16866,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146829/NaQ4EYdHcfvMAtV2RgnFyuWkbC3PrzZj.jpg",
    "bonus": false
@@ -16898,7 +16898,7 @@
     }
    ],
    "firstSeen": "2026-11-16",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146830/1Nw4FgCcYpDK5V2EUhX0AdinyWHb8suB.jpg",
    "bonus": false
@@ -17204,7 +17204,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146929/439b4bedbb657741edc0b7f49a711925.jpg",
    "bonus": false
@@ -17455,7 +17455,7 @@
    "url": "https://www.goodsmile.com/ja/product/1147013",
    "shops": [],
    "firstSeen": "2026-11-20",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147013/k2FCZBjzJrUXnAy4T5H9KMNEusgwdP8i.jpg",
    "bonus": false
@@ -17718,7 +17718,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147075/QLAR73Nxvj245d8H9qhwrTzZumP1fJFB.jpg",
    "bonus": false
@@ -17942,7 +17942,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147129/fhTyMLp0Z49KcuwD3BFJxPvrQqnCbi8R.jpg",
    "bonus": false
@@ -17974,7 +17974,7 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147167/f16146c264fa49335444cdf7fc59fa9b.jpg",
    "bonus": false
@@ -18138,7 +18138,7 @@
     }
    ],
    "firstSeen": "2026-11-20",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147351/RgPNkSWaiT3cLsymz52BjU8A7wdJhteZ.jpg",
    "bonus": true
@@ -18165,7 +18165,7 @@
    "url": "https://www.goodsmile.com/ja/product/1147367",
    "shops": [],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147367/a0txL4Z7umRpGTENFMknf5Jdryqw3vBe.jpg",
    "bonus": false
@@ -18946,14 +18946,9 @@
    "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147662/uRa6zJwSbpyF8gCH2t3fjdXNAe0sGimU.jpg",
    "isRerelease": false,
    "url": "https://www.goodsmile.com/ja/product/1147662",
-   "shops": [
-    {
-     "name": "GOOD SMILE STORE 楽天市場店",
-     "url": "https://item.rakuten.co.jp/goodsmilestore/72628/"
-    }
-   ],
+   "shops": [],
    "firstSeen": "2026-11-20",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147662/W78haNCwvVqpxX42zFrDbUsyLuQ6TASK.jpg",
    "bonus": false
@@ -18980,7 +18975,7 @@
    "url": "https://www.goodsmile.com/ja/product/1147682",
    "shops": [],
    "firstSeen": "2026-11-20",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147682/WanC03dsvJTyXVFc5qMztuSjBN7ghiZ9.jpg",
    "bonus": false
@@ -19012,7 +19007,7 @@
     }
    ],
    "firstSeen": "2026-11-20",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147688/07FjrczwYSPHm4L1AtnRdVup3KDJkZ6i.jpg",
    "bonus": false
@@ -19044,7 +19039,7 @@
     }
    ],
    "firstSeen": "2026-11-20",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147695/Ujw7kRKTbsDVgiH8ZLAq4XQyr6vBN1cC.jpg",
    "bonus": false
@@ -19076,7 +19071,7 @@
     }
    ],
    "firstSeen": "2026-11-20",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147697/ks4HWgXvTyuBpFJEPYLjVcR573rnmiGa.jpg",
    "bonus": false
@@ -19108,7 +19103,7 @@
     }
    ],
    "firstSeen": "2026-11-20",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147709/Bs0byzvX3V4G1gtRaLFQ7KCTunkJZD8x.jpg",
    "bonus": false
@@ -19140,7 +19135,7 @@
     }
    ],
    "firstSeen": "2026-11-20",
-   "fetchedAt": "2026-11-20",
+   "fetchedAt": "2026-11-22",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147910/8LZEwYpNfaJFR9Ubq6HKXB4VzM3DCWxy.jpg",
    "bonus": false
@@ -19265,7 +19260,7 @@
    "image": "https://www.megahobby.jp/images/item/item_0000004656_KeTBH5R2VskC_02.jpg",
    "url": "https://www.megahobby.jp/products/item/4656/",
    "firstSeen": "2026-11-19",
-   "fetchedAt": "2026-11-21",
+   "fetchedAt": "2026-11-22",
    "stage": "announced",
    "status": "open"
   },
@@ -19293,7 +19288,7 @@
    "image": "https://www.megahobby.jp/images/item/item_0000005852_uSKyXwrPGv2t_02.jpg",
    "url": "https://www.megahobby.jp/products/item/5852/",
    "firstSeen": "2026-11-19",
-   "fetchedAt": "2026-11-21",
+   "fetchedAt": "2026-11-22",
    "stage": "announced",
    "status": "open"
   },
@@ -19321,7 +19316,7 @@
    "image": "https://www.megahobby.jp/images/item/item_0000006157_9zmZZfcaH2cj_02.jpg",
    "url": "https://www.megahobby.jp/products/item/6157/",
    "firstSeen": "2026-11-19",
-   "fetchedAt": "2026-11-21",
+   "fetchedAt": "2026-11-22",
    "stage": "announced",
    "status": "open"
   },
@@ -19349,7 +19344,7 @@
    "image": "https://www.megahobby.jp/images/item/item_0000006162_foZ93n7fMkcn_02.jpg",
    "url": "https://www.megahobby.jp/products/item/6162/",
    "firstSeen": "2026-11-19",
-   "fetchedAt": "2026-11-21",
+   "fetchedAt": "2026-11-22",
    "stage": "announced",
    "status": "open"
   },
@@ -19377,7 +19372,7 @@
    "image": "https://www.megahobby.jp/images/item/item_0000006163_05wHdvQrmpVE_02.jpg",
    "url": "https://www.megahobby.jp/products/item/6163/",
    "firstSeen": "2026-11-19",
-   "fetchedAt": "2026-11-21",
+   "fetchedAt": "2026-11-22",
    "stage": "announced",
    "status": "open"
   },
@@ -19405,7 +19400,7 @@
    "image": "https://www.megahobby.jp/images/item/item_0000006164_C3iDsmXZZZv0_02.jpg",
    "url": "https://www.megahobby.jp/products/item/6164/",
    "firstSeen": "2026-11-19",
-   "fetchedAt": "2026-11-21",
+   "fetchedAt": "2026-11-22",
    "stage": "announced",
    "status": "open"
   },
@@ -19433,7 +19428,7 @@
    "image": "https://www.megahobby.jp/images/item/item_0000006165_nnUtOmjuEh2g_02.jpg",
    "url": "https://www.megahobby.jp/products/item/6165/",
    "firstSeen": "2026-11-19",
-   "fetchedAt": "2026-11-21",
+   "fetchedAt": "2026-11-22",
    "stage": "announced",
    "status": "open"
   },
@@ -19461,7 +19456,7 @@
    "image": "https://www.megahobby.jp/images/item/item_0000006166_0NkGy5XgzQU0_02.jpg",
    "url": "https://www.megahobby.jp/products/item/6166/",
    "firstSeen": "2026-11-19",
-   "fetchedAt": "2026-11-21",
+   "fetchedAt": "2026-11-22",
    "stage": "announced",
    "status": "open"
   },
@@ -19489,7 +19484,7 @@
    "image": "https://www.megahobby.jp/images/item/item_0000006167_uxxigXgWTX2l_02.jpg",
    "url": "https://www.megahobby.jp/products/item/6167/",
    "firstSeen": "2026-11-19",
-   "fetchedAt": "2026-11-21",
+   "fetchedAt": "2026-11-22",
    "stage": "announced",
    "status": "open"
   },
@@ -19517,7 +19512,7 @@
    "image": "https://www.megahobby.jp/images/item/item_0000006168_fO2GsXs2SiSS_02.jpg",
    "url": "https://www.megahobby.jp/products/item/6168/",
    "firstSeen": "2026-11-19",
-   "fetchedAt": "2026-11-21",
+   "fetchedAt": "2026-11-22",
    "stage": "announced",
    "status": "open"
   },
@@ -19545,7 +19540,7 @@
    "image": "https://www.megahobby.jp/images/item/item_0000006169_rNxbzsBtOebf_02.jpg",
    "url": "https://www.megahobby.jp/products/item/6169/",
    "firstSeen": "2026-11-19",
-   "fetchedAt": "2026-11-21",
+   "fetchedAt": "2026-11-22",
    "stage": "announced",
    "status": "open"
   },
@@ -19573,7 +19568,7 @@
    "image": "https://www.megahobby.jp/images/item/item_0000006170_VvlsG1t2JUFe_02.jpg",
    "url": "https://www.megahobby.jp/products/item/6170/",
    "firstSeen": "2026-11-19",
-   "fetchedAt": "2026-11-21",
+   "fetchedAt": "2026-11-22",
    "stage": "announced",
    "status": "open"
   },
@@ -19601,7 +19596,7 @@
    "image": "https://www.megahobby.jp/images/item/item_0000006171_8MO8SMb0O8ya_02.jpg",
    "url": "https://www.megahobby.jp/products/item/6171/",
    "firstSeen": "2026-11-19",
-   "fetchedAt": "2026-11-21",
+   "fetchedAt": "2026-11-22",
    "stage": "announced",
    "status": "open"
   },
@@ -19629,7 +19624,7 @@
    "image": "https://www.megahobby.jp/images/item/item_0000006172_gvj90t0MLbiB_02.jpg",
    "url": "https://www.megahobby.jp/products/item/6172/",
    "firstSeen": "2026-11-19",
-   "fetchedAt": "2026-11-21",
+   "fetchedAt": "2026-11-22",
    "stage": "announced",
    "status": "open"
   },
@@ -19657,7 +19652,7 @@
    "image": "https://www.megahobby.jp/images/item/item_0000006173_F8fOITpT9tTD_02.jpg",
    "url": "https://www.megahobby.jp/products/item/6173/",
    "firstSeen": "2026-11-19",
-   "fetchedAt": "2026-11-21",
+   "fetchedAt": "2026-11-22",
    "stage": "announced",
    "status": "open"
   },
@@ -19685,7 +19680,7 @@
    "image": "https://www.megahobby.jp/images/item/item_0000006174_Jmr7ybgTjRTq_02.jpg",
    "url": "https://www.megahobby.jp/products/item/6174/",
    "firstSeen": "2026-11-19",
-   "fetchedAt": "2026-11-21",
+   "fetchedAt": "2026-11-22",
    "stage": "announced",
    "status": "open"
   },
@@ -19713,7 +19708,7 @@
    "image": "https://www.megahobby.jp/images/item/item_0000006175_PctaVMV3i1ch_02.jpg",
    "url": "https://www.megahobby.jp/products/item/6175/",
    "firstSeen": "2026-11-19",
-   "fetchedAt": "2026-11-21",
+   "fetchedAt": "2026-11-22",
    "stage": "announced",
    "status": "open"
   },
@@ -19741,7 +19736,7 @@
    "image": "https://www.megahobby.jp/images/item/item_0000006176_KjnW3FdTza1d_02.jpg",
    "url": "https://www.megahobby.jp/products/item/6176/",
    "firstSeen": "2026-11-19",
-   "fetchedAt": "2026-11-21",
+   "fetchedAt": "2026-11-22",
    "stage": "announced",
    "status": "open"
   },
@@ -19769,7 +19764,7 @@
    "image": "https://www.megahobby.jp/images/item/item_0000006177_Hfl3h0tN3017_02.jpg",
    "url": "https://www.megahobby.jp/products/item/6177/",
    "firstSeen": "2026-11-19",
-   "fetchedAt": "2026-11-21",
+   "fetchedAt": "2026-11-22",
    "stage": "announced",
    "status": "open"
   },
@@ -19797,7 +19792,7 @@
    "image": "https://www.megahobby.jp/images/item/item_0000006178_ufe2DsBZoGIq_02.jpg",
    "url": "https://www.megahobby.jp/products/item/6178/",
    "firstSeen": "2026-11-19",
-   "fetchedAt": "2026-11-21",
+   "fetchedAt": "2026-11-22",
    "stage": "announced",
    "status": "open"
   },
@@ -19825,7 +19820,7 @@
    "image": "https://www.megahobby.jp/images/item/item_0000006179_9DjbWB6Wowzw_02.jpg",
    "url": "https://www.megahobby.jp/products/item/6179/",
    "firstSeen": "2026-11-19",
-   "fetchedAt": "2026-11-21",
+   "fetchedAt": "2026-11-22",
    "stage": "announced",
    "status": "open"
   },
@@ -19853,7 +19848,7 @@
    "image": "https://www.megahobby.jp/images/item/item_0000006180_lbyaGjNQxYx1_02.jpg",
    "url": "https://www.megahobby.jp/products/item/6180/",
    "firstSeen": "2026-11-19",
-   "fetchedAt": "2026-11-21",
+   "fetchedAt": "2026-11-22",
    "stage": "announced",
    "status": "open"
   },
@@ -19881,7 +19876,7 @@
    "image": "https://www.megahobby.jp/images/item/item_0000006181_y1jB7nTzkYm9_02.jpg",
    "url": "https://www.megahobby.jp/products/item/6181/",
    "firstSeen": "2026-11-19",
-   "fetchedAt": "2026-11-21",
+   "fetchedAt": "2026-11-22",
    "stage": "announced",
    "status": "open"
   },
@@ -19909,7 +19904,7 @@
    "image": "https://www.megahobby.jp/images/item/item_0000006182_Gm2t2ZsLvmse_02.jpg",
    "url": "https://www.megahobby.jp/products/item/6182/",
    "firstSeen": "2026-11-19",
-   "fetchedAt": "2026-11-21",
+   "fetchedAt": "2026-11-22",
    "stage": "announced",
    "status": "open"
   },
@@ -19937,7 +19932,7 @@
    "image": "https://www.megahobby.jp/images/item/item_0000006183_IViosaY4wkbU_02.jpg",
    "url": "https://www.megahobby.jp/products/item/6183/",
    "firstSeen": "2026-11-19",
-   "fetchedAt": "2026-11-21",
+   "fetchedAt": "2026-11-22",
    "stage": "announced",
    "status": "open"
   },
@@ -19965,7 +19960,7 @@
    "image": "https://www.megahobby.jp/images/item/item_0000006184_cdsE7mj1Jikb_02.jpg",
    "url": "https://www.megahobby.jp/products/item/6184/",
    "firstSeen": "2026-11-19",
-   "fetchedAt": "2026-11-21",
+   "fetchedAt": "2026-11-22",
    "stage": "announced",
    "status": "open"
   },
@@ -19993,7 +19988,7 @@
    "image": "https://www.megahobby.jp/images/item/item_0000006185_MX2HWD5Tdacb_02.jpg",
    "url": "https://www.megahobby.jp/products/item/6185/",
    "firstSeen": "2026-11-19",
-   "fetchedAt": "2026-11-21",
+   "fetchedAt": "2026-11-22",
    "stage": "announced",
    "status": "open"
   },
@@ -20021,7 +20016,7 @@
    "image": "https://www.megahobby.jp/images/item/item_0000006186_EGjaPpjHTYvN_02.jpg",
    "url": "https://www.megahobby.jp/products/item/6186/",
    "firstSeen": "2026-11-19",
-   "fetchedAt": "2026-11-21",
+   "fetchedAt": "2026-11-22",
    "stage": "announced",
    "status": "open"
   },
@@ -20049,7 +20044,7 @@
    "image": "https://www.megahobby.jp/images/item/item_0000006187_3uy3aX9luZAu_02.jpg",
    "url": "https://www.megahobby.jp/products/item/6187/",
    "firstSeen": "2026-11-19",
-   "fetchedAt": "2026-11-21",
+   "fetchedAt": "2026-11-22",
    "stage": "announced",
    "status": "open"
   },
@@ -20077,7 +20072,7 @@
    "image": "https://www.megahobby.jp/images/item/item_0000006188_DJTTFuBqMZx9_02.jpg",
    "url": "https://www.megahobby.jp/products/item/6188/",
    "firstSeen": "2026-11-19",
-   "fetchedAt": "2026-11-21",
+   "fetchedAt": "2026-11-22",
    "stage": "announced",
    "status": "open"
   },
@@ -20105,7 +20100,7 @@
    "image": "https://www.megahobby.jp/images/item/item_0000006189_CHmDgA9GZvUU_02.jpg",
    "url": "https://www.megahobby.jp/products/item/6189/",
    "firstSeen": "2026-11-19",
-   "fetchedAt": "2026-11-21",
+   "fetchedAt": "2026-11-22",
    "stage": "announced",
    "status": "open"
   },
@@ -20133,7 +20128,7 @@
    "image": "https://www.megahobby.jp/images/item/item_0000006190_dxaZ37gileiW_02.jpg",
    "url": "https://www.megahobby.jp/products/item/6190/",
    "firstSeen": "2026-11-19",
-   "fetchedAt": "2026-11-21",
+   "fetchedAt": "2026-11-22",
    "stage": "announced",
    "status": "open"
   },
@@ -20161,7 +20156,7 @@
    "image": "https://www.megahobby.jp/images/item/item_0000006191_JJSA18wICL3X_02.jpg",
    "url": "https://www.megahobby.jp/products/item/6191/",
    "firstSeen": "2026-11-19",
-   "fetchedAt": "2026-11-21",
+   "fetchedAt": "2026-11-22",
    "stage": "announced",
    "status": "open"
   },
@@ -20189,7 +20184,7 @@
    "image": "https://www.megahobby.jp/images/item/item_0000006192_mrkVDJ93erwW_02.jpg",
    "url": "https://www.megahobby.jp/products/item/6192/",
    "firstSeen": "2026-11-19",
-   "fetchedAt": "2026-11-21",
+   "fetchedAt": "2026-11-22",
    "stage": "announced",
    "status": "open"
   },
@@ -20217,7 +20212,7 @@
    "image": "https://www.megahobby.jp/images/item/item_0000006193_dqwdkvkYDdWT_02.jpg",
    "url": "https://www.megahobby.jp/products/item/6193/",
    "firstSeen": "2026-11-19",
-   "fetchedAt": "2026-11-21",
+   "fetchedAt": "2026-11-22",
    "stage": "announced",
    "status": "open"
   }
