@@ -1,8 +1,8 @@
 {
- "updatedAt": "2026-11-25T00:54:53.321Z",
+ "updatedAt": "2026-11-25T14:40:52.884Z",
  "sourceUpdatedAt": {
-  "mh": "2026-11-25T00:54:55.174Z",
-  "alter": "2026-11-25T00:54:56.844Z"
+  "mh": "2026-11-25T14:41:23.127Z",
+  "alter": "2026-11-25T14:41:24.793Z"
  },
  "items": [
   {
@@ -8174,6 +8174,33 @@
    "bonus": true
   },
   {
+   "id": "gsc-1139518",
+   "source": "gsc",
+   "sourceId": "1139518",
+   "name": "G.S.Collection 桜ミク グッスマイラコンVer.",
+   "series": "キャラクター・ボーカル・シリーズ01 初音ミク",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "スケールフィギュア",
+   "spec": "プラスチック製 塗装済み完成品・1/7スケール・専用台座付属・全高：約260mm",
+   "jan": "4570232593633",
+   "priceJpy": 24800,
+   "preorderStart": null,
+   "preorderEnd": null,
+   "preorderEndAt": null,
+   "releaseMonth": null,
+   "availability": null,
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1139518/bjk96H30mQGn8dSXxL5CfhENeUB2riu1.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1139518",
+   "shops": [],
+   "firstSeen": "2026-11-25",
+   "fetchedAt": "2026-11-25",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1139518/9ed110cafd709e4c7bdbe421b89a67d8.jpg",
+   "bonus": true
+  },
+  {
    "id": "gsc-1139584",
    "source": "gsc",
    "sourceId": "1139584",
@@ -15631,9 +15658,10 @@
    ],
    "firstSeen": "2026-11-25",
    "fetchedAt": "2026-11-25",
-   "status": "open",
+   "status": "closed",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1145974/UvYM8NHn42LGRabiqP9xAeBCX156yTWj.jpg",
-   "bonus": true
+   "bonus": true,
+   "closedAt": "2026-11-25"
   },
   {
    "id": "gsc-1146015",
@@ -16230,9 +16258,10 @@
    "shops": [],
    "firstSeen": "2026-11-25",
    "fetchedAt": "2026-11-25",
-   "status": "open",
+   "status": "closed",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1146591/ANiqmQa6UzGVhPeyY4JM7R35KEn9wXHZ.jpg",
-   "bonus": false
+   "bonus": false,
+   "closedAt": "2026-11-25"
   },
   {
    "id": "gsc-1146601",
