@@ -1,8 +1,8 @@
 {
- "updatedAt": "2026-11-26T00:35:14.378Z",
+ "updatedAt": "2026-11-26T14:04:39.969Z",
  "sourceUpdatedAt": {
-  "mh": "2026-11-26T00:35:33.841Z",
-  "alter": "2026-11-26T00:36:31.782Z"
+  "mh": "2026-11-26T14:05:09.955Z",
+  "alter": "2026-11-26T14:05:11.595Z"
  },
  "items": [
   {
@@ -1681,11 +1681,10 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-18",
-   "status": "closed",
-   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/5612/05d20e2937b13d98217a173da7fbf649.jpg",
-   "bonus": true,
-   "closedAt": "2026-11-19"
+   "fetchedAt": "2026-11-26",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/5612/ef7bbaa53023bd2cbd878a7b859ffc58.jpg",
+   "bonus": true
   },
   {
    "id": "gsc-6029",
@@ -2422,11 +2421,10 @@
     }
    ],
    "firstSeen": "2026-11-12",
-   "fetchedAt": "2026-11-18",
-   "status": "closed",
-   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/11111/682552058deb91b03a71067ce49caa79.jpg",
-   "bonus": true,
-   "closedAt": "2026-11-19"
+   "fetchedAt": "2026-11-26",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/11111/8fa1f953491f619b348f5a2c1fbf1b5c.jpg",
+   "bonus": true
   },
   {
    "id": "gsc-11137",
@@ -4245,6 +4243,38 @@
    "closedAt": "2026-11-19"
   },
   {
+   "id": "gsc-60275",
+   "source": "gsc",
+   "sourceId": "60275",
+   "name": "【再販】 ねんどろいど プラナ",
+   "series": "ブルーアーカイブ -Blue Archive-",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ねんどろいど",
+   "spec": "プラスチック製 塗装済み可動フィギュア・ノンスケール・専用台座付属・全高：約100mm",
+   "jan": "4570232592988",
+   "priceJpy": 6700,
+   "preorderStart": "2026-11-26",
+   "preorderEnd": "2027-01-06",
+   "preorderEndAt": null,
+   "releaseMonth": "2027-04",
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/60275/mAj7UY4hHEF1Gr5PvMDVZXWgbT2zftdJ.jpg",
+   "isRerelease": true,
+   "url": "https://www.goodsmile.com/ja/product/60275",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/69379/"
+    }
+   ],
+   "firstSeen": "2026-11-26",
+   "fetchedAt": "2026-11-26",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/60275/4ZarvxHUCKuY5bWcQmfjVndN0Dyp7eRh.jpg",
+   "bonus": true
+  },
+  {
    "id": "gsc-60342",
    "source": "gsc",
    "sourceId": "60342",
@@ -5849,6 +5879,38 @@
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1137365/d3mQYnLf7u5yt9VzEp26NBq4DwRSUxiX.jpg",
    "bonus": false,
    "closedAt": "2026-11-26"
+  },
+  {
+   "id": "gsc-1137451",
+   "source": "gsc",
+   "sourceId": "1137451",
+   "name": "ねんどろいど 獅堂 光",
+   "series": "TVアニメ「魔法騎士レイアース」",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ねんどろいど",
+   "spec": "プラスチック製 塗装済み可動フィギュア・ノンスケール・専用台座付属・全高：約100mm",
+   "jan": "4570232595972",
+   "priceJpy": 7500,
+   "preorderStart": "2026-11-26",
+   "preorderEnd": "2027-01-06",
+   "preorderEndAt": "2027-01-06T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1137451/7G4FCVLwWEDntQk8B5gTNx6jvum0PSc9.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1137451",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/57683/"
+    }
+   ],
+   "firstSeen": "2026-11-26",
+   "fetchedAt": "2026-11-26",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1137451/ZXHWC7mByxtEjDR86VG35Yuw9rcvTUeN.jpg",
+   "bonus": true
   },
   {
    "id": "gsc-1137488",
@@ -8004,6 +8066,70 @@
    "bonus": false
   },
   {
+   "id": "gsc-1139201",
+   "source": "gsc",
+   "sourceId": "1139201",
+   "name": "【再販】 ねんどろいど 鹿目まどか 〈ワルプルギスの廻天〉Ver. べーしっく",
+   "series": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ねんどろいどシリーズ",
+   "spec": "プラスチック製 塗装済み可動フィギュア・ノンスケール・専用台座付属・全高：約100mm",
+   "jan": "4570232596849",
+   "priceJpy": 3900,
+   "preorderStart": "2026-11-26",
+   "preorderEnd": "2027-01-13",
+   "preorderEndAt": null,
+   "releaseMonth": "2027-06",
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1139201/G47YXigzjwQef5Kr96dakEBJUCyMu3SD.jpg",
+   "isRerelease": true,
+   "url": "https://www.goodsmile.com/ja/product/1139201",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/72238/"
+    }
+   ],
+   "firstSeen": "2026-11-26",
+   "fetchedAt": "2026-11-26",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1139201/ccd3fcf482c87cbc2fa06d64eb9a9fcd.jpg",
+   "bonus": true
+  },
+  {
+   "id": "gsc-1139202",
+   "source": "gsc",
+   "sourceId": "1139202",
+   "name": "【再販】 ねんどろいど 暁美ほむら 〈ワルプルギスの廻天〉Ver. べーしっく",
+   "series": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ねんどろいど",
+   "spec": "プラスチック製 塗装済み可動フィギュア・ノンスケール・専用台座付属・全高：約100mm",
+   "jan": "4570232596856",
+   "priceJpy": 3900,
+   "preorderStart": "2026-11-26",
+   "preorderEnd": "2027-01-13",
+   "preorderEndAt": null,
+   "releaseMonth": "2027-06",
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1139202/TtNyr9USBuFm72Abj1P3Gp4cRa6eKvxs.jpg",
+   "isRerelease": true,
+   "url": "https://www.goodsmile.com/ja/product/1139202",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/72239/"
+    }
+   ],
+   "firstSeen": "2026-11-26",
+   "fetchedAt": "2026-11-26",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1139202/fpm2W8JX5C0iekE9F4LzDArqTa1xnvuS.jpg",
+   "bonus": true
+  },
+  {
    "id": "gsc-1139308",
    "source": "gsc",
    "sourceId": "1139308",
@@ -8606,6 +8732,70 @@
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1140447/X9yQ0eiBmKjgCAL2YWx6ERNFf8vpHMhU.jpg",
    "bonus": false,
    "closedAt": "2026-11-19"
+  },
+  {
+   "id": "gsc-1140462",
+   "source": "gsc",
+   "sourceId": "1140462",
+   "name": "ねんどろいど 龍咲 海",
+   "series": "TVアニメ「魔法騎士レイアース」",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ねんどろいど",
+   "spec": "プラスチック製 塗装済み可動フィギュア・ノンスケール・専用台座付属・全高：約100mm",
+   "jan": "4570232595989",
+   "priceJpy": 7500,
+   "preorderStart": "2026-11-26",
+   "preorderEnd": "2027-01-06",
+   "preorderEndAt": "2027-01-06T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1140462/ifuZCY42J59ytmNDVz0EhpBWxScLsnG6.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1140462",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/61939/"
+    }
+   ],
+   "firstSeen": "2026-11-26",
+   "fetchedAt": "2026-11-26",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1140462/uzP0fwk7sGVMdcRJ68mnT2ZpEXiKHajD.jpg",
+   "bonus": true
+  },
+  {
+   "id": "gsc-1140463",
+   "source": "gsc",
+   "sourceId": "1140463",
+   "name": "ねんどろいど 鳳凰寺 風",
+   "series": "TVアニメ「魔法騎士レイアース」",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ねんどろいど",
+   "spec": "プラスチック製 塗装済み可動フィギュア・ノンスケール・専用台座付属・全高：約100mm",
+   "jan": "4570232595996",
+   "priceJpy": 7500,
+   "preorderStart": "2026-11-26",
+   "preorderEnd": "2027-01-06",
+   "preorderEndAt": "2027-01-06T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1140463/49WqgEJZ3Qu1B6YfntLKjyD7XP50br8s.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1140463",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/61940/"
+    }
+   ],
+   "firstSeen": "2026-11-26",
+   "fetchedAt": "2026-11-26",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1140463/HmhuXAq4JdT0Frej192DK3B7W8ENwsVv.jpg",
+   "bonus": true
   },
   {
    "id": "gsc-1140600",
@@ -13839,6 +14029,38 @@
    "fetchedAt": "2026-11-25",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144442/xJ85qBYHthN4mfTpnADcGL2iFMErPkaw.jpg",
+   "bonus": true
+  },
+  {
+   "id": "gsc-1144443",
+   "source": "gsc",
+   "sourceId": "1144443",
+   "name": "ねんどろいど 初音ミク 気まぐれメルシィVer.",
+   "series": "キャラクター・ボーカル・シリーズ01 初音ミク",
+   "maker": "グッドスマイルカンパニー",
+   "seller": "グッドスマイルカンパニー",
+   "category": "ねんどろいど",
+   "spec": "プラスチック製 塗装済み可動フィギュア・ノンスケール・専用台座付属・全高：約100mm",
+   "jan": "4570232595965",
+   "priceJpy": 7800,
+   "preorderStart": "2026-11-26",
+   "preorderEnd": "2027-01-06",
+   "preorderEndAt": "2027-01-06T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144443/vHbwSd7KJ1Q3N8Et5FBmUayxc4Ti6Gfg.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1144443",
+   "shops": [
+    {
+     "name": "GOOD SMILE STORE 楽天市場店",
+     "url": "https://item.rakuten.co.jp/goodsmilestore/67366/"
+    }
+   ],
+   "firstSeen": "2026-11-26",
+   "fetchedAt": "2026-11-26",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1144443/uH90RZJdaPAT8yhFW2U5XtsiKVGxMQYb.jpg",
    "bonus": true
   },
   {
@@ -19845,6 +20067,33 @@
    "fetchedAt": "2026-11-26",
    "status": "open",
    "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147695/Ujw7kRKTbsDVgiH8ZLAq4XQyr6vBN1cC.jpg",
+   "bonus": false
+  },
+  {
+   "id": "gsc-1147696",
+   "source": "gsc",
+   "sourceId": "1147696",
+   "name": "Infinity Studio X Blizzard <World of Warcraft> グロマッシュ・ヘルスクリーム 1/3バストモデル",
+   "series": "World of Warcraft",
+   "maker": "Infinity Studio",
+   "seller": "グッドスマイルカンパニー",
+   "category": "その他フィギュア",
+   "spec": "PVC&ABS&ポリストーン&PU&金属ほか製塗装済み完成品・1/3スケール・全高：H=420mm W=500mm L=410mm",
+   "jan": "6972099323121",
+   "priceJpy": 87500,
+   "preorderStart": "2026-11-26",
+   "preorderEnd": "2027-01-06",
+   "preorderEndAt": "2027-01-06T23:59:59+09:00",
+   "releaseMonth": null,
+   "availability": "PreOrder",
+   "image": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147696/i31eXVHUrKM2vxJtjBfw5kLZ9WDp4aAu.jpg",
+   "isRerelease": false,
+   "url": "https://www.goodsmile.com/ja/product/1147696",
+   "shops": [],
+   "firstSeen": "2026-11-26",
+   "fetchedAt": "2026-11-26",
+   "status": "open",
+   "thumb": "https://www.goodsmile.com/gsc-webrevo-sdk-storage-prd/product/image/1147696/bg4siQ3pGfEwvW9FzMtnLuPVkBDaYqSx.jpg",
    "bonus": false
   },
   {
